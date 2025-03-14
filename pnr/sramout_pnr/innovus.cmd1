@@ -1,0 +1,232 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Mar  9 16:39:08 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+#@(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+#@(#)CDS: CPE v15.23-s045
+#@(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+uiSetTool stretchWire
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_verilog ./netlist/sram_w16_out.v
+set init_design_netlisttype Verilog
+set init_design_settop 1
+set init_top_cell sram_w16_out
+set init_lef_file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef
+create_library_set -name WC_LIB -timing $worst_timing_lib
+create_library_set -name BC_LIB -timing $best_timing_lib
+create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+create_constraint_mode -name CON -sdc_file [list $sdc]
+create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+init_design -setup WC_VIEW -hold BC_VIEW
+set_interactive_constraint_modes {CON}
+setDesignMode -process 65
+floorPlan -s 550 100 15 15 15 15
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+setAddStripeMode -break_at block_ring
+addStripe -number_of_sets 25 -spacing 1 -layer M4 -width 1 -nets { VSS VDD } -start_from left -start 20 -stop 490
+sroute
+pan -80.365 7.032
+pan -134.611 3.349
+pan -112.511 9.710
+pan -47.549 3.014
+pan 65.631 4.688
+pan 53.912 7.702
+getPinAssignMode -pinEditInBatch -quiet
+set ptngSprNoRefreshPins 1
+setPtnPinStatus -cell sram_w16_out -pin {D[0]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[1]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[2]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[3]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[4]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[5]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[6]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[7]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[8]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[9]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[10]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[11]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[12]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[13]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[14]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[15]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[16]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[17]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[18]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[19]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[20]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[21]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[22]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[23]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[24]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[25]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[26]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[27]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[28]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[29]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[30]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[31]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[32]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[33]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[34]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[35]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[36]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[37]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[38]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[39]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[40]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[41]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[42]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[43]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[44]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[45]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[46]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[47]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[48]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[49]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[50]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[51]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[52]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[53]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[54]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[55]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[56]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[57]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[58]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[59]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[60]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[61]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[62]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[63]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[64]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[65]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[66]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[67]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[68]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[69]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[70]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[71]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[72]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[73]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[74]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[75]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[76]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[77]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[78]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[79]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[80]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[81]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[82]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[83]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[84]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[85]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[86]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[87]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[88]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[89]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[90]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[91]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[92]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[93]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[94]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[95]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[96]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[97]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[98]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[99]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[100]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[101]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[102]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[103]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[104]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[105]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[106]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[107]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[108]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[109]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[110]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[111]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[112]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[113]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[114]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[115]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[116]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[117]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[118]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[119]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[120]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[121]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[122]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[123]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[124]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[125]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[126]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[127]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[128]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[129]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[130]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[131]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[132]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[133]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[134]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[135]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[136]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[137]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[138]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[139]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[140]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[141]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[142]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[143]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[144]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[145]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[146]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[147]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[148]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[149]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[150]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[151]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[152]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[153]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[154]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[155]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[156]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[157]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[158]} -status unplaced -silent
+setPtnPinStatus -cell sram_w16_out -pin {D[159]} -status unplaced -silent
+set ptngSprNoRefreshPins 0
+ptnSprRefreshPinsAndBlockages
+pan 83.713 2.009
+pan 169.770 18.082
+setPinAssignMode -pinEditInBatch true
+editPin -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 4 -spreadType center -spacing 4 -pin {{D[0]} {D[1]} {D[2]} {D[3]} {D[4]} {D[5]} {D[6]} {D[7]} {D[8]} {D[9]} {D[10]} {D[11]} {D[12]} {D[13]} {D[14]} {D[15]} {D[16]} {D[17]} {D[18]} {D[19]} {D[20]} {D[21]} {D[22]} {D[23]} {D[24]} {D[25]} {D[26]} {D[27]} {D[28]} {D[29]} {D[30]} {D[31]} {D[32]} {D[33]} {D[34]} {D[35]} {D[36]} {D[37]} {D[38]} {D[39]} {D[40]} {D[41]} {D[42]} {D[43]} {D[44]} {D[45]} {D[46]} {D[47]} {D[48]} {D[49]} {D[50]} {D[51]} {D[52]} {D[53]} {D[54]} {D[55]} {D[56]} {D[57]} {D[58]} {D[59]} {D[60]} {D[61]} {D[62]} {D[63]} {D[64]} {D[65]} {D[66]} {D[67]} {D[68]} {D[69]} {D[70]} {D[71]} {D[72]} {D[73]} {D[74]} {D[75]} {D[76]} {D[77]} {D[78]} {D[79]} {D[80]} {D[81]} {D[82]} {D[83]} {D[84]} {D[85]} {D[86]} {D[87]} {D[88]} {D[89]} {D[90]} {D[91]} {D[92]} {D[93]} {D[94]} {D[95]} {D[96]} {D[97]} {D[98]} {D[99]} {D[100]} {D[101]} {D[102]} {D[103]} {D[104]} {D[105]} {D[106]} {D[107]} {D[108]} {D[109]} {D[110]} {D[111]} {D[112]} {D[113]} {D[114]} {D[115]} {D[116]} {D[117]} {D[118]} {D[119]} {D[120]} {D[121]} {D[122]} {D[123]} {D[124]} {D[125]} {D[126]} {D[127]} {D[128]} {D[129]} {D[130]} {D[131]} {D[132]} {D[133]} {D[134]} {D[135]} {D[136]} {D[137]} {D[138]} {D[139]} {D[140]} {D[141]} {D[142]} {D[143]} {D[144]} {D[145]} {D[146]} {D[147]} {D[148]} {D[149]} {D[150]} {D[151]} {D[152]} {D[153]} {D[154]} {D[155]} {D[156]} {D[157]} {D[158]} {D[159]}}
+pan -185.508 -21.431
+pan 232.723 46.880
+pan -30.806 -1.340
+pan -285.630 -4.018
+pan 83.713 -3.014
+pan 164.078 -7.702
+pan -76.681 -6.697
+pan -106.148 -4.353
+pan -78.691 4.018
+pan 173.119 11.050
+pan 157.046 22.435
+pan -106.148 -20.091

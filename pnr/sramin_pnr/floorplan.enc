@@ -1,0 +1,1 @@
+restoreDesign [file dirname [file normalize [info script]]]/floorplan.enc.dat sram_w16_in

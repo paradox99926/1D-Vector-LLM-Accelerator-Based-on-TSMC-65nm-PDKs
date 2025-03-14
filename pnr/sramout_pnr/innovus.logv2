@@ -1,0 +1,438 @@
+[03/09 16:41:01      0] 
+[03/09 16:41:01      0] Cadence Innovus(TM) Implementation System.
+[03/09 16:41:01      0] Copyright 2015 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/09 16:41:01      0] 
+[03/09 16:41:01      0] Version:	v15.23-s045_1, built Fri Apr 22 12:32:52 PDT 2016
+[03/09 16:41:01      0] Options:	
+[03/09 16:41:01      0] Date:		Sun Mar  9 16:41:01 2025
+[03/09 16:41:01      0] Host:		ieng6-ece-19.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB)
+[03/09 16:41:01      0] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/09 16:41:01      0] 
+[03/09 16:41:01      0] License:
+[03/09 16:41:01      0] 		invs	Innovus Implementation System	15.2	checkout succeeded
+[03/09 16:41:01      0] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/09 16:41:02      0] **ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /acsnfs3/software/cadence-innovus152/tools/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+[03/09 16:41:02      0] 
+[03/09 16:41:02      0] **ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : (null)
+[03/09 16:41:02      0] 
+[03/09 16:41:02      0] **ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+[03/09 16:41:02      0] 
+[03/09 16:41:10      7] @(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+[03/09 16:41:10      7] @(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+[03/09 16:41:10      7] @(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+[03/09 16:41:10      7] @(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+[03/09 16:41:10      7] @(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+[03/09 16:41:10      7] @(#)CDS: CPE v15.23-s045
+[03/09 16:41:10      7] @(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+[03/09 16:41:10      7] @(#)CDS: OA 22.50-p036 Tue Nov  3 09:29:52 2015
+[03/09 16:41:10      7] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/09 16:41:10      7] @(#)CDS: RCDB 11.7
+[03/09 16:41:10      7] --- Running on ieng6-ece-19.ucsd.edu (x86_64 w/Linux 3.10.0-1160.119.1.el7.x86_64) (4cores*8cpus*Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz 25344KB) ---
+[03/09 16:41:10      7] Create and set the environment variable TMPDIR to /tmp/innovus_temp_25731_ieng6-ece-19.ucsd.edu_xiz225_Qq2MsI.
+
+[03/09 16:41:11      8] 
+[03/09 16:41:11      8] **INFO:  MMMC transition support version v31-84 
+[03/09 16:41:11      8] 
+[03/09 16:41:11      8] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/09 16:41:11      8] <CMD> suppressMessage ENCEXT-2799
+[03/09 16:41:11      8] <CMD> getDrawView
+[03/09 16:41:11      8] <CMD> loadWorkspace -name Physical
+[03/09 16:41:11      8] <CMD> win
+[03/09 16:41:15      9] <CMD> set init_pwr_net VDD
+[03/09 16:41:15      9] <CMD> set init_gnd_net VSS
+[03/09 16:41:15      9] <CMD> set init_verilog ./netlist/sram_w16_out.v
+[03/09 16:41:15      9] <CMD> set init_design_netlisttype Verilog
+[03/09 16:41:15      9] <CMD> set init_design_settop 1
+[03/09 16:41:15      9] <CMD> set init_top_cell sram_w16_out
+[03/09 16:41:15      9] <CMD> set init_lef_file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef
+[03/09 16:41:15      9] <CMD> create_library_set -name WC_LIB -timing $worst_timing_lib
+[03/09 16:41:15      9] <CMD> create_library_set -name BC_LIB -timing $best_timing_lib
+[03/09 16:41:15      9] <CMD> create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+[03/09 16:41:15      9] <CMD> create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+[03/09 16:41:15      9] <CMD> create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+[03/09 16:41:15      9] <CMD> create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+[03/09 16:41:15      9] <CMD> create_constraint_mode -name CON -sdc_file [list $sdc]
+[03/09 16:41:15      9] <CMD> create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+[03/09 16:41:15      9] <CMD> create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+[03/09 16:41:15      9] <CMD> init_design -setup WC_VIEW -hold BC_VIEW
+[03/09 16:41:15      9] **ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[03/09 16:41:15      9] 
+[03/09 16:41:15      9] **ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+[03/09 16:41:15      9] 
+[03/09 16:41:15      9] Loading LEF file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef ...
+[03/09 16:41:15      9] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 28.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 867.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 877.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1014.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1024.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1161.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1171.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1308.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1318.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1372.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1383.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1604.
+[03/09 16:41:15      9] WARNING (LEFPARS-2019): TOPOFSTACKONLY statement is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1614.
+[03/09 16:41:15      9] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1769.
+[03/09 16:41:15      9] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1771.
+[03/09 16:41:15      9] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1772.
+[03/09 16:41:15      9] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1776.
+[03/09 16:41:15      9] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1778.
+[03/09 16:41:15      9] WARNING (LEFPARS-2021): turn-via is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1779.
+[03/09 16:41:15      9] WARNING (LEFPARS-2022): DIRECTION statement in VIARULE is obsolete in version 5.6 and later.
+[03/09 16:41:15      9] The LEF parser will ignore this statement.
+[03/09 16:41:15      9] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef at line 1783.
+[03/09 16:41:15      9] Set DBUPerIGU to M2 pitch 400.
+[03/09 16:41:16      9] **WARN: (IMPLF-200):	Pin 'I' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/09 16:41:16      9] Type 'man IMPLF-200' for more detail.
+[03/09 16:41:16      9] 
+[03/09 16:41:16      9] viaInitial starts at Sun Mar  9 16:41:16 2025
+viaInitial ends at Sun Mar  9 16:41:16 2025
+Reading WC_LIB timing library '/home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lib/tcbn65gpluswc.lib' ...
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D8' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D8' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D8' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0' is not defined in the library.
+[03/09 16:41:16      9] **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1' is not defined in the library.
+[03/09 16:41:16      9] Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+[03/09 16:41:17     10] Read 811 cells in library 'tcbn65gpluswc' 
+[03/09 16:41:17     10] Reading BC_LIB timing library '/home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lib/tcbn65gplusbc.lib' ...
+[03/09 16:41:18     11] Read 811 cells in library 'tcbn65gplusbc' 
+[03/09 16:41:18     11] *** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.19min, fe_real=0.28min, fe_mem=465.7M) ***
+[03/09 16:41:18     11] *** Begin netlist parsing (mem=465.7M) ***
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D4' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D2' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D1' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR4D0' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D4' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D2' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D1' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR3D0' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D4' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'XOR2D2' is defined in LEF but not in the timing library.
+[03/09 16:41:18     11] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/09 16:41:18     11] To increase the message display limit, refer to the product command reference manual.
+[03/09 16:41:18     11] Created 811 new cells from 2 timing libraries.
+[03/09 16:41:18     11] Reading netlist ...
+[03/09 16:41:18     11] Backslashed names will retain backslash and a trailing blank character.
+[03/09 16:41:18     11] Reading verilog netlist './netlist/sram_w16_out.v'
+[03/09 16:41:18     11] 
+[03/09 16:41:18     11] *** Memory Usage v#1 (Current mem = 465.652M, initial mem = 149.258M) ***
+[03/09 16:41:18     11] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=465.7M) ***
+[03/09 16:41:18     11] Set top cell to sram_w16_out.
+[03/09 16:41:18     11] Hooked 1622 DB cells to tlib cells.
+[03/09 16:41:18     11] Starting recursive module instantiation check.
+[03/09 16:41:18     11] No recursion found.
+[03/09 16:41:18     11] Building hierarchical netlist for Cell sram_w16_out ...
+[03/09 16:41:18     11] *** Netlist is unique.
+[03/09 16:41:18     11] ** info: there are 1658 modules.
+[03/09 16:41:18     11] ** info: there are 4586 stdCell insts.
+[03/09 16:41:18     11] 
+[03/09 16:41:18     11] *** Memory Usage v#1 (Current mem = 522.984M, initial mem = 149.258M) ***
+[03/09 16:41:18     11] **WARN: (IMPFP-3961):	The techSite 'dcore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/09 16:41:18     11] Type 'man IMPFP-3961' for more detail.
+[03/09 16:41:18     11] **WARN: (IMPFP-3961):	The techSite 'ccore' has no related cells in LEF/OA library. Cannot make calculations for this site type unless cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/09 16:41:18     11] Type 'man IMPFP-3961' for more detail.
+[03/09 16:41:18     11] Set Default Net Delay as 1000 ps.
+[03/09 16:41:18     11] Set Default Net Load as 0.5 pF. 
+[03/09 16:41:18     11] Set Default Input Pin Transition as 0.1 ps.
+[03/09 16:41:18     12] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/09 16:41:18     12] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable ...
+[03/09 16:41:18     12] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/09 16:41:18     12] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/09 16:41:18     12] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/09 16:41:18     12] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/09 16:41:18     12] Reading Capacitance Table File /home/linux/ieng6/ee260bwi25/xiz225/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable ...
+[03/09 16:41:18     12] **WARN: (IMPEXT-2760):	Layer M9 specified in the cap table is ignored because it is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/09 16:41:18     12] **WARN: (IMPEXT-2771):	Via VIA_8 specified in the cap table is ignored because its top layer, M9, is greater than the maximum number of layers, 8, specified in the technology LEF file. Check the cap table for the invalid layer specification.
+[03/09 16:41:18     12] **WARN: (IMPEXT-2801):	Resistance values are not provided in the Cap Table. Sheet resistance defined in the LEF file will be used.
+[03/09 16:41:18     12] **WARN: (IMPEXT-2710):	Basic Cap table for layer M9 is ignored because the layer is not specified in the technology LEF file.
+[03/09 16:41:18     12] Importing multi-corner RC tables ... 
+[03/09 16:41:18     12] Summary of Active RC-Corners : 
+[03/09 16:41:18     12]  
+[03/09 16:41:18     12]  Analysis View: WC_VIEW
+[03/09 16:41:18     12]     RC-Corner Name        : Cmax
+[03/09 16:41:18     12]     RC-Corner Index       : 0
+[03/09 16:41:18     12]     RC-Corner Temperature : 125 Celsius
+[03/09 16:41:18     12]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/xiz225/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable'
+[03/09 16:41:18     12]     RC-Corner PreRoute Res Factor         : 1
+[03/09 16:41:18     12]     RC-Corner PreRoute Cap Factor         : 1
+[03/09 16:41:18     12]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/09 16:41:18     12]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/09 16:41:18     12]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/09 16:41:18     12]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/09 16:41:18     12]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/09 16:41:18     12]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/09 16:41:18     12]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/09 16:41:18     12]  
+[03/09 16:41:18     12]  Analysis View: BC_VIEW
+[03/09 16:41:18     12]     RC-Corner Name        : Cmin
+[03/09 16:41:18     12]     RC-Corner Index       : 1
+[03/09 16:41:18     12]     RC-Corner Temperature : -40 Celsius
+[03/09 16:41:18     12]     RC-Corner Cap Table   : '/home/linux/ieng6/ee260bwi25/xiz225/PDKdata/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable'
+[03/09 16:41:18     12]     RC-Corner PreRoute Res Factor         : 1
+[03/09 16:41:18     12]     RC-Corner PreRoute Cap Factor         : 1
+[03/09 16:41:18     12]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/09 16:41:18     12]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/09 16:41:18     12]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/09 16:41:18     12]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/09 16:41:18     12]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/09 16:41:18     12]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/09 16:41:18     12]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/09 16:41:18     12] *Info: initialize multi-corner CTS.
+[03/09 16:41:18     12] Reading timing constraints file './constraints/sram_w16_out.sdc' ...
+[03/09 16:41:19     12] Current (total cpu=0:00:12.3, real=0:00:18.0, peak res=274.0M, current mem=641.8M)
+[03/09 16:41:19     12] INFO (CTE): Constraints read successfully.
+[03/09 16:41:19     12] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=292.1M, current mem=661.0M)
+[03/09 16:41:19     12] Current (total cpu=0:00:12.4, real=0:00:18.0, peak res=292.1M, current mem=661.0M)
+[03/09 16:41:19     12] Summary for sequential cells idenfication: 
+[03/09 16:41:19     12] Identified SBFF number: 199
+[03/09 16:41:19     12] Identified MBFF number: 0
+[03/09 16:41:19     12] Not identified SBFF number: 0
+[03/09 16:41:19     12] Not identified MBFF number: 0
+[03/09 16:41:19     12] Number of sequential cells which are not FFs: 104
+[03/09 16:41:19     12] 
+[03/09 16:41:19     12] Total number of combinational cells: 492
+[03/09 16:41:19     12] Total number of sequential cells: 303
+[03/09 16:41:19     12] Total number of tristate cells: 11
+[03/09 16:41:19     12] Total number of level shifter cells: 0
+[03/09 16:41:19     12] Total number of power gating cells: 0
+[03/09 16:41:19     12] Total number of isolation cells: 0
+[03/09 16:41:19     12] Total number of power switch cells: 0
+[03/09 16:41:19     12] Total number of pulse generator cells: 0
+[03/09 16:41:19     12] Total number of always on buffers: 0
+[03/09 16:41:19     12] Total number of retention cells: 0
+[03/09 16:41:19     12] List of usable buffers: BUFFD1 BUFFD0 BUFFD2 BUFFD3 BUFFD4 BUFFD6 BUFFD8 BUFFD12 BUFFD16 CKBD1 CKBD0 CKBD2 CKBD3 CKBD4 CKBD6 CKBD8 CKBD12 CKBD16
+[03/09 16:41:19     12] Total number of usable buffers: 18
+[03/09 16:41:19     12] List of unusable buffers: BUFFD20 BUFFD24 CKBD20 CKBD24 GBUFFD1 GBUFFD3 GBUFFD2 GBUFFD4 GBUFFD8
+[03/09 16:41:19     12] Total number of unusable buffers: 9
+[03/09 16:41:19     12] List of usable inverters: CKND1 CKND0 CKND2 CKND3 CKND4 CKND6 CKND8 CKND12 CKND16 INVD1 INVD0 INVD2 INVD3 INVD4 INVD6 INVD8 INVD12 INVD16
+[03/09 16:41:19     12] Total number of usable inverters: 18
+[03/09 16:41:19     12] List of unusable inverters: CKND20 CKND24 GINVD2 GINVD1 GINVD4 GINVD3 GINVD8 INVD20 INVD24
+[03/09 16:41:19     12] Total number of unusable inverters: 9
+[03/09 16:41:19     12] List of identified usable delay cells:
+[03/09 16:41:19     12] Total number of identified usable delay cells: 0
+[03/09 16:41:19     12] List of identified unusable delay cells: DEL0 DEL005 DEL01 DEL015 DEL02 DEL1 DEL2 DEL3 DEL4
+[03/09 16:41:19     12] Total number of identified unusable delay cells: 9
+[03/09 16:41:19     12] All delay cells are dont_use. Buffers will be used to fix hold violations.
+[03/09 16:41:19     12] 
+[03/09 16:41:19     12] *** Summary of all messages that are not suppressed in this session:
+[03/09 16:41:19     12] Severity  ID               Count  Summary                                  
+[03/09 16:41:19     12] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/09 16:41:19     12] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/09 16:41:19     12] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/09 16:41:19     12] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/09 16:41:19     12] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/09 16:41:19     12] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/09 16:41:19     12] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/09 16:41:19     12] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/09 16:41:19     12] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/09 16:41:19     12] *** Message Summary: 1633 warning(s), 2 error(s)
+[03/09 16:41:19     12] 
+[03/09 16:41:19     12] <CMD> set_interactive_constraint_modes {CON}
+[03/09 16:41:19     12] <CMD> setDesignMode -process 65
+[03/09 16:41:19     12] Applying the recommended capacitance filtering threshold values for 65nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+[03/09 16:41:19     12] 	These values will be used by all post-route extraction engines, including tQuantus, IQRC and Quantus QRC extraction.
+[03/09 16:41:19     12] 	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+[03/09 16:41:19     12] 	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+[03/09 16:41:19     12] 	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+[03/09 16:41:19     12] Updating process node dependent CCOpt properties for the 65nm process node.
+[03/09 16:41:21     12] <CMD> floorPlan -s 640 50 15 15 15 15
+[03/09 16:41:21     12] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[03/09 16:41:21     12] <CMD> globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+[03/09 16:41:21     12] 4586 new pwr-pin connections were made to global net 'VDD'.
+[03/09 16:41:21     12] <CMD> globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+[03/09 16:41:21     12] 4586 new gnd-pin connections were made to global net 'VSS'.
+[03/09 16:41:21     12] <CMD> setAddStripeMode -break_at block_ring
+[03/09 16:41:21     12] Stripe will break at block ring.
+[03/09 16:41:21     12] <CMD> addStripe -number_of_sets 25 -spacing 1 -layer M4 -width 1 -nets { VSS VDD } -start_from left -start 20 -stop 490
+[03/09 16:41:21     13] 
+[03/09 16:41:21     13] Starting stripe generation ...
+[03/09 16:41:21     13] Non-Default setAddStripeOption Settings :
+[03/09 16:41:21     13]   NONE
+[03/09 16:41:21     13] The core ring for VSS is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/09 16:41:21     13] The core ring for VDD is incomplete. The core ring will not be used as a boundary for stripes. In this situation, the power planner will generate stripes only within the core area.
+[03/09 16:41:21     13] Stripe generation is complete; vias are now being generated.
+[03/09 16:41:21     13] The power planner created 50 wires.
+[03/09 16:41:21     13] *** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 835.4M) ***
+[03/09 16:41:21     13] <CMD> sroute
+[03/09 16:41:21     13] *** Begin SPECIAL ROUTE on Sun Mar  9 16:41:21 2025 ***
+[03/09 16:41:21     13] SPECIAL ROUTE ran on directory: /home/linux/ieng6/ee260bwi25/xiz225/project/pnr/sramout_pnr
+[03/09 16:41:21     13] SPECIAL ROUTE ran on machine: ieng6-ece-19.ucsd.edu (Linux 3.10.0-1160.119.1.el7.x86_64 Xeon 2.19Ghz)
+[03/09 16:41:21     13] 
+[03/09 16:41:21     13] Begin option processing ...
+[03/09 16:41:21     13] srouteConnectPowerBump set to false
+[03/09 16:41:21     13] routeSpecial set to true
+[03/09 16:41:21     13] srouteConnectConverterPin set to false
+[03/09 16:41:21     13] srouteFollowCorePinEnd set to 3
+[03/09 16:41:21     13] srouteJogControl set to "preferWithChanges differentLayer"
+[03/09 16:41:21     13] sroutePadPinAllPorts set to true
+[03/09 16:41:21     13] sroutePreserveExistingRoutes set to true
+[03/09 16:41:21     13] srouteRoutePowerBarPortOnBothDir set to true
+[03/09 16:41:21     13] End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1530.00 megs.
+[03/09 16:41:21     13] 
+[03/09 16:41:21     13] Reading DB technology information...
+[03/09 16:41:21     13] Finished reading DB technology information.
+[03/09 16:41:21     13] Reading floorplan and netlist information...
+[03/09 16:41:21     13] Finished reading floorplan and netlist information.
+[03/09 16:41:22     13] Read in 17 layers, 8 routing layers, 1 overlap layer
+[03/09 16:41:22     13] Read in 846 macros, 11 used
+[03/09 16:41:22     13] Read in 11 components
+[03/09 16:41:22     13]   11 core components: 11 unplaced, 0 placed, 0 fixed
+[03/09 16:41:22     13] Read in 327 logical pins
+[03/09 16:41:22     13] Read in 327 nets
+[03/09 16:41:22     13] Read in 2 special nets, 2 routed
+[03/09 16:41:22     13] Read in 22 terminals
+[03/09 16:41:22     13] Begin power routing ...
+[03/09 16:41:22     13] **WARN: (IMPSR-1254):	Cannot find any block pin of net VDD. Check netlist, or change option to include the pin.
+[03/09 16:41:22     13] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VDD. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/09 16:41:22     13] Type 'man IMPSR-1256' for more detail.
+[03/09 16:41:22     13] Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/09 16:41:22     13] **WARN: (IMPSR-1254):	Cannot find any block pin of net VSS. Check netlist, or change option to include the pin.
+[03/09 16:41:22     13] **WARN: (IMPSR-1256):	Cannot find any CORE class pad pin of net VSS. Change routing area or layer to include the expected pin, or check netlist, or change port class in the technology file.
+[03/09 16:41:22     13] Type 'man IMPSR-1256' for more detail.
+[03/09 16:41:22     13] Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+[03/09 16:41:22     13] CPU time for FollowPin 0 seconds
+[03/09 16:41:22     13] CPU time for FollowPin 0 seconds
+[03/09 16:41:22     13]   Number of IO ports routed: 0
+[03/09 16:41:22     13]   Number of Block ports routed: 0
+[03/09 16:41:22     13]   Number of Stripe ports routed: 0  open: 100
+[03/09 16:41:22     13]   Number of Core ports routed: 0  open: 56
+[03/09 16:41:22     13]   Number of Pad ports routed: 0
+[03/09 16:41:22     13]   Number of Power Bump ports routed: 0
+[03/09 16:41:22     13]   Number of Followpin connections: 28
+[03/09 16:41:22     13] End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1548.00 megs.
+[03/09 16:41:22     13] 
+[03/09 16:41:22     13] 
+[03/09 16:41:22     13] 
+[03/09 16:41:22     13]  Begin updating DB with routing results ...
+[03/09 16:41:22     13]  Updating DB with 101 via definition ...Extracting standard cell pins and blockage ...... 
+[03/09 16:41:22     13] Pin and blockage extraction finished
+[03/09 16:41:22     13] 
+[03/09 16:41:22     13] 
+sroute post-processing starts at Sun Mar  9 16:41:22 2025
+The viaGen is rebuilding shadow vias for net VSS.
+[03/09 16:41:22     13] sroute post-processing ends at Sun Mar  9 16:41:22 2025
+
+sroute post-processing starts at Sun Mar  9 16:41:22 2025
+The viaGen is rebuilding shadow vias for net VDD.
+[03/09 16:41:22     13] sroute post-processing ends at Sun Mar  9 16:41:22 2025
+sroute: Total CPU time used = 0:0:0
+[03/09 16:41:22     13] sroute: Total Real time used = 0:0:1
+[03/09 16:41:22     13] sroute: Total Memory used = 16.98 megs
+[03/09 16:41:22     13] sroute: Total Peak Memory used = 852.36 megs
+[03/09 16:41:25     13] <CMD> pan -63.622 78.021
+[03/09 16:41:26     14] <CMD> pan -95.433 5.692
+[03/09 16:41:29     14] <CMD> pan 144.656 25.114
+[03/09 16:41:32     15] <CMD> getPinAssignMode -pinEditInBatch -quiet
+[03/09 16:41:43     17] <CMD> setPinAssignMode -pinEditInBatch true
+[03/09 16:41:43     17] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Bottom -layer 4 -spreadType center -spacing 4 -pin {{D[0]} {D[1]} {D[2]} {D[3]} {D[4]} {D[5]} {D[6]} {D[7]} {D[8]} {D[9]} {D[10]} {D[11]} {D[12]} {D[13]} {D[14]} {D[15]} {D[16]} {D[17]} {D[18]} {D[19]} {D[20]} {D[21]} {D[22]} {D[23]} {D[24]} {D[25]} {D[26]} {D[27]} {D[28]} {D[29]} {D[30]} {D[31]} {D[32]} {D[33]} {D[34]} {D[35]} {D[36]} {D[37]} {D[38]} {D[39]} {D[40]} {D[41]} {D[42]} {D[43]} {D[44]} {D[45]} {D[46]} {D[47]} {D[48]} {D[49]} {D[50]} {D[51]} {D[52]} {D[53]} {D[54]} {D[55]} {D[56]} {D[57]} {D[58]} {D[59]} {D[60]} {D[61]} {D[62]} {D[63]} {D[64]} {D[65]} {D[66]} {D[67]} {D[68]} {D[69]} {D[70]} {D[71]} {D[72]} {D[73]} {D[74]} {D[75]} {D[76]} {D[77]} {D[78]} {D[79]} {D[80]} {D[81]} {D[82]} {D[83]} {D[84]} {D[85]} {D[86]} {D[87]} {D[88]} {D[89]} {D[90]} {D[91]} {D[92]} {D[93]} {D[94]} {D[95]} {D[96]} {D[97]} {D[98]} {D[99]} {D[100]} {D[101]} {D[102]} {D[103]} {D[104]} {D[105]} {D[106]} {D[107]} {D[108]} {D[109]} {D[110]} {D[111]} {D[112]} {D[113]} {D[114]} {D[115]} {D[116]} {D[117]} {D[118]} {D[119]} {D[120]} {D[121]} {D[122]} {D[123]} {D[124]} {D[125]} {D[126]} {D[127]} {D[128]} {D[129]} {D[130]} {D[131]} {D[132]} {D[133]} {D[134]} {D[135]} {D[136]} {D[137]} {D[138]} {D[139]} {D[140]} {D[141]} {D[142]} {D[143]} {D[144]} {D[145]} {D[146]} {D[147]} {D[148]} {D[149]} {D[150]} {D[151]} {D[152]} {D[153]} {D[154]} {D[155]} {D[156]} {D[157]} {D[158]} {D[159]}}
+[03/09 16:41:43     17] Successfully spread [160] pins.
+[03/09 16:41:43     17] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1023.8M).
+[03/09 16:41:47     18] <CMD> pan -186.848 -6.362
+[03/09 16:41:48     18] <CMD> pan 214.976 -21.765
+[03/09 16:41:49     18] <CMD> pan 32.816 -1.340
+[03/09 16:42:07     21] <CMD> setPinAssignMode -pinEditInBatch true
+[03/09 16:42:07     21] <CMD> editPin -pinWidth 0.1 -pinDepth 0.52 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 4 -spreadType center -spacing 4 -pin {{D[0]} {D[1]} {D[2]} {D[3]} {D[4]} {D[5]} {D[6]} {D[7]} {D[8]} {D[9]} {D[10]} {D[11]} {D[12]} {D[13]} {D[14]} {D[15]} {D[16]} {D[17]} {D[18]} {D[19]} {D[20]} {D[21]} {D[22]} {D[23]} {D[24]} {D[25]} {D[26]} {D[27]} {D[28]} {D[29]} {D[30]} {D[31]} {D[32]} {D[33]} {D[34]} {D[35]} {D[36]} {D[37]} {D[38]} {D[39]} {D[40]} {D[41]} {D[42]} {D[43]} {D[44]} {D[45]} {D[46]} {D[47]} {D[48]} {D[49]} {D[50]} {D[51]} {D[52]} {D[53]} {D[54]} {D[55]} {D[56]} {D[57]} {D[58]} {D[59]} {D[60]} {D[61]} {D[62]} {D[63]} {D[64]} {D[65]} {D[66]} {D[67]} {D[68]} {D[69]} {D[70]} {D[71]} {D[72]} {D[73]} {D[74]} {D[75]} {D[76]} {D[77]} {D[78]} {D[79]} {D[80]} {D[81]} {D[82]} {D[83]} {D[84]} {D[85]} {D[86]} {D[87]} {D[88]} {D[89]} {D[90]} {D[91]} {D[92]} {D[93]} {D[94]} {D[95]} {D[96]} {D[97]} {D[98]} {D[99]} {D[100]} {D[101]} {D[102]} {D[103]} {D[104]} {D[105]} {D[106]} {D[107]} {D[108]} {D[109]} {D[110]} {D[111]} {D[112]} {D[113]} {D[114]} {D[115]} {D[116]} {D[117]} {D[118]} {D[119]} {D[120]} {D[121]} {D[122]} {D[123]} {D[124]} {D[125]} {D[126]} {D[127]} {D[128]} {D[129]} {D[130]} {D[131]} {D[132]} {D[133]} {D[134]} {D[135]} {D[136]} {D[137]} {D[138]} {D[139]} {D[140]} {D[141]} {D[142]} {D[143]} {D[144]} {D[145]} {D[146]} {D[147]} {D[148]} {D[149]} {D[150]} {D[151]} {D[152]} {D[153]} {D[154]} {D[155]} {D[156]} {D[157]} {D[158]} {D[159]}}
+[03/09 16:42:07     21] Successfully spread [160] pins.
+[03/09 16:42:07     21] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1023.8M).
+[03/09 16:42:19     24] <CMD> setPinAssignMode -pinEditInBatch true
+[03/09 16:42:19     24] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Top -layer 4 -spreadType center -spacing 4.0 -pin {{Q[0]} {Q[1]} {Q[2]} {Q[3]} {Q[4]} {Q[5]} {Q[6]} {Q[7]} {Q[8]} {Q[9]} {Q[10]} {Q[11]} {Q[12]} {Q[13]} {Q[14]} {Q[15]} {Q[16]} {Q[17]} {Q[18]} {Q[19]} {Q[20]} {Q[21]} {Q[22]} {Q[23]} {Q[24]} {Q[25]} {Q[26]} {Q[27]} {Q[28]} {Q[29]} {Q[30]} {Q[31]} {Q[32]} {Q[33]} {Q[34]} {Q[35]} {Q[36]} {Q[37]} {Q[38]} {Q[39]} {Q[40]} {Q[41]} {Q[42]} {Q[43]} {Q[44]} {Q[45]} {Q[46]} {Q[47]} {Q[48]} {Q[49]} {Q[50]} {Q[51]} {Q[52]} {Q[53]} {Q[54]} {Q[55]} {Q[56]} {Q[57]} {Q[58]} {Q[59]} {Q[60]} {Q[61]} {Q[62]} {Q[63]} {Q[64]} {Q[65]} {Q[66]} {Q[67]} {Q[68]} {Q[69]} {Q[70]} {Q[71]} {Q[72]} {Q[73]} {Q[74]} {Q[75]} {Q[76]} {Q[77]} {Q[78]} {Q[79]} {Q[80]} {Q[81]} {Q[82]} {Q[83]} {Q[84]} {Q[85]} {Q[86]} {Q[87]} {Q[88]} {Q[89]} {Q[90]} {Q[91]} {Q[92]} {Q[93]} {Q[94]} {Q[95]} {Q[96]} {Q[97]} {Q[98]} {Q[99]} {Q[100]} {Q[101]} {Q[102]} {Q[103]} {Q[104]} {Q[105]} {Q[106]} {Q[107]} {Q[108]} {Q[109]} {Q[110]} {Q[111]} {Q[112]} {Q[113]} {Q[114]} {Q[115]} {Q[116]} {Q[117]} {Q[118]} {Q[119]} {Q[120]} {Q[121]} {Q[122]} {Q[123]} {Q[124]} {Q[125]} {Q[126]} {Q[127]} {Q[128]} {Q[129]} {Q[130]} {Q[131]} {Q[132]} {Q[133]} {Q[134]} {Q[135]} {Q[136]} {Q[137]} {Q[138]} {Q[139]} {Q[140]} {Q[141]} {Q[142]} {Q[143]} {Q[144]} {Q[145]} {Q[146]} {Q[147]} {Q[148]} {Q[149]} {Q[150]} {Q[151]} {Q[152]} {Q[153]} {Q[154]} {Q[155]} {Q[156]} {Q[157]} {Q[158]} {Q[159]}}
+[03/09 16:42:19     24] Successfully spread [160] pins.
+[03/09 16:42:19     24] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1023.8M).
+[03/09 16:42:37     27] <CMD> setPinAssignMode -pinEditInBatch true
+[03/09 16:42:37     27] <CMD> editPin -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -side Left -layer 3 -spreadType center -spacing 4 -pin {{A[0]} {A[1]} {A[2]} {A[3]} CEN CLK WEN}
+[03/09 16:42:37     27] Successfully spread [7] pins.
+[03/09 16:42:37     27] editPin : finished (cpu = 0:00:00.0 real = 0:00:00.0, mem = 1023.8M).
+[03/09 16:43:11     32] <CMD> pan -0.231 1.594
+[03/09 16:43:13     32] <CMD> pan -0.013 0.194
+[03/09 16:43:18     33] <CMD> pan 121.527 34.803
+[03/09 16:43:20     34] <CMD> pan 0.114 -1.518
+[03/09 16:43:27     35] <CMD> pan 6.974 34.492
+[03/09 16:43:29     35] <CMD> pan -6.848 26.884
+[03/09 16:43:36     36] <CMD> pan -150.693 -31.454
+[03/09 16:45:34     53] <CMD> pan -268.728 34.828
+[03/09 16:46:25     60] 
+[03/09 16:46:25     60] *** Memory Usage v#1 (Current mem = 1020.523M, initial mem = 149.258M) ***
+[03/09 16:46:25     60] 
+[03/09 16:46:25     60] *** Summary of all messages that are not suppressed in this session:
+[03/09 16:46:25     60] Severity  ID               Count  Summary                                  
+[03/09 16:46:25     60] WARNING   IMPLF-200            1  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/09 16:46:25     60] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[03/09 16:46:25     60] WARNING   IMPFP-3961           2  The techSite '%s' has no related cells i...
+[03/09 16:46:25     60] WARNING   IMPEXT-2710          2  Basic Cap table for layer M%d is ignored...
+[03/09 16:46:25     60] WARNING   IMPEXT-2760          2  Layer M%d specified in the cap table is ...
+[03/09 16:46:25     60] WARNING   IMPEXT-2771          2  Via %s specified in the cap table is ign...
+[03/09 16:46:25     60] WARNING   IMPEXT-2801          2  Resistance values are not provided in th...
+[03/09 16:46:25     60] WARNING   IMPVL-159         1622  Pin '%s' of cell '%s' is defined in LEF ...
+[03/09 16:46:25     60] WARNING   IMPSR-1254           2  Cannot find any block pin of net %s. Che...
+[03/09 16:46:25     60] WARNING   IMPSR-1256           2  Cannot find any CORE class pad pin of ne...
+[03/09 16:46:25     60] ERROR     IMPOAX-142           3  %s                                       
+[03/09 16:46:25     60] ERROR     IMPOAX-820           1  The OA features are disabled in the curr...
+[03/09 16:46:25     60] ERROR     IMPOAX-850           1  %s command cannot be run as OA features ...
+[03/09 16:46:25     60] *** Message Summary: 1638 warning(s), 5 error(s)
+[03/09 16:46:25     60] 
+[03/09 16:46:25     60] --- Ending "Innovus" (totcpu=0:01:01, real=0:05:24, mem=1020.5M) ---
