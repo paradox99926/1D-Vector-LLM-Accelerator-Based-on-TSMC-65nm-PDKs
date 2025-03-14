@@ -1,0 +1,11 @@
+catch { setDesignMode -process 65 }
+catch { setAnalysisMode -analysisType bcwc }
+setExtractRCMode  -engine preRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.1
+catch { setCTSMode -routeTopPreferredLayer M4 }
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 4}
+
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setDelayCalMode -engine aae }
+catch { setPinAssignMode -maxLayer 4 }
+catch { setTrialRouteMode -maxRouteLayer 4 }
+catch { setAddStripeMode -break_at block_ring }

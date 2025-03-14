@@ -1,0 +1,112 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Mar 13 14:09:03 2025                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.23-s045_1 (64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.23-s045_1 NR160414-1105/15_23-UB (database version 2.30, 317.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.23-s014 (64bit) 04/22/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.23-s022_1 () Apr 22 2016 09:38:45 ( )
+#@(#)CDS: SYNTECH 15.23-s008_1 () Apr 12 2016 21:52:59 ( )
+#@(#)CDS: CPE v15.23-s045
+#@(#)CDS: IQRC/TQRC 15.1.4-s213 (64bit) Tue Feb  9 17:31:28 PST 2016 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+set init_pwr_net VDD
+set init_gnd_net VSS
+set init_verilog ./netlist/core.v
+set init_design_netlisttype Verilog
+set init_design_settop 1
+set init_top_cell core
+set init_lef_file {/home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16_in.lef}
+set init_lef_file {/home/linux/ieng6/ee260bwi25/xiz225/PDKdata/lef/tcbn65gplus_8lmT2.lef ./subckt/sram_w16_out.lef}
+create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_in_WC.lib ./subckt/sram_w16_out_WC.lib"
+create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_in_BC.lib ./subckt/sram_w16_out_BC.lib"
+create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+create_constraint_mode -name CON -sdc_file [list $sdc]
+create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+init_design -setup WC_VIEW -hold BC_VIEW
+set_interactive_constraint_modes {CON}
+setDesignMode -process 65
+floorPlan -site core -r 1 0.5 50 50 50 50
+globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
+globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
+addRing -spacing {top 10 bottom 10 left 10 right 10} -width {top 10 bottom 10 left 10 right 10} -layer {top M1 bottom M1 left M2 right M2} -center 1 -type core_rings -nets {VSS  VDD}
+setAddStripeMode -break_at block_ring
+addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit M1 -max_same_layer_jog_length 0.8 -padcore_ring_bottom_layer_limit M1 -number_of_sets 20 -skip_via_on_pin Standardcell -stacked_via_top_layer M8 -padcore_ring_top_layer_limit M1 -spacing 5 -merge_stripes_value 0.1 -direction horizontal -layer M5 -block_ring_bottom_layer_limit M1 -width 2 -area {} -nets {VDD VSS} -stacked_via_bottom_layer M1
+setDrawView fplan
+zoomBox 467.553 302.022 722.750 253.623
+gui_select -rect {-494.541 416.271 -303.598 402.384}
+zoomBox -463.296 419.742 -248.050 183.667
+selectObject Module mac_array_instance
+deselectAll
+selectObject Module psum_mem_instance
+deselectAll
+selectObject Module kmem_instance
+deselectAll
+selectObject Module qmem_instance
+deselectAll
+selectObject Module mac_array_instance
+gui_select -rect {-193.376 487.760 -258.675 459.249}
+selectObject Module mac_array_instance
+gui_select -rect {-286.267 542.023 -274.310 538.344}
+selectObject Module mac_array_instance
+uiSetTool move
+setObjFPlanBox Module mac_array_instance 47.7675 174.0505 415.7075 540.262
+setObjFPlanBox Module mac_array_instance -492.9875 296.521 -124.9875 661.921
+deselectAll
+selectObject Module psum_mem_instance
+setObjFPlanBox Module psum_mem_instance 165.3875 58.861 381.4855 273.944
+deselectAll
+selectObject Module kmem_instance
+setObjFPlanBox Module kmem_instance 416.028 425.824 514.876 524.208
+deselectAll
+selectObject Module qmem_instance
+setObjFPlanBox Module qmem_instance 69.779 432.262 168.627 530.646
+deselectAll
+selectWire 30.0000 464.6800 566.0000 466.6800 5 VSS
+editMove 21.1535 17.4745
+undo
+undo
+undo
+undo
+editMove -98.4085 -6.438
+undo
+undo
+editMove -257.518 126.9195
+undo
+uiSetTool select
+uiSetTool move
+deselectAll
+selectWire 30.0000 337.2800 566.0000 339.2800 5 VSS
+editMove -388.116 188.54
+undo
+undo
+deselectAll
+selectObject Module psum_mem_instance
+setObjFPlanBox Module psum_mem_instance 176.424 56.102 392.522 271.185
+deselectAll
+selectObject Module kmem_instance
+setObjFPlanBox Module kmem_instance 418.787 428.5835 517.635 526.9675
+deselectAll
+selectObject Module qmem_instance
+setObjFPlanBox Module qmem_instance 87.253 428.5835 186.101 526.9675
+setObjFPlanBox Module qmem_instance 72.4845 416.9635 171.2845 515.9635
+deselectAll
+selectWire 10.0000 508.6400 586.0000 510.6400 5 VDD
+editMove 0.9195 -31.27
+undo
+deselectAll
+selectObject Module kmem_instance
+setObjFPlanBox Module kmem_instance 420.6395 414.204 519.4395 513.204
+zoomBox -111.523 712.168 1.601 712.168
