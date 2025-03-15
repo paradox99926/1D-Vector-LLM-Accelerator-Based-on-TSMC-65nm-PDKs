@@ -2,13 +2,16 @@
 `include "mux2X1.v"
 `timescale 1ns/1ps
 module fullchip (clk,
-                 clk_scan,
-                 test_mode,
                  mem_in,
                  inst,
                  reset,
+                 out,
+                 test_mode,
+                 clk_scan,
                  reset_scan,
-                 out);
+                 SI,
+                 SE,
+                 SO);
     
     parameter col     = 8;
     parameter bw      = 8;
@@ -20,10 +23,14 @@ module fullchip (clk,
     input  [cor*pr*bw-1:0] mem_in;
     input  [20:0] inst;
     input  reset;
-    input  reset_scan;
-    input  clk_scan;
-    input  test_mode;//0: data; 1: scan
     output [bw_psum*col*cor-1:0] out;
+
+    input  test_mode;//0: data; 1: scan
+    input  clk_scan;
+    input  reset_scan;
+    input  wire   SI;
+    input  wire   SE;
+    output wire   SO;
     
     wire div_ready0, div_ready1;
     wire clk0, clk1;
