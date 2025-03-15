@@ -1,5 +1,5 @@
 set top_module core
-set rtlPath "./verilog"
+set rtlPath "./rtl"
 
 # Target library
 set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db 
@@ -141,5 +141,5 @@ sh date
 sh uptime
 
 # Done
-echo "run.scr completed successfully"
+echo "run_dc.tcl completed successfully"
 

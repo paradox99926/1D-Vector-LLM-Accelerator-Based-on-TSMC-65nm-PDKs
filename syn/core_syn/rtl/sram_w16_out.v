@@ -10,7 +10,7 @@ module sram_w16_out (CLK,
     parameter sram_fold = sram_bit/4;
     parameter sram_addr = 16*4;
     input  CLK;
-    input  WEN;//active low
+    input  WEN;
     input  CEN;
     input  [sram_bit-1:0] D;
     input  [3:0] A;

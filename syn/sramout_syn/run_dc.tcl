@@ -1,5 +1,5 @@
 set top_module sram_w16_out
-set rtlPath "/home/linux/ieng6/ee260bwi25/xiz225/project/syn/sramout_syn/rtl"
+set rtlPath "./rtl"
 
 # Target library
 set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db 
@@ -127,5 +127,5 @@ sh date
 sh uptime
 
 # Done
-echo "run.scr completed successfully"
+echo "run_dc.tcl completed successfully"
 

@@ -1,5 +1,5 @@
 set top_module sram_w16_in
-set rtlPath "/home/linux/ieng6/ee260bwi25/xiz225/project/syn/sramin_syn/rtl"
+set rtlPath "./rtl"
 
 # Target library
 set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db 
@@ -17,12 +17,14 @@ set dont_use_cells 1
 set dont_use_cell_list ""
 
 remove_design -all
+
 if {[file exists template]} {
 	exec rm -rf template
 }
 exec mkdir template
+
 if {![file exists log]} {
-    exec mkdir log
+	exec mkdir log
 }
 if {![file exists gate]} {
 	exec mkdir gate
@@ -127,5 +129,5 @@ sh date
 sh uptime
 
 # Done
-echo "run.scr completed successfully"
+echo "run_dc.tcl completed successfully"
 
