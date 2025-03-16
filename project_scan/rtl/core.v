@@ -13,7 +13,13 @@ module core (clk,
              inst,
              reset,
              fifo_ext_rd,
-             div_ready);
+             div_ready,
+             test_mode,
+             clk_scan,
+             reset_scan,
+             SI,
+             SE,
+             SO);
     
     parameter col     = 8;
     parameter bw      = 8;
@@ -30,6 +36,13 @@ module core (clk,
     input  reset;
     input fifo_ext_rd;
     
+    input  test_mode;//0: data; 1: scan
+    input  clk_scan;
+    input  reset_scan;
+    input  wire   SI;
+    input  wire   SE;
+    output wire   SO;
+
     wire  [bw_psum*col-1:0] pmem_out;
     wire  [pr*bw-1:0] mac_in;
     wire  [pr*bw-1:0] kmem_out;
@@ -56,24 +69,11 @@ module core (clk,
     wire sfp_wr2pmem;
     wire [bw_psum+3:0] sum_in;
     wire [bw_psum+3:0] sum_out;
+
+    wire clk_scan_data;
+    wire clk_o_scan_data;
+    wire reset_scan_data;
     
-    
-    // wire clk_sfp;
-    // wire clk_fifo;
-    // wire clk_mac;
-    
-    // wire clk_en_sfp;
-    // wire clk_en_fifo;
-    // wire clk_en_mac;
-    
-    // reg q_clk_sfp;
-    // reg q_clk_fifo;
-    // reg q_clk_mac;
-    
-    // assign sfp_sel     = inst[23];
-    // assign clk_en_sfp  = inst[22];
-    // assign clk_en_fifo = inst[21];
-    // assign clk_en_mac  = inst[20];
     assign sfp_sel        = inst[20];
     assign div            = inst[19];
     assign acc            = inst[18];
@@ -92,19 +92,41 @@ module core (clk,
     assign mac_in  = inst[6] ? kmem_out : qmem_out;
     assign pmem_in = (sfp_wr2pmem & sfp_sel) ? sfp_out : fifo_out;
     assign out     = pmem_out;
+
+
+    mux2X1 mux2X1_instance0(
+        .IN_0(clk),
+        .IN_1(clk_scan),
+        .SEL(test_mode),
+        .OUT(clk_scan_data)
+    );
+
+    mux2X1 mux2X1_instance1(
+        .IN_0(clk_o),
+        .IN_1(clk_scan),
+        .SEL(test_mode),
+        .OUT(clk_o_scan_data)
+    );
+
+    mux2X1 mux2X1_instance2(
+        .IN_0(reset),
+        .IN_1(reset_scan),
+        .SEL(test_mode),
+        .OUT(reset_scan_data)
+    );
     
     mac_array #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) mac_array_instance (
     .in(mac_in),
-    .clk(clk),
-    .reset(reset),
+    .clk(clk_scan_data),
+    .reset(reset_scan_data),
     .inst(inst[7:6]),
     .fifo_wr(fifo_wr),
     .out(array_out)
     );
     
     ofifo #(.bw(bw_psum), .col(col))  ofifo_inst (
-    .reset(reset),
-    .clk(clk),
+    .reset(reset_scan_data),
+    .clk(clk_scan_data),
     .in(array_out),
     .wr(fifo_wr),
     .rd(ofifo_rd),
@@ -114,7 +136,7 @@ module core (clk,
     
     
     sram_w16_in #(.sram_bit(pr*bw)) qmem_instance (
-    .CLK(clk),
+    .CLK(clk_scan_data),
     .D(mem_in),
     .Q(qmem_out),
     .CEN(!(qmem_rd||qmem_wr)),
@@ -123,7 +145,7 @@ module core (clk,
     );
     
     sram_w16_in #(.sram_bit(pr*bw)) kmem_instance (
-    .CLK(clk),
+    .CLK(clk_scan_data),
     .D(mem_in),
     .Q(kmem_out),
     .CEN(!(kmem_rd||kmem_wr)),
@@ -132,7 +154,7 @@ module core (clk,
     );
     
     sram_w16_out #(.sram_bit(col*bw_psum)) psum_mem_instance (
-    .CLK(clk),
+    .CLK(clk_scan_data),
     .D(pmem_in),
     .Q(pmem_out),
     .CEN(!(pmem_rd||pmem_wr)),
@@ -141,12 +163,12 @@ module core (clk,
     );
     
     sfp_row #(.bw(bw), .bw_psum(bw_psum), .col(col)) sfp_row_instance(
-    .clk(clk),
-    .clk_o(clk_o),
+    .clk(clk_scan_data),
+    .clk_o(clk_o_scan_data),
     .acc(acc),
     .div(div),
     .fifo_ext_rd(fifo_ext_rd),
-    .reset(reset),
+    .reset(reset_scan_data),
     .sum_in(sum_in),
     .sum_out(sum_out),
     .sfp_in(pmem_out),

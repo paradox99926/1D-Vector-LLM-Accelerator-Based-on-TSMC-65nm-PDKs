@@ -108,11 +108,11 @@ module fullchip_tb();
         ///// Q data txt reading /////
         if (mode_sel) begin
             $display("##### Q data txt reading #####");
-            qk_file = $fopen("../testdata/qdata_sparse.txt", "r");
+            qk_file = $fopen("qdata_sparse.txt", "r");
         end
         else begin
             $display("##### V data txt reading #####");
-            qk_file = $fopen("../testdata/vdata_sparse.txt", "r");
+            qk_file = $fopen("vdata_sparse.txt", "r");
         end
         
         for (q = 0; q<total_cycle; q = q+1) begin
@@ -154,9 +154,9 @@ module fullchip_tb();
         reset = 0;
         
         if (mode_sel)
-            qk_file = $fopen("../testdata/kdata_core0_sparse.txt", "r");
+            qk_file = $fopen("kdata_core0_sparse.txt", "r");
         else
-            qk_file = $fopen("../testdata/norm_core0_sparse.txt", "r");
+            qk_file = $fopen("norm_core0_sparse.txt", "r");
         
         for (q = 0; q<col; q = q+1) begin
             for (j = 0; j<pr; j = j+1) begin
@@ -168,9 +168,9 @@ module fullchip_tb();
         $fclose(qk_file);
         
         if (mode_sel)
-            qk_file = $fopen("../testdata/kdata_core1_sparse.txt", "r");
+            qk_file = $fopen("kdata_core1_sparse.txt", "r");
         else
-            qk_file = $fopen("../testdata/norm_core1_sparse.txt", "r");
+            qk_file = $fopen("norm_core1_sparse.txt", "r");
         
         for (q = 0; q<col; q = q+1) begin
             for (j = pr; j<cor*pr; j = j+1) begin
