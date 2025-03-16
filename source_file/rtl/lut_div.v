@@ -6,7 +6,7 @@ module lut_div (
 );
 
     // Lookup table for quotient: lut[divisor][dividend]
-    reg [7:0] quotient_lut [15:0][255:0];
+    (*rom_style = "block" *) reg [7:0] quotient_lut [15:0][255:0];
 
     // Initialize lookup table
     integer i, j;

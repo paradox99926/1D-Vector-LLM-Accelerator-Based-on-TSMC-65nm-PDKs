@@ -1,7 +1,5 @@
 `ifndef FIFO_DEPTH16_V
-
 `include "fifo_depth16.v"
-
 `endif
 
 `timescale 1ns/1ps

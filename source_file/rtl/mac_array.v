@@ -5,8 +5,7 @@ module mac_array (clk,
                   in,
                   out,
                   fifo_wr,
-                  inst,
-                  approx);
+                  inst);
     
     parameter col     = 8;
     parameter bw      = 8;
@@ -14,7 +13,6 @@ module mac_array (clk,
     parameter pr      = 8;
     
     output [bw_psum*col-1:0] out;
-    input  approx;
     input  [pr*bw-1:0] in;
     input  clk, reset;
     input  [1:0] inst; // [1]: execute, [0]: load
@@ -43,8 +41,7 @@ module mac_array (clk,
     .fifo_wr(fifo_wr[i-1]),
     .i_inst(inst_temp[2*i-1:2*(i-1)]),
     .o_inst(inst_temp[2*(i+1)-1:2*(i)]),
-    .out(out[bw_psum*i-1 : bw_psum*(i-1)]),
-    .approx(approx)
+    .out(out[bw_psum*i-1 : bw_psum*(i-1)])
     );
     end
     

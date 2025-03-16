@@ -1,10 +1,8 @@
 `ifndef FIFO_DEPTH16_V
-
 `include "fifo_depth16.v"
-
 `endif
 
-`include "lut_div.v"
+// `include "lut_div.v"
 `timescale 1ns/1ps
 module sfp_row (clk,
                 clk_o,
@@ -36,16 +34,16 @@ module sfp_row (clk,
     wire signed [bw_psum-1:0] sfp_out_unsign [col-1:0];
     reg signed [bw_psum-1:0] sfp_in_temp [col-1:0];
     reg [bw_psum+3:0] sum_q;
-    reg [bw_psum-1:0] sum_2core_temp;
+    reg [bw_psum+1:0] sum_2core_temp;
     reg fifo_wr;
     reg div_q;
     reg div_2q;
     
     genvar i;
     generate
-    for(i = 0; i<col;i = i+1) begin
+    for(i = 0; i<col;i = i+1) begin : abs_instance
         assign sfp_in_unsign[i]                     = (sfp_in[bw_psum*(i+1)-1])?(~sfp_in[bw_psum*(i+1)-1:bw_psum*i] + 1):sfp_in[bw_psum*(i+1)-1 : bw_psum*i];
-        assign sfp_out[bw_psum*(i+1)-1 : bw_psum*i] = {12'b0,sfp_out_unsign[i][7:0]};
+        assign sfp_out[bw_psum*(i+1)-1 : bw_psum*i] = {10'b0,sfp_out_unsign[i][7:0],2'b0};
         assign abs[bw_psum*(i+1)-1 : bw_psum*i]     = (sfp_in[bw_psum*(i+1)-1])?(~sfp_in[bw_psum*(i+1)-1:bw_psum*i] + 1):sfp_in[bw_psum*(i+1)-1 : bw_psum*i];
     end
     endgenerate
@@ -75,7 +73,7 @@ module sfp_row (clk,
     
     integer k;
     
-    always @ (posedge clk) begin
+    always @ (posedge clk or posedge reset) begin
         if (reset) begin
             fifo_wr <= 0;
             div_q <= 0;
@@ -85,7 +83,7 @@ module sfp_row (clk,
         else begin
             div_q          <= div ;
             div_2q         <= div_q;
-            sum_2core_temp <= sum_2core[bw_psum+3:7];
+            sum_2core_temp <= sum_2core[bw_psum+3:5];
             if (acc) begin
                 sum_q <= 
                 {4'b0, abs[bw_psum*1-1 : bw_psum*0]} +
@@ -114,11 +112,14 @@ module sfp_row (clk,
     
     generate
     for(j = 0; j<col; j = j+1) begin : lut_dividor
-    lut_div lut_div_instance (
-    .dividend(sfp_in_temp[j][7:0]),   // Dividend
-    .divisor(sum_2core_temp[3:0]),   // Divisor
-    .quotient(sfp_out_unsign[j][7:0])      // Quotient
-    );
+    assign sfp_out_unsign[j][7:0] = sfp_in_temp[j][7:0]/sum_2core_temp[3:0];
+    // lut_div lut_div_instance (
+    // .dividend(sfp_in_temp[j][7:0]),   // Dividend
+    // .divisor(sum_2core_temp[3:0]),   // Divisor
+    // .quotient(sfp_out_unsign[j][7:0]),   // Quotient
+    // .clk(clk),
+    // .reset(reset)
+    // );
     end
     endgenerate
     

@@ -1,6 +1,6 @@
 `include "mac_16in.v"
 `timescale 1ns/1ps
-module mac_col (clk, reset, out, q_in, q_out, i_inst, fifo_wr, o_inst, approx);
+module mac_col (clk, reset, out, q_in, q_out, i_inst, fifo_wr, o_inst);
 
 parameter bw = 8;
 parameter bw_psum = 2*bw+6;
@@ -10,7 +10,6 @@ parameter col_id = 0;
 output signed [bw_psum-1:0] out;
 input  signed [pr*bw-1:0] q_in;
 output signed [pr*bw-1:0] q_out;
-input  approx;
 input  clk, reset;
 input  [1:0] i_inst; // [1]: execute, [0]: load 
 output [1:0] o_inst; // [1]: execute, [0]: load 
@@ -33,13 +32,12 @@ mac_16in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_8in_instance (
         .a(query_q), 
         .b(key_q),
 	      .out(psum),
-        .approx(approx),
         .clk(clk),
         .reset(reset)
 ); 
 
 
-always @ (posedge clk) begin
+always @ (posedge clk or posedge reset) begin
   if (reset) begin
     cnt_q <= 0;
     load_ready_q <= 1;

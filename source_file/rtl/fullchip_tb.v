@@ -11,7 +11,8 @@ module fullchip_tb();
     parameter pr          = 8;           // how many products added in each dot product
     parameter cor         = 2;
     parameter col         = 8;           // how many dot product units are equipped
-    parameter mode_sel    = 0;     //1:Q,K-norm; 0:norm,V
+    parameter mode_sel    = 1;     //1:Q,K-norm; 0:norm,V
+    parameter test_sel    = 0;
     
     integer qk_file ; // file handler
     integer qk_scan_file ; // file handler
@@ -34,17 +35,19 @@ module fullchip_tb();
     
     integer i,j,k,t,q;
     
-    reg sfp_sel     = 0;
-    reg clk_en_sfp  = 0;
-    reg clk_en_fifo = 0;
-    reg clk_en_mac  = 0;
+    reg test_mode      = 0;
+
+    reg sfp_sel        = 0;
+    // reg clk_en_sfp  = 0;
+    // reg clk_en_fifo = 0;
+    // reg clk_en_mac  = 0;
     
-    reg approx      = 0;
+    reg sfp_wr2pmem = 0;
     reg acc         = 0;
     reg div         = 0;
     reg fifo_ext_rd = 0;
     
-    reg reset = 1;
+    reg reset = 0;
     reg clk   = 0;
     reg [cor*pr*bw-1:0] mem_in;
     reg ofifo_rd        = 0;
@@ -60,16 +63,16 @@ module fullchip_tb();
     reg [3:0] pmem_add  = 0;
     // reg [bw_psum*col*cor-1:0] out_ref [col-1:0];
     
-    wire [23:0] inst;
+    wire [20:0] inst;
     wire [bw_psum*col*cor-1:0] out_2core;
     
-    assign inst[23]    = sfp_sel;
-    assign inst[22]    = clk_en_sfp;
-    assign inst[21]    = clk_en_fifo;
-    assign inst[20]    = clk_en_mac;
+    // assign inst[22] = clk_en_sfp;
+    // assign inst[21] = clk_en_fifo;
+    // assign inst[20] = clk_en_mac;
+    assign inst[20]    = sfp_sel;
     assign inst[19]    = div;
     assign inst[18]    = acc;
-    assign inst[17]    = approx;
+    assign inst[17]    = sfp_wr2pmem;
     assign inst[16]    = ofifo_rd;
     assign inst[15:12] = qkmem_add;
     assign inst[11:8]  = pmem_add;
@@ -92,7 +95,13 @@ module fullchip_tb();
     .clk(clk),
     .mem_in(mem_in),
     .inst(inst),
-    .out(out_2core)
+    .out(out_2core),
+    .test_mode(test_mode),
+    .clk_scan(),
+    .reset_scan(),
+    .SI(),
+    .SE(),
+    .SO()
     );
     
     
@@ -101,11 +110,18 @@ module fullchip_tb();
         $dumpfile("fullchip_tb.vcd");
         $dumpvars(0,fullchip_tb);
         
-        approx      = 1;
-        clk_en_sfp  = 0;
-        clk_en_fifo = 0;
-        clk_en_mac  = 1;
-        sfp_sel     = mode_sel;
+        #0.5 clk = 1'b0;
+        reset = 0;
+        #0.5 clk = 1'b1;
+        #0.5 clk = 1'b0;
+        reset = 1;
+        #0.5 clk = 1'b1;
+        #0.5 clk = 1'b0;
+        reset = 0;
+        #0.5 clk = 1'b1;
+
+        sfp_sel        = mode_sel;
+        test_mode      = test_sel;
         ///// Q data txt reading /////
         if (mode_sel) begin
             $display("##### Q data txt reading #####");
@@ -337,7 +353,7 @@ module fullchip_tb();
         
         ///// execution  /////
         $display("##### execute #####");
-        clk_en_fifo = 1;
+        // clk_en_fifo = 1;
         for (q = 0; q<total_cycle; q = q+1) begin
             #0.5 clk = 1'b0;
             execute  = 1;
@@ -388,37 +404,60 @@ module fullchip_tb();
         ///////////////////////////////////////////
         
         
-        /////////////////// sfp ////////////////////
-        if (mode_sel)
-            $display("##### calculate the sfp #####");
-        else
-            $display("##### calculate the out #####");
         
-        clk_en_mac  = 0;
-        clk_en_fifo = 0;
-        clk_en_sfp  = 1;
+        
+        ////////////////// norm ///////////////////
+        if(mode_sel) begin
+        $display("##### calculate sum in sfp by psum from pmem #####");
         
         #0.5 clk = 1'b0;
-        pmem_wr  = 0; pmem_add  = 0; acc  = 0; div  = 0;
+        pmem_rd  = 1;
+        acc      = 1;
         #0.5 clk = 1'b1;
         
         for (q = 0; q<total_cycle; q = q+1) begin
             #0.5 clk = 1'b0;
-            acc      = 1;
-            pmem_rd  = 1;
-            
-            if (q>0) begin
-                pmem_add = pmem_add + 1;
-            end
+            #0.5 clk = 1'b1;
+            //$display("prd @PMEM Add%2d: %40h", q, pmem_out);
+            pmem_add = pmem_add + 1;
+            #0.5 clk = 1'b0;
             #0.5 clk = 1'b1;
             
         end
         
         #0.5 clk = 1'b0;
-        pmem_add = 0;
+        pmem_rd  = 0; pmem_add  = 0; acc  = 0;
+        #0.5 clk = 1'b1;
+        
+        // $display("##### realize norm's division in sfp #####");
+        #0.5 clk = 1'b0; div = 1;
+        #0.5 clk = 1'b1;
+        #0.5 clk = 1'b0; pmem_rd = 1; div = 0;
+        #0.5 clk = 1'b1;
+        #0.5 clk = 1'b0; sfp_wr2pmem = 1;
         #0.5 clk = 1'b1;
         #0.5 clk = 1'b0;
-        acc      = 0;
+        #0.5 clk = 1'b1;
+        
+        for (q = 0; q<total_cycle+1; q = q+1) begin
+            #0.5 clk = 1'b0; div = 1; pmem_wr = 1;
+            #0.5 clk = 1'b1;
+            #0.5 clk = 1'b0; if (q<total_cycle) pmem_add = pmem_add + 1; pmem_wr = 0;
+            #0.5 clk = 1'b1;
+            #0.5 clk = 1'b0; div = 0;
+            #0.5 clk = 1'b1;
+            #0.5 clk = 1'b0;
+            #0.5 clk = 1'b1;
+        end
+        end
+        ///////////////////////////////////////////
+
+
+        
+        ////////////////// write results to norm ///////////////////
+        $display("##### write results to norm #####");
+        #0.5 clk = 1'b0;
+        pmem_add = 0;
         #0.5 clk = 1'b1;
         
         for (q = 0; q<total_cycle; q = q+1) begin
@@ -438,17 +477,13 @@ module fullchip_tb();
                 norm[q][col-k-1]     = $signed(out_2core[(k+1)*bw_psum-1 -:bw_psum]);
                 norm[q][cor*col-k-1] = $signed(out_2core[(k+col+1)*bw_psum-1 -:bw_psum]);
             end
-            
-            
         end
         #0.5 clk = 1'b0;
         pmem_rd  = 0; pmem_add  = 0; div  = 0;
         #0.5 clk = 1'b1;
         
-        clk_en_mac  = 0;
-        clk_en_fifo = 0;
-        clk_en_sfp  = 0;
         ///////////////////////////////////////////
+        
         
         
         
