@@ -4,7 +4,13 @@ module fullchip (clk,
                  mem_in,
                  inst,
                  reset,
-                 out);
+                 out,
+                 test_mode,
+                 clk_scan,
+                 reset_scan,
+                 SI,
+                 SE,
+                 SO);
     
     parameter col     = 8;
     parameter bw      = 8;
@@ -17,6 +23,13 @@ module fullchip (clk,
     input  [20:0] inst;
     input  reset;
     output [bw_psum*col*cor-1:0] out;
+
+    input  test_mode;//0: data; 1: scan
+    input  clk_scan;
+    input  reset_scan;
+    input  wire   SI;
+    input  wire   SE;
+    output wire   SO;
     
     wire div_ready0, div_ready1;
     wire clk0, clk1;
@@ -25,10 +38,10 @@ module fullchip (clk,
     wire [bw_psum*col-1:0] out_core0;
     wire [bw_psum*col-1:0] out_core1;
 
+    assign out = {out_core1, out_core0};
     assign clk0 = clk;
     assign clk1 = clk;
 
-    assign out = {out_core1, out_core0};
     
     core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance0 (
     .reset(reset),
@@ -40,7 +53,13 @@ module fullchip (clk,
     .out(out_core0),
     .sum_in(sum_core1),
     .fifo_ext_rd(div_ready1),
-    .div_ready(div_ready0)
+    .div_ready(div_ready0),
+    .test_mode(test_mode),
+    .clk_scan(clk_scan),
+    .reset_scan(reset_scan),
+    .SI(SI),
+    .SE(SE),
+    .SO(SO)
     );
     
     core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance1 (
@@ -53,7 +72,13 @@ module fullchip (clk,
     .out(out_core1),
     .sum_in(sum_core0),
     .fifo_ext_rd(div_ready0),
-    .div_ready(div_ready1)
+    .div_ready(div_ready1),
+    .test_mode(test_mode),
+    .clk_scan(clk_scan),
+    .reset_scan(reset_scan),
+    .SI(SI),
+    .SE(SE),
+    .SO(SO)
     );
 
     // sync #(.width(1)) sync_instance0(

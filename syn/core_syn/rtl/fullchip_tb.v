@@ -12,6 +12,7 @@ module fullchip_tb();
     parameter cor         = 2;
     parameter col         = 8;           // how many dot product units are equipped
     parameter mode_sel    = 1;     //1:Q,K-norm; 0:norm,V
+    parameter test_sel    = 0;
     
     integer qk_file ; // file handler
     integer qk_scan_file ; // file handler
@@ -34,6 +35,8 @@ module fullchip_tb();
     
     integer i,j,k,t,q;
     
+    reg test_mode      = 0;
+
     reg sfp_sel        = 0;
     // reg clk_en_sfp  = 0;
     // reg clk_en_fifo = 0;
@@ -44,7 +47,7 @@ module fullchip_tb();
     reg div         = 0;
     reg fifo_ext_rd = 0;
     
-    reg reset = 1;
+    reg reset = 0;
     reg clk   = 0;
     reg [cor*pr*bw-1:0] mem_in;
     reg ofifo_rd        = 0;
@@ -92,7 +95,13 @@ module fullchip_tb();
     .clk(clk),
     .mem_in(mem_in),
     .inst(inst),
-    .out(out_2core)
+    .out(out_2core),
+    .test_mode(test_mode),
+    .clk_scan(),
+    .reset_scan(),
+    .SI(),
+    .SE(),
+    .SO()
     );
     
     
@@ -101,10 +110,18 @@ module fullchip_tb();
         $dumpfile("fullchip_tb.vcd");
         $dumpvars(0,fullchip_tb);
         
-        // clk_en_sfp  = 0;
-        // clk_en_fifo = 0;
-        // clk_en_mac  = 1;
+        #0.5 clk = 1'b0;
+        reset = 0;
+        #0.5 clk = 1'b1;
+        #0.5 clk = 1'b0;
+        reset = 1;
+        #0.5 clk = 1'b1;
+        #0.5 clk = 1'b0;
+        reset = 0;
+        #0.5 clk = 1'b1;
+
         sfp_sel        = mode_sel;
+        test_mode      = test_sel;
         ///// Q data txt reading /////
         if (mode_sel) begin
             $display("##### Q data txt reading #####");
@@ -382,30 +399,6 @@ module fullchip_tb();
         
         #0.5 clk = 1'b0;
         pmem_wr  = 0; pmem_add  = 0; ofifo_rd  = 0;
-        #0.5 clk = 1'b1;
-        
-        ///////////////////////////////////////////
-        
-        
-        ////////////// output multiplication result from pmem ///////////////////
-        
-        $display("##### display multiplication result from pmem #####");
-        
-        #0.5 clk = 1'b0;
-        pmem_rd  = 1;
-        #0.5 clk = 1'b1;
-        
-        for (q = 0; q<total_cycle; q = q+1) begin
-            #0.5 clk = 1'b0;
-            #0.5 clk = 1'b1;
-            pmem_add = pmem_add + 1;
-            #0.5 clk = 1'b0;
-            #0.5 clk = 1'b1;
-            
-        end
-        
-        #0.5 clk = 1'b0;
-        pmem_rd  = 0; pmem_add  = 0;
         #0.5 clk = 1'b1;
         
         ///////////////////////////////////////////
