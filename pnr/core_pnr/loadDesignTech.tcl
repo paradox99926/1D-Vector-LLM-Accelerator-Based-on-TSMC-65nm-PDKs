@@ -1,6 +1,6 @@
 #Load design
-set desdir 		"/home/linux/ieng6/ee260bwi25/xiz225/DESIGNdata"
-set libdir 		"/home/linux/ieng6/ee260bwi25/xiz225/PDKdata"
+set desdir 		"/home/linux/ieng6/ee260bwi25/public/DESIGNdata"
+set libdir 		"/home/linux/ieng6/ee260bwi25/public/PDKdata"
 set design 		"core"
 set netlist 		"./netlist/$design.v"
 set sdc 		"./constraints/$design.sdc"
