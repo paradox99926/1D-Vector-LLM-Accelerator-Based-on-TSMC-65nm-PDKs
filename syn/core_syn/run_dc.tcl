@@ -55,7 +55,7 @@ analyze -format verilog -lib WORK mac_top.v
 analyze -format verilog -lib WORK mul_tc_8_8.v 
 analyze -format verilog -lib WORK booth_decoder_4.v
 analyze -format verilog -lib WORK booth_decoder_1.v
-analyze -format verilog -lib WORK lut_div.v
+analyze -format verilog -lib WORK mux2X1.v
 
 elaborate $top_module -lib WORK -update
 current_design $top_module

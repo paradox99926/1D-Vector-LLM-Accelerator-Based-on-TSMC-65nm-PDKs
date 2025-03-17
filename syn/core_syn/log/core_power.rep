@@ -1,13 +1,14 @@
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Wed Mar 12 17:47:08 2025
+Date   : Sun Mar 16 17:57:16 2025
 ****************************************
 
 
@@ -22,15 +23,12 @@ Wire Load Model Mode: segmented
 Design        Wire Load Model            Library
 ------------------------------------------------
 core                   ZeroWireload      tcbn65gplustc
+mux2X1_2               ZeroWireload      tcbn65gplustc
 mac_array_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gplustc
 ofifo_col8_bw20        ZeroWireload      tcbn65gplustc
-sram_w16_in_sram_bit64_1
-                       ZeroWireload      tcbn65gplustc
-sram_w16_in_sram_bit64_0
-                       ZeroWireload      tcbn65gplustc
-sram_w16_out_sram_bit160
-                       ZeroWireload      tcbn65gplustc
+mux2X1_0               ZeroWireload      tcbn65gplustc
+mux2X1_1               ZeroWireload      tcbn65gplustc
 sfp_row_col8_bw8_bw_psum20
                        ZeroWireload      tcbn65gplustc
 mac_col_bw8_bw_psum20_pr8_col_id1
@@ -65,77 +63,10 @@ fifo_depth16_DEPTH8_WIDTH20_1
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_DEPTH8_WIDTH20_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_1
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_1
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_1
-                       ZeroWireload      tcbn65gplustc
+fifo_depth16_WIDTH24_1 ZeroWireload      tcbn65gplustc
 fifo_depth16_WIDTH24_0 ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_0
+                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_1
                        ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_7
@@ -361,6 +292,42 @@ SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_3
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_2
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_0
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_17
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_1
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_0
                        ZeroWireload      tcbn65gplustc
@@ -921,12 +888,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  15.6041 mW   (91%)
-  Net Switching Power  =   1.4696 mW    (9%)
+  Cell Internal Power  =   1.7848 mW    (3%)
+  Net Switching Power  =  50.8340 mW   (97%)
                          ---------
-Total Dynamic Power    =  17.0738 mW  (100%)
+Total Dynamic Power    =  52.6188 mW  (100%)
 
-Cell Leakage Power     = 632.0882 uW
+Cell Leakage Power     = 469.8730 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -935,10 +902,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.7834            0.3552        4.2964e+03            1.1429  (   6.46%)
-register          13.2101            0.2429        3.0148e+05           13.7545  (  77.68%)
+clock_network      1.0122           50.6235        1.7660e+04           51.6532  (  97.30%)
+register           0.7124        5.7524e-03        1.5865e+05            0.8768  (   1.65%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      1.6105            0.8716        3.2631e+05            2.8084  (  15.86%)
+combinational  6.0199e-02            0.2047        2.9356e+05            0.5585  (   1.05%)
 --------------------------------------------------------------------------------------------------
-Total             15.6041 mW         1.4696 mW     6.3209e+05 nW        17.7059 mW
+Total              1.7848 mW        50.8340 mW     4.6987e+05 nW        53.0884 mW
 1
