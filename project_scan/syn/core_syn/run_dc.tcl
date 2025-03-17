@@ -2,7 +2,7 @@ set top_module core
 set rtlPath "./rtl"
 ############################# Target library #############################
 
-set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db 
+set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db
 set link_library $target_library
 set symbol_library {}
 set wire_load_mode enclosed
@@ -18,14 +18,14 @@ set dont_use_cell_list ""
 
 remove_design -all
 if {[file exists template]} {
-	exec rm -rf template
+    exec rm -rf template
 }
 exec mkdir template
 if {![file exists log]} {
     exec mkdir log
 }
 if {![file exists gate]} {
-	exec mkdir gate
+    exec mkdir gate
 }
 
 sh date
@@ -50,11 +50,13 @@ analyze -format verilog -lib WORK mac_16in.v
 analyze -format verilog -lib WORK fifo_depth16.v
 analyze -format verilog -lib WORK mac_col.v
 analyze -format verilog -lib WORK mac_top.v
-analyze -format verilog -lib WORK mul_tc_8_8.v 
+analyze -format verilog -lib WORK mul_tc_8_8.v
 analyze -format verilog -lib WORK booth_decoder_4.v
 analyze -format verilog -lib WORK booth_decoder_1.v
-analyze -format verilog -lib WORK lut_div.v
 analyze -format verilog -lib WORK mux2X1.v
+# analyze -format verilog -lib WORK sram_16w_in.v
+# analyze -format verilog -lib WORK sram_16w_out.v
+
 
 elaborate $top_module -lib WORK -update
 current_design $top_module
@@ -75,7 +77,7 @@ set_fix_hold [all_clocks]
 set_driving_cell -lib_cell BUFFD8 -pin Z [all_inputs]
 #set_load [get_attribute "$target_library/BUFFD8/A" fanout_load] [all_outputs]
 foreach_in_collection p [all_outputs] {
-	set_load 0.050 $p
+    set_load 0.050 $p
 }
 ###################### More compiler directives ########################
 
@@ -84,19 +86,26 @@ set_app_var ungroup_keep_original_design true
 set_register_merging [get_designs $top_module] false
 set compile_seqmap_propagate_constants false
 set compile_seqmap_propagate_high_effort false
-set_clock_gating_style -sequential_cell latch -minimum_bitwidth 4
-set_scan_configuration -clock_mixing no_mix  -style multiplexed_flip_flop -replace true -max_length 100  
-# More constraints and setup before compile
-foreach_in_collection design [ get_designs "*" ] {
-	current_design $design
-	#feedthrough / outputs / constants
-	set_fix_multiple_port_nets -all
+set_clock_gating_style -sequential_cell flip_flop -minimum_bitwidth 4
+
+set_scan_configuration -chain_count 20 -clock_mixing no_mix \
+    -style multiplexed_flip_flop -replace true -max_length 100 -replace true \
+
+    # set_app_var test_optimize_dft_ng true
+
+
+    # More constraints and setup before compile
+    foreach_in_collection design [ get_designs "*" ] {
+        current_design $design
+    #feedthrough / outputs / constants
+    set_fix_multiple_port_nets -all
 }
 current_design $top_module
 
 ###################### Mapping and optimization ########################
 
-compile_ultra -no_autoungroup -timing_high_effort_script -exact_map -gate_clock -retime -scan
+# compile_ultra -no_autoungroup -timing_high_effort_script -exact_map -gate_clock -retime -scan
+compile_ultra -scan -no_autoungroup -gate_clock -retime -timing_high_effort_script
 set_svf -off
 
 ################### Setting Test Timing Variables ######################
@@ -112,16 +121,30 @@ set test_default_strobe_width 0
 
 set_dft_signal -port [get_ports clk_scan]   -type ScanClock   -view existing_dft  -timing {30 60}
 set_dft_signal -port [get_ports reset_scan] -type Reset       -view existing_dft  -active_state 0
-set_dft_signal -port [get_ports test_mode]  -type Constant    -view existing_dft  -active_state 1 
-set_dft_signal -port [get_ports test_mode]  -type TestMode    -view spec          -active_state 1 
+set_dft_signal -port [get_ports test_mode]  -type Constant    -view existing_dft  -active_state 1
+set_dft_signal -port [get_ports test_mode]  -type TestMode    -view spec          -active_state 1
 set_dft_signal -port [get_ports SE]         -type ScanEnable  -view spec          -active_state 1   -usage scan
-set_dft_signal -port [get_ports SI]         -type ScanDataIn  -view spec 
-set_dft_signal -port [get_ports SO]         -type ScanDataOut -view spec  
+set_dft_signal -port [get_ports SI]         -type ScanDataIn  -view spec
+set_dft_signal -port [get_ports SO]         -type ScanDataOut -view spec
+
+############################ Auto fix ################################
+
+#Enabling the Autofix for Clock, Reset and Set
+set_dft_configuration -fix_clock enable -fix_reset enable -fix_set enable
+
+#Specifying the Autofix settings
+# this information is used for the set and reset and clock fixing.
+set_autofix_configuration -type set -method mux -test_data preset -control testmode
+set_autofix_configuration -type reset -method mux -test_data reset -control testmode
+set_autofix_configuration -type clock -method mux -test_data scanclk -control testmode
+
+# this will tell the tool that optimation was already done so u dont disturbe the optimisation.by doing it again.
+set_dft_insertion_configuration -synthesis_optimization none -preserve_design_name true
 
 ############################# Create Test Protocol #####################
 
 create_test_protocol
-                            
+
 ###################### Pre-DFT Design Rule Checking ####################
 
 dft_drc -verbose -coverage_estimate
@@ -143,6 +166,7 @@ compile_ultra -scan -incremental
 ###################### Design Rule Checking post DFT ###################
 
 dft_drc -verbose -coverage_estimate
+
 # Write Out Design - Hierarchical
 current_design $top_module
 
@@ -160,7 +184,7 @@ redirect [format "%s%s" log/ $top_module _area.rep] { report_area }
 redirect -append [format "%s%s%s" log/ $top_module _area.rep] { report_reference }
 redirect [format "%s%s%s" log/ $top_module _power.rep] { report_power }
 redirect [format "%s%s%s" log/ $top_module _timing.rep] \
-  { report_timing -path full -max_paths 100 -nets -transition_time -capacitance -significant_digits 3 -nosplit}
+    { report_timing -path full -max_paths 100 -nets -transition_time -capacitance -significant_digits 3 -nosplit}
 
 set inFile  [open log/$top_module\_area.rep]
 while { [gets $inFile line]>=0 } {
@@ -173,17 +197,17 @@ set inFile  [open log/$top_module\_power.rep]
 while { [gets $inFile line]>=0 } {
     if { [regexp {Total Dynamic Power} $line] } {
         set PWR [lindex $line 4]
-    } elseif { [regexp {Cell Leakage Power} $line] } {  
-        set LEAK [lindex $line 4] 
+    } elseif { [regexp {Cell Leakage Power} $line] } {
+        set LEAK [lindex $line 4]
     }
 }
 close $inFile
 
 set unmapped_designs [get_designs -filter "is_unmapped == true" $top_module]
 if {  [sizeof_collection $unmapped_designs] != 0 } {
-	echo "****************************************************"
-	echo "* ERROR!!!! Compile finished with unmapped logic.  *"
-	echo "****************************************************"
+    echo "****************************************************"
+    echo "* ERROR!!!! Compile finished with unmapped logic.  *"
+    echo "****************************************************"
 }
 # Done
 sh date

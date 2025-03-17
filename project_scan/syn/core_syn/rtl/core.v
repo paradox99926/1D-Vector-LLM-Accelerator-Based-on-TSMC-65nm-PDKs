@@ -1,8 +1,9 @@
 `include "mac_array.v"
 `include "ofifo.v"
-`include "sram_w16_in.v"
-`include "sram_w16_out.v"
+// `include "sram_w16_in.v"
+// `include "sram_w16_out.v"
 `include "sfp_row.v"
+`include "mux2X1.v"
 `timescale 1ns/1ps
 module core (clk,
              clk_o,
@@ -55,6 +56,7 @@ module core (clk,
     wire  ofifo_rd;
     wire [3:0] qkmem_add;
     wire [3:0] pmem_add;
+    wire fifo_valid;
     
     wire  qmem_rd;
     wire  qmem_wr;

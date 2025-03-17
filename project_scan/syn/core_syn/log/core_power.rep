@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Wed Mar 12 17:47:08 2025
+Date   : Sun Mar 16 20:52:16 2025
 ****************************************
 
 
@@ -22,6 +22,7 @@ Wire Load Model Mode: segmented
 Design        Wire Load Model            Library
 ------------------------------------------------
 core                   ZeroWireload      tcbn65gplustc
+mux2X1_2               ZeroWireload      tcbn65gplustc
 mac_array_col8_bw8_bw_psum20_pr8
                        ZeroWireload      tcbn65gplustc
 ofifo_col8_bw20        ZeroWireload      tcbn65gplustc
@@ -135,7 +136,10 @@ SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_2
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_1
                        ZeroWireload      tcbn65gplustc
+fifo_depth16_WIDTH24_1 ZeroWireload      tcbn65gplustc
 fifo_depth16_WIDTH24_0 ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_0
+                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_1
                        ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_7
@@ -361,6 +365,42 @@ SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_3
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_2
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_0
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_17
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_1
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_0
                        ZeroWireload      tcbn65gplustc
@@ -853,7 +893,6 @@ booth_decoder_1_60     ZeroWireload      tcbn65gplustc
 booth_decoder_1_59     ZeroWireload      tcbn65gplustc
 booth_decoder_1_58     ZeroWireload      tcbn65gplustc
 booth_decoder_1_57     ZeroWireload      tcbn65gplustc
-booth_decoder_1_56     ZeroWireload      tcbn65gplustc
 booth_decoder_1_55     ZeroWireload      tcbn65gplustc
 booth_decoder_1_54     ZeroWireload      tcbn65gplustc
 booth_decoder_1_53     ZeroWireload      tcbn65gplustc
@@ -910,6 +949,9 @@ booth_decoder_1_3      ZeroWireload      tcbn65gplustc
 booth_decoder_1_2      ZeroWireload      tcbn65gplustc
 booth_decoder_1_1      ZeroWireload      tcbn65gplustc
 booth_decoder_1_0      ZeroWireload      tcbn65gplustc
+mux2X1_0               ZeroWireload      tcbn65gplustc
+mux2X1_1               ZeroWireload      tcbn65gplustc
+booth_decoder_1_56     ZeroWireload      tcbn65gplustc
 
 
 Global Operating Voltage = 1    
@@ -921,12 +963,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  15.6041 mW   (91%)
-  Net Switching Power  =   1.4696 mW    (9%)
+  Cell Internal Power  =  32.2283 mW    (6%)
+  Net Switching Power  = 530.2191 mW   (94%)
                          ---------
-Total Dynamic Power    =  17.0738 mW  (100%)
+Total Dynamic Power    = 562.4473 mW  (100%)
 
-Cell Leakage Power     = 632.0882 uW
+Cell Leakage Power     = 617.1557 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -935,10 +977,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      0.7834            0.3552        4.2964e+03            1.1429  (   6.46%)
-register          13.2101            0.2429        3.0148e+05           13.7545  (  77.68%)
+clock_network      2.1623          527.2589        5.0858e+03          529.4268  (  94.03%)
+register          27.6806            0.6525        2.6279e+05           28.5959  (   5.08%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      1.6105            0.8716        3.2631e+05            2.8084  (  15.86%)
+combinational      2.3854            2.3079        3.4927e+05            5.0426  (   0.90%)
 --------------------------------------------------------------------------------------------------
-Total             15.6041 mW         1.4696 mW     6.3209e+05 nW        17.7059 mW
+Total             32.2283 mW       530.2194 mW     6.1715e+05 nW       563.0652 mW
 1

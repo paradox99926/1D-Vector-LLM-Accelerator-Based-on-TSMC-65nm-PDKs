@@ -1,5 +1,4 @@
 `include "core.v"
-`include "mux2X1.v"
 `timescale 1ns/1ps
 module fullchip (clk,
                  mem_in,

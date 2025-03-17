@@ -37,7 +37,7 @@ mac_16in #(.bw(bw), .bw_psum(bw_psum), .pr(pr)) mac_8in_instance (
 ); 
 
 
-always @ (posedge clk) begin
+always @ (posedge clk or posedge reset) begin
   if (reset) begin
     cnt_q <= 0;
     load_ready_q <= 1;

@@ -22,7 +22,7 @@ module mac_16in (out,
     
     genvar i;
     generate
-    for (i = 0; i<pr ; i = i+1) begin
+    for (i = 0; i<pr ; i = i+1) begin : mac_instance
         mac_top #(.bw(bw), .bw_psum(2*bw)) mac_instance(.out(product[i]),
         .a(a[bw*(i+1)-1:bw*i]),
         .b(b[bw*(i+1)-1:bw*i]));
@@ -30,7 +30,7 @@ module mac_16in (out,
     endgenerate
     
     integer j;
-    always @(posedge clk) begin
+    always @(posedge clk or posedge reset) begin
         if (reset) begin
             for (j = 0; j<pr ; j = j+1) begin
                 temp[j] <= 0;

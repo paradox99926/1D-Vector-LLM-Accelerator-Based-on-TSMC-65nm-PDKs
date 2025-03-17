@@ -1,9 +1,7 @@
 `timescale 1ns/1ps
 
 `ifndef FIFO_DEPTH16_V
-
 `define FIFO_DEPTH16_V
-
 `endif
 
 module fifo_depth16 (rd_clk,
@@ -30,8 +28,8 @@ module fifo_depth16 (rd_clk,
     output  [WIDTH-1:0] out;       // 16-bit output data
     
     reg [WIDTH-1:0] fifo_mem [0:DEPTH-1];  // FIFO memory
-    reg [4:0] wr_ptr = 5'b00000;           // Write pointer
-    reg [4:0] rd_ptr = 5'b00000;           // Read pointer
+    reg [4:0] wr_ptr;          // Write pointer
+    reg [4:0] rd_ptr;          // Read pointer
     
     wire [4:0] wr_ptr_gray;                // Gray code of write pointer
     wire [4:0] rd_ptr_gray;                // Gray code of read pointer
@@ -54,7 +52,8 @@ module fifo_depth16 (rd_clk,
         if (reset) begin
             wr_ptr_gray_sync1 <= 5'b00000;
             wr_ptr_gray_sync2 <= 5'b00000;
-            end else begin
+            end 
+            else begin
             wr_ptr_gray_sync1 <= wr_ptr_gray;
             wr_ptr_gray_sync2 <= wr_ptr_gray_sync1;
         end
@@ -65,7 +64,8 @@ module fifo_depth16 (rd_clk,
         if (reset) begin
             rd_ptr_gray_sync1 <= 5'b00000;
             rd_ptr_gray_sync2 <= 5'b00000;
-            end else begin
+            end 
+            else begin
             rd_ptr_gray_sync1 <= rd_ptr_gray;
             rd_ptr_gray_sync2 <= rd_ptr_gray_sync1;
         end

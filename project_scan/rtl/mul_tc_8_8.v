@@ -1,5 +1,4 @@
 `include "booth_decoder_4.v" // 8-bit Booth decoder, generates 4 partial products
-// `include "adder16.v"       // 16-bit adder
 
 module mul_tc_8_8 (
     input wire [7:0]  a         , // Input data, 8-bit two's complement
