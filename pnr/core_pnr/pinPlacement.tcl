@@ -1,4 +1,54 @@
-getPinAssignMode -pinEditInBatch -quiet
+# Assign pins
 setPinAssignMode -pinEditInBatch true
-editPin -fixOverlap 1 -unit MICRON -spreadDirection clockwise -side Left -layer 3 -spreadType center -spacing 4 -pin {clk x[7] x[6] x[5] x[4] x[3] x[2] x[1] x[0] y[7] y[6] y[5] y[4] y[3] y[2] y[1] y[0] z[7] z[6] z[5] z[4] z[3] z[2] z[1] z[0]} -fixedPin true
-editPin -fixOverlap 1 -unit MICRON -spreadDirection counterClockwise -side Right -layer 3 -spreadType center -spacing 8 -pin {out[6] out[5] out[4] out[3] out[2] out[1] out[0] } -fixedPin true
+
+# Top edge
+# Assign D (input data) pins
+editPin -fixedPin True				\
+	-fixOverlap True			\
+	-unit MICRON				\
+	-spreadDirection counterclockwise	\
+	-side Top				\
+	-layer 4				\
+	-spreadType center			\
+	-spacing 4				\
+	-pin {{mem_in[*]}}
+
+# Bottom edge
+# Assign Q (output data) pins
+editPin -fixedPin True				\
+	-fixOverlap True			\
+	-unit MICRON				\
+	-spreadDirection clockwise		\
+	-side Bottom				\
+	-layer 4				\
+	-spreadType center			\
+	-spacing 4				\
+	-pin {{out[*]}}
+
+# Right edge
+# Assign scan chain pins
+editPin -fixedPin True				\
+	-fixOverlap True			\
+	-unit MICRON				\
+	-spreadDirection counterclockwise	\
+	-side Right				\
+	-layer 3				\
+	-spreadType center			\
+	-spacing 4				\
+	-pin {clk_scan SE SI SO test_mode reset_scan}
+
+
+# Left Edge
+# Assign other pins
+editPin -fixedPin True				\
+	-fixOverlap True			\
+	-unit MICRON				\
+	-spreadDirection counterclockwise	\
+	-side Left				\
+	-layer 3				\
+	-spreadType center			\
+	-spacing 4				\
+	-pin {clk clk_o {inst[*]} reset		\
+		{sum_in[*]} fifo_ext_rd		\
+		{sum_out[*]} div_ready}
+

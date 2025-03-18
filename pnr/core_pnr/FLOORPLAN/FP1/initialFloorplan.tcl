@@ -1,4 +1,8 @@
 # Floorplan
+# SRAMin SRAMin
+#
+#
+# S R A M o u t
 floorPlan -site core -s 780 480 10.0 10.0 10.0 10.0
 
 globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
