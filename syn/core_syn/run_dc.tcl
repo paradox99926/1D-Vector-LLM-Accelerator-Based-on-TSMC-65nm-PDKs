@@ -56,8 +56,8 @@ analyze -format verilog -lib WORK mul_tc_8_8.v
 analyze -format verilog -lib WORK booth_decoder_4.v
 analyze -format verilog -lib WORK booth_decoder_1.v
 analyze -format verilog -lib WORK mux2X1.v
-analyze -format verilog -lib WORK sram_w16_in.v
-analyze -format verilog -lib WORK sram_w16_out.v
+# analyze -format verilog -lib WORK sram_w16_in.v
+# analyze -format verilog -lib WORK sram_w16_out.v
 
 elaborate $top_module -lib WORK -update
 current_design $top_module
@@ -99,6 +99,7 @@ current_design $top_module
 
 # Compile
 # Source user compile options
+ungroup -flatten -all
 compile_ultra -no_autoungroup -timing_high_effort_script -exact_map -gate_clock -retime
 
 # Write Out Design - Hierarchical
