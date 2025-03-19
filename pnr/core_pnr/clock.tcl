@@ -1,4 +1,5 @@
 # Clock tree synthesis 
+set design 		"core"
 set_ccopt_property -update_io_latency false
 create_ccopt_clock_tree_spec -file ./constraints/$design.ccopt
 ccopt_design

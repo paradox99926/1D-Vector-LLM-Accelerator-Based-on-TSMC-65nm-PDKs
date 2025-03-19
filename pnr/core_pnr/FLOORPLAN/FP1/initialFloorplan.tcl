@@ -22,7 +22,7 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-block_ring_top_layer_limit M1		\
 		-max_same_layer_jog_length 0.8		\
 		-padcore_ring_bottom_layer_limit M1	\
-		-number_of_sets 10			\
+		-number_of_sets 15			\
 		-skip_via_on_pin Standardcell		\
 		-stacked_via_top_layer M8		\
 		-padcore_ring_top_layer_limit M1	\
@@ -36,10 +36,7 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-nets {VDD VSS}				\
 		-stacked_via_bottom_layer M1
 
-# Add instance
-#flipOrRotateObject -rotate R90 -name qmem_instance
-#flipOrRotateObject -rotate R90 -name kmem_instance
-
+# Add sub-module instance
 setObjFPlanBox Instance qmem_instance 465 370 735 440
 setObjFPlanBox Instance kmem_instance 65 370 335 440
 setObjFPlanBox Instance psum_mem_instance 65 60 735 180
@@ -57,8 +54,8 @@ addRing -nets {VDD VSS}						\
 	-type block_rings					\
 	-around each_block 					\
 	-layer {top M1 bottom M1 left M2 right M2} 		\
-	-width   {top 1 bottom 1 left 1 right 1}		\
-	-spacing {top 1 bottom 1 left 1 right 1}
+	-width   {top 0.5 bottom 0.5 left 0.5 right 0.5}	\
+	-spacing {top 0.5 bottom 0.5 left 0.5 right 0.5}
 
 
 globalNetConnect VDD -type pgpin -pin VDD -sinst psum_mem_instance -verbose -override

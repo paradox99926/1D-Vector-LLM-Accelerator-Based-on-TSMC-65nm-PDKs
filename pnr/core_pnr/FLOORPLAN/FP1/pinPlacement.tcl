@@ -10,7 +10,7 @@ setPinAssignMode -pinEditInBatch true
 editPin -fixedPin True				\
 	-fixOverlap True			\
 	-unit MICRON				\
-	-spreadDirection counterclockwise	\
+	-spreadDirection clockwise		\
 	-side Top				\
 	-layer 4				\
 	-spreadType center			\
@@ -22,7 +22,7 @@ editPin -fixedPin True				\
 editPin -fixedPin True				\
 	-fixOverlap True			\
 	-unit MICRON				\
-	-spreadDirection clockwise		\
+	-spreadDirection counterclockwise	\
 	-side Bottom				\
 	-layer 4				\
 	-spreadType center			\
@@ -39,7 +39,7 @@ editPin -fixedPin True				\
 	-layer 3				\
 	-spreadType center			\
 	-spacing 4				\
-	-pin {clk_scan SE SI SO test_mode reset_scan}
+	-pin {SO SE SI clk_scan test_mode reset_scan}
 
 
 # Left Edge
