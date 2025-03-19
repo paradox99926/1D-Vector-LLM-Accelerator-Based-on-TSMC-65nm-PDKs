@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Sun Mar 16 20:52:16 2025
+Date   : Tue Mar 18 21:31:34 2025
 ****************************************
 
 
@@ -68,6 +68,22 @@ fifo_depth16_DEPTH8_WIDTH20_0
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_0
                        ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_9
+                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_8
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_7
@@ -85,6 +101,22 @@ SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_2
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_1
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_0
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_9
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_8
                        ZeroWireload      tcbn65gplustc
@@ -893,6 +925,7 @@ booth_decoder_1_60     ZeroWireload      tcbn65gplustc
 booth_decoder_1_59     ZeroWireload      tcbn65gplustc
 booth_decoder_1_58     ZeroWireload      tcbn65gplustc
 booth_decoder_1_57     ZeroWireload      tcbn65gplustc
+booth_decoder_1_56     ZeroWireload      tcbn65gplustc
 booth_decoder_1_55     ZeroWireload      tcbn65gplustc
 booth_decoder_1_54     ZeroWireload      tcbn65gplustc
 booth_decoder_1_53     ZeroWireload      tcbn65gplustc
@@ -906,7 +939,6 @@ booth_decoder_1_46     ZeroWireload      tcbn65gplustc
 booth_decoder_1_45     ZeroWireload      tcbn65gplustc
 booth_decoder_1_44     ZeroWireload      tcbn65gplustc
 booth_decoder_1_43     ZeroWireload      tcbn65gplustc
-booth_decoder_1_42     ZeroWireload      tcbn65gplustc
 booth_decoder_1_41     ZeroWireload      tcbn65gplustc
 booth_decoder_1_40     ZeroWireload      tcbn65gplustc
 booth_decoder_1_39     ZeroWireload      tcbn65gplustc
@@ -951,7 +983,7 @@ booth_decoder_1_1      ZeroWireload      tcbn65gplustc
 booth_decoder_1_0      ZeroWireload      tcbn65gplustc
 mux2X1_0               ZeroWireload      tcbn65gplustc
 mux2X1_1               ZeroWireload      tcbn65gplustc
-booth_decoder_1_56     ZeroWireload      tcbn65gplustc
+booth_decoder_1_42     ZeroWireload      tcbn65gplustc
 
 
 Global Operating Voltage = 1    
@@ -963,12 +995,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  32.2283 mW    (6%)
-  Net Switching Power  = 530.2191 mW   (94%)
+  Cell Internal Power  =  35.2707 mW    (6%)
+  Net Switching Power  = 515.0805 mW   (94%)
                          ---------
-Total Dynamic Power    = 562.4473 mW  (100%)
+Total Dynamic Power    = 550.3512 mW  (100%)
 
-Cell Leakage Power     = 617.1557 uW
+Cell Leakage Power     = 656.0608 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -977,10 +1009,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      2.1623          527.2589        5.0858e+03          529.4268  (  94.03%)
-register          27.6806            0.6525        2.6279e+05           28.5959  (   5.08%)
+clock_network      2.1778          511.9508        5.5440e+03          514.1346  (  93.31%)
+register          30.5998            0.6931        2.9552e+05           31.5884  (   5.73%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      2.3854            2.3079        3.4927e+05            5.0426  (   0.90%)
+combinational      2.4931            2.4364        3.5499e+05            5.2844  (   0.96%)
 --------------------------------------------------------------------------------------------------
-Total             32.2283 mW       530.2194 mW     6.1715e+05 nW       563.0652 mW
+Total             35.2708 mW       515.0803 mW     6.5605e+05 nW       551.0074 mW
 1

@@ -54,8 +54,8 @@ analyze -format verilog -lib WORK mul_tc_8_8.v
 analyze -format verilog -lib WORK booth_decoder_4.v
 analyze -format verilog -lib WORK booth_decoder_1.v
 analyze -format verilog -lib WORK mux2X1.v
-# analyze -format verilog -lib WORK sram_16w_in.v
-# analyze -format verilog -lib WORK sram_16w_out.v
+analyze -format verilog -lib WORK sram_w16_in.v
+analyze -format verilog -lib WORK sram_w16_out.v
 
 
 elaborate $top_module -lib WORK -update
@@ -75,7 +75,6 @@ set_fix_multiple_port_nets -all -buffer_constants
 set_fix_hold [all_clocks]
 
 set_driving_cell -lib_cell BUFFD8 -pin Z [all_inputs]
-#set_load [get_attribute "$target_library/BUFFD8/A" fanout_load] [all_outputs]
 foreach_in_collection p [all_outputs] {
     set_load 0.050 $p
 }
@@ -86,13 +85,10 @@ set_app_var ungroup_keep_original_design true
 set_register_merging [get_designs $top_module] false
 set compile_seqmap_propagate_constants false
 set compile_seqmap_propagate_high_effort false
-set_clock_gating_style -sequential_cell flip_flop -minimum_bitwidth 4
+set_clock_gating_style -sequential_cell Flip_flop -minimum_bitwidth 4
 
 set_scan_configuration -chain_count 20 -clock_mixing no_mix \
     -style multiplexed_flip_flop -replace true -max_length 100 -replace true \
-
-    # set_app_var test_optimize_dft_ng true
-
 
     # More constraints and setup before compile
     foreach_in_collection design [ get_designs "*" ] {

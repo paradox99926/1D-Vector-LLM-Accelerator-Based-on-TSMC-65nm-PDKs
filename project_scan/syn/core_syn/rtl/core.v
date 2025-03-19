@@ -1,7 +1,7 @@
 `include "mac_array.v"
 `include "ofifo.v"
-// `include "sram_w16_in.v"
-// `include "sram_w16_out.v"
+`include "sram_w16_in.v"
+`include "sram_w16_out.v"
 `include "sfp_row.v"
 `include "mux2X1.v"
 `timescale 1ns/1ps

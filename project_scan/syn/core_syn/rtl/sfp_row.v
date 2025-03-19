@@ -34,7 +34,7 @@ module sfp_row (clk,
     wire signed [bw_psum-1:0] sfp_out_unsign [col-1:0];
     reg signed [bw_psum-1:0] sfp_in_temp [col-1:0];
     reg [bw_psum+3:0] sum_q;
-    reg [bw_psum+1:0] sum_2core_temp;
+    reg signed [bw_psum+1:0] sum_2core_temp;
     reg fifo_wr;
     reg div_q;
     reg div_2q;

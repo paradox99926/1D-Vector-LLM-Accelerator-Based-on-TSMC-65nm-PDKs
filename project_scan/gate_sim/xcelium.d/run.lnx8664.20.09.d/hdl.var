@@ -1,0 +1,9 @@
+define XMSIMRC	( /software/ECE/XCELIUM-2009/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+define AMSRC	( /software/ECE/XCELIUM-2009/tools/xcelium/files/amsrc, ~/.amsrc )
+include ./hdlrun.var
+include ./xllibs/hdl.var
+define SNAPSHOT worklib.fullchip_tb:v
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )
+define ELAB_SNAPSHOT
+define SNAPSHOT worklib.fullchip_tb:v

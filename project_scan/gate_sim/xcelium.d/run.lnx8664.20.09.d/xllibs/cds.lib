@@ -1,0 +1,3 @@
+define tcbn65gplus ./tcbn65gplus
+define core ./core
+define fullchip ./fullchip

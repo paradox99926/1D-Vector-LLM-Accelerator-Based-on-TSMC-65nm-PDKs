@@ -11,7 +11,7 @@ module fullchip_tb();
     parameter pr          = 8;           // how many products added in each dot product
     parameter cor         = 2;
     parameter col         = 8;           // how many dot product units are equipped
-    parameter mode_sel    = 1;     //1:Q,K-norm; 0:norm,V
+    parameter mode_sel    = 0;     //1:Q,K-norm; 0:norm,V
     parameter test_sel    = 0;
     
     integer qk_file ; // file handler

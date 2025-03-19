@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-VFILE
+./netlist/fullchip.v
+-VFILE
+./netlist/core.v
+-VFILE
+/home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v
