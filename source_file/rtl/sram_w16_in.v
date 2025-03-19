@@ -23,13 +23,13 @@ module sram_w16_in (CLK,
     always @ (posedge CLK) begin
         if (!CEN && WEN) begin // read operation
             // Combine 2 32-bit blocks into a 64-bit output
-            Q <= {memory[{A, 2'b1}],memory[{A, 2'b0}]};
+            Q <= {memory[{A, 1'b1}],memory[{A, 1'b0}]};
         end
         else if (!CEN && !WEN) begin // write operation
             // Split the 128-bit input into 2 32-bit blocks and write to memory
-            memory[{A, 2'b0}] <= D[sram_fold-1:0];
-            memory[{A, 2'b1}] <= D[sram_fold*2-1:sram_fold*1];
+            memory[{A, 1'b0}] <= D[sram_fold-1:0];
+            memory[{A, 1'b1}] <= D[sram_fold*2-1:sram_fold*1];
         end
-            end
+    end
             
-            endmodule
+endmodule
