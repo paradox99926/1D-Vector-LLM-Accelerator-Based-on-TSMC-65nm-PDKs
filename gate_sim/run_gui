@@ -1,0 +1,13 @@
+xrun \
++gui \
++access+rwc \
++xm64bit \
++xmstatus \
++xmtimescale+1ns/1ps \
++xmoveride_timescale \
+-v ./netlist/fullchip.v \
+-v ./netlist/core.v \
+-v /home/linux/ieng6/ee260bwi25/public/PDKdata/verilog/tcbn65gplus.v \
+./netlist/fullchip_tb.v \
++xmseq_udp_delay+20ps \
+

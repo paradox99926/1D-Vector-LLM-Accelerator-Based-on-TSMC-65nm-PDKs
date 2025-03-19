@@ -6,6 +6,7 @@ parameter bw = 8;
 parameter bw_psum = 2*bw+6;
 parameter pr = 8;
 parameter col_id = 0;
+parameter cnt_max = 9-col_id;
 
 output signed [bw_psum-1:0] out;
 input  signed [pr*bw-1:0] q_in;
@@ -51,7 +52,7 @@ always @ (posedge clk or posedge reset) begin
     inst_3q <= inst_2q;
     if (inst_q[0]) begin
        query_q <= q_in;
-       if (cnt_q == 9-col_id)begin
+       if (cnt_q == cnt_max)begin
          cnt_q <= 0;
          key_q <= q_in;
          load_ready_q <= 0;

@@ -2,7 +2,7 @@ set top_module core
 set rtlPath "./rtl"
 
 # Target library
-set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db 
+set target_library /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db
 set link_library $target_library
 set symbol_library {}
 set wire_load_mode enclosed
@@ -18,14 +18,14 @@ set dont_use_cell_list ""
 
 remove_design -all
 if {[file exists template]} {
-	exec rm -rf template
+    exec rm -rf template
 }
 exec mkdir template
 if {![file exists log]} {
     exec mkdir log
 }
 if {![file exists gate]} {
-	exec mkdir gate
+    exec mkdir gate
 }
 
 sh date
@@ -52,10 +52,12 @@ analyze -format verilog -lib WORK mac_16in.v
 analyze -format verilog -lib WORK fifo_depth16.v
 analyze -format verilog -lib WORK mac_col.v
 analyze -format verilog -lib WORK mac_top.v
-analyze -format verilog -lib WORK mul_tc_8_8.v 
+analyze -format verilog -lib WORK mul_tc_8_8.v
 analyze -format verilog -lib WORK booth_decoder_4.v
 analyze -format verilog -lib WORK booth_decoder_1.v
 analyze -format verilog -lib WORK mux2X1.v
+analyze -format verilog -lib WORK sram_w16_in.v
+analyze -format verilog -lib WORK sram_w16_out.v
 
 elaborate $top_module -lib WORK -update
 current_design $top_module
@@ -76,7 +78,7 @@ set_fix_hold [all_clocks]
 set_driving_cell -lib_cell BUFFD8 -pin Z [all_inputs]
 #set_load [get_attribute "$target_library/BUFFD8/A" fanout_load] [all_outputs]
 foreach_in_collection p [all_outputs] {
-	set_load 0.050 $p
+    set_load 0.050 $p
 }
 
 #More compiler directives
@@ -88,9 +90,9 @@ set compile_seqmap_propagate_high_effort false
 set_clock_gating_style -sequential_cell latch -minimum_bitwidth 4
 # More constraints and setup before compile
 foreach_in_collection design [ get_designs "*" ] {
-	current_design $design
-	#feedthrough / outputs / constants
-	set_fix_multiple_port_nets -all
+    current_design $design
+    #feedthrough / outputs / constants
+    set_fix_multiple_port_nets -all
 }
 current_design $top_module
 
@@ -111,7 +113,7 @@ redirect [format "%s%s" log/ $top_module _area.rep] { report_area }
 redirect -append [format "%s%s%s" log/ $top_module _area.rep] { report_reference }
 redirect [format "%s%s%s" log/ $top_module _power.rep] { report_power }
 redirect [format "%s%s%s" log/ $top_module _timing.rep] \
-  { report_timing -path full -max_paths 100 -nets -transition_time -capacitance -significant_digits 3 -nosplit}
+    { report_timing -path full -max_paths 100 -nets -transition_time -capacitance -significant_digits 3 -nosplit}
 
 set inFile  [open log/$top_module\_area.rep]
 while { [gets $inFile line]>=0 } {
@@ -124,22 +126,22 @@ set inFile  [open log/$top_module\_power.rep]
 while { [gets $inFile line]>=0 } {
     if { [regexp {Total Dynamic Power} $line] } {
         set PWR [lindex $line 4]
-    } elseif { [regexp {Cell Leakage Power} $line] } {  
-        set LEAK [lindex $line 4] 
+    } elseif { [regexp {Cell Leakage Power} $line] } {
+        set LEAK [lindex $line 4]
     }
 }
 close $inFile
 
 set unmapped_designs [get_designs -filter "is_unmapped == true" $top_module]
 if {  [sizeof_collection $unmapped_designs] != 0 } {
-	echo "****************************************************"
-	echo "* ERROR!!!! Compile finished with unmapped logic.  *"
-	echo "****************************************************"
+    echo "****************************************************"
+    echo "* ERROR!!!! Compile finished with unmapped logic.  *"
+    echo "****************************************************"
 }
 # Done
 sh date
 sh uptime
 
 # Done
-echo "run_dc.tcl completed successfully"
+echo "run.scr completed successfully"
 

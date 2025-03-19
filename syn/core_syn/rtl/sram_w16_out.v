@@ -32,6 +32,6 @@ module sram_w16_out (CLK,
             memory[{A, 2'b10}] <= D[sram_fold*3-1:sram_fold*2];
             memory[{A, 2'b11}] <= D[sram_fold*4-1:sram_fold*3];
         end
-            end
+    end
             
-            endmodule
+endmodule
