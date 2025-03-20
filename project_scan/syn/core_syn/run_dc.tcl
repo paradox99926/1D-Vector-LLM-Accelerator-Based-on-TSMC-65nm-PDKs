@@ -85,7 +85,7 @@ set_app_var ungroup_keep_original_design true
 set_register_merging [get_designs $top_module] false
 set compile_seqmap_propagate_constants false
 set compile_seqmap_propagate_high_effort false
-set_clock_gating_style -sequential_cell Flip_flop -minimum_bitwidth 4
+set_clock_gating_style -minimum_bitwidth 4
 
 set_scan_configuration -chain_count 20 -clock_mixing no_mix \
     -style multiplexed_flip_flop -replace true -max_length 100 -replace true \
@@ -116,7 +116,7 @@ set test_default_strobe_width 0
 ########################## Define DFT Signals ##########################
 
 set_dft_signal -port [get_ports clk_scan]   -type ScanClock   -view existing_dft  -timing {30 60}
-set_dft_signal -port [get_ports reset_scan] -type Reset       -view existing_dft  -active_state 0
+set_dft_signal -port [get_ports reset_scan] -type Reset       -view existing_dft  -active_state 1
 set_dft_signal -port [get_ports test_mode]  -type Constant    -view existing_dft  -active_state 1
 set_dft_signal -port [get_ports test_mode]  -type TestMode    -view spec          -active_state 1
 set_dft_signal -port [get_ports SE]         -type ScanEnable  -view spec          -active_state 1   -usage scan
@@ -130,9 +130,9 @@ set_dft_configuration -fix_clock enable -fix_reset enable -fix_set enable
 
 #Specifying the Autofix settings
 # this information is used for the set and reset and clock fixing.
-set_autofix_configuration -type set -method mux -test_data preset -control testmode
-set_autofix_configuration -type reset -method mux -test_data reset -control testmode
-set_autofix_configuration -type clock -method mux -test_data scanclk -control testmode
+set_autofix_configuration -type set   -method mux -test_data SE         -control test_mode
+set_autofix_configuration -type reset -method mux -test_data reset_scan -control test_mode
+set_autofix_configuration -type clock -method mux -test_data clk_scan   -control test_mode
 
 # this will tell the tool that optimation was already done so u dont disturbe the optimisation.by doing it again.
 set_dft_insertion_configuration -synthesis_optimization none -preserve_design_name true
@@ -143,7 +143,7 @@ create_test_protocol
 
 ###################### Pre-DFT Design Rule Checking ####################
 
-dft_drc -verbose -coverage_estimate
+dft_drc -verbose
 
 ############################# Preview DFT ##############################
 

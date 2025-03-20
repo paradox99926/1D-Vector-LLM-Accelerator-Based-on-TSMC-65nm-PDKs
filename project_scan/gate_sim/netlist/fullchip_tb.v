@@ -10,7 +10,7 @@ module fullchip_tb();
     parameter pr          = 8;           // how many products added in each dot product
     parameter cor         = 2;
     parameter col         = 8;           // how many dot product units are equipped
-    parameter mode_sel    = 0;     //1:Q,K-norm; 0:norm,V
+    parameter mode_sel    = 1;     //1:Q,K-norm; 0:norm,V
     parameter test_sel    = 0;
     
     integer qk_file ; // file handler
@@ -35,6 +35,7 @@ module fullchip_tb();
     integer i,j,k,t,q;
     
     reg test_mode      = 0;
+    reg SE             = 0;
 
     reg sfp_sel        = 0;
     // reg clk_en_sfp  = 0;
@@ -99,7 +100,7 @@ module fullchip_tb();
     .clk_scan(),
     .reset_scan(),
     .SI(),
-    .SE(),
+    .SE(SE),
     .SO()
     );
     
@@ -121,6 +122,7 @@ module fullchip_tb();
 
         sfp_sel        = mode_sel;
         test_mode      = test_sel;
+        SE             = 0;
         ///// Q data txt reading /////
         if (mode_sel) begin
             $display("##### Q data txt reading #####");

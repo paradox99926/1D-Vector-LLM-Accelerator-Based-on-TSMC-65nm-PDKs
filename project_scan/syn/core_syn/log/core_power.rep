@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : core
 Version: K-2015.06-SP2
-Date   : Tue Mar 18 21:31:34 2025
+Date   : Wed Mar 19 20:54:54 2025
 ****************************************
 
 
@@ -68,407 +68,53 @@ fifo_depth16_DEPTH8_WIDTH20_0
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_1
-                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_1
-                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_1
                        ZeroWireload      tcbn65gplustc
 fifo_depth16_WIDTH24_1 ZeroWireload      tcbn65gplustc
 fifo_depth16_WIDTH24_0 ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_1
-                       ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_7
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id1_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id1_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id1_1
                        ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_6
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id2_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id2_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id2_1
-                       ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_5
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id3_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id3_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id3_1
                        ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_4
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id4_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id4_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id4_1
-                       ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_3
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id5_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id5_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id5_1
                        ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_2
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id6_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id6_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id6_1
-                       ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_1
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id7_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id7_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id7_1
                        ZeroWireload      tcbn65gplustc
 mac_16in_bw8_bw_psum20_pr8_0
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id8_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id8_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id8_1
-                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_79
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_78
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_77
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_76
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_75
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_74
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_73
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_72
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_71
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_70
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_69
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_68
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_67
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_66
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_65
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_64
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_63
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_62
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_61
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_60
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_59
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_58
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_57
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_56
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_55
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_54
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_53
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_52
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_51
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_50
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_49
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_48
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_47
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_46
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_45
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_44
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_43
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_42
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_41
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_40
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_39
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_38
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_37
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_36
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_35
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_34
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_33
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_32
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_31
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_30
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_29
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_28
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_27
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_26
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_25
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_24
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_23
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_22
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_21
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_20
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_19
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_18
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_17
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_0
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_1
                        ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_17
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_4
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_1
-                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_0
                        ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_17
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_16
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_15
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_14
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_13
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_12
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_11
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_10
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_9
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_8
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_7
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_6
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_5
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_4
-                       ZeroWireload      tcbn65gplustc
 SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_3
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_2
-                       ZeroWireload      tcbn65gplustc
-SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_1
                        ZeroWireload      tcbn65gplustc
 mac_top_bw8_bw_psum16_63
                        ZeroWireload      tcbn65gplustc
@@ -842,7 +488,6 @@ booth_decoder_1_143    ZeroWireload      tcbn65gplustc
 booth_decoder_1_142    ZeroWireload      tcbn65gplustc
 booth_decoder_1_141    ZeroWireload      tcbn65gplustc
 booth_decoder_1_140    ZeroWireload      tcbn65gplustc
-booth_decoder_1_139    ZeroWireload      tcbn65gplustc
 booth_decoder_1_138    ZeroWireload      tcbn65gplustc
 booth_decoder_1_137    ZeroWireload      tcbn65gplustc
 booth_decoder_1_136    ZeroWireload      tcbn65gplustc
@@ -869,7 +514,6 @@ booth_decoder_1_116    ZeroWireload      tcbn65gplustc
 booth_decoder_1_115    ZeroWireload      tcbn65gplustc
 booth_decoder_1_114    ZeroWireload      tcbn65gplustc
 booth_decoder_1_113    ZeroWireload      tcbn65gplustc
-booth_decoder_1_112    ZeroWireload      tcbn65gplustc
 booth_decoder_1_111    ZeroWireload      tcbn65gplustc
 booth_decoder_1_110    ZeroWireload      tcbn65gplustc
 booth_decoder_1_109    ZeroWireload      tcbn65gplustc
@@ -898,7 +542,6 @@ booth_decoder_1_87     ZeroWireload      tcbn65gplustc
 booth_decoder_1_86     ZeroWireload      tcbn65gplustc
 booth_decoder_1_85     ZeroWireload      tcbn65gplustc
 booth_decoder_1_84     ZeroWireload      tcbn65gplustc
-booth_decoder_1_83     ZeroWireload      tcbn65gplustc
 booth_decoder_1_82     ZeroWireload      tcbn65gplustc
 booth_decoder_1_81     ZeroWireload      tcbn65gplustc
 booth_decoder_1_80     ZeroWireload      tcbn65gplustc
@@ -939,8 +582,8 @@ booth_decoder_1_46     ZeroWireload      tcbn65gplustc
 booth_decoder_1_45     ZeroWireload      tcbn65gplustc
 booth_decoder_1_44     ZeroWireload      tcbn65gplustc
 booth_decoder_1_43     ZeroWireload      tcbn65gplustc
+booth_decoder_1_42     ZeroWireload      tcbn65gplustc
 booth_decoder_1_41     ZeroWireload      tcbn65gplustc
-booth_decoder_1_40     ZeroWireload      tcbn65gplustc
 booth_decoder_1_39     ZeroWireload      tcbn65gplustc
 booth_decoder_1_38     ZeroWireload      tcbn65gplustc
 booth_decoder_1_37     ZeroWireload      tcbn65gplustc
@@ -981,9 +624,366 @@ booth_decoder_1_3      ZeroWireload      tcbn65gplustc
 booth_decoder_1_2      ZeroWireload      tcbn65gplustc
 booth_decoder_1_1      ZeroWireload      tcbn65gplustc
 booth_decoder_1_0      ZeroWireload      tcbn65gplustc
+booth_decoder_1_40     ZeroWireload      tcbn65gplustc
+booth_decoder_1_112    ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id2_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id2_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_0_17
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_0_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id8_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id8_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id5_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id5_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id1_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id1_2
+                       ZeroWireload      tcbn65gplustc
+booth_decoder_1_83     ZeroWireload      tcbn65gplustc
+booth_decoder_1_139    ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_WIDTH24_1_17
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_in_sram_bit64_1_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id7_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id7_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id4_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id4_2
+                       ZeroWireload      tcbn65gplustc
 mux2X1_0               ZeroWireload      tcbn65gplustc
 mux2X1_1               ZeroWireload      tcbn65gplustc
-booth_decoder_1_42     ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sfp_row_col8_bw8_bw_psum20_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_sram_w16_out_sram_bit160_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_3
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_4
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_5
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_6
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_7
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_8
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_9
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_0
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_10
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_11
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_12
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_13
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_14
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_15
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_16
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_17
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_18
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_19
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_20
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_21
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_22
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_23
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_24
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_25
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_26
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_27
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_28
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_29
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_30
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_31
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_32
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_33
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_34
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_35
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_36
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_37
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_38
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_39
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_40
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_41
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_42
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_43
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_44
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_45
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_46
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_47
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_48
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_49
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_50
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_51
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_52
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_53
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_54
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_55
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_56
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_57
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_58
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_59
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_60
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_61
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_62
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_63
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_64
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_65
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_66
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_67
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_68
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_69
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_70
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_71
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_72
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_73
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_74
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_75
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_76
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_77
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_fifo_depth16_DEPTH8_WIDTH20_0_78
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id6_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id6_2
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id3_1
+                       ZeroWireload      tcbn65gplustc
+SNPS_CLOCK_GATE_HIGH_mac_col_bw8_bw_psum20_pr8_col_id3_2
+                       ZeroWireload      tcbn65gplustc
 
 
 Global Operating Voltage = 1    
@@ -995,12 +995,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  =  35.2707 mW    (6%)
-  Net Switching Power  = 515.0805 mW   (94%)
+  Cell Internal Power  =  19.5851 mW    (4%)
+  Net Switching Power  = 517.0749 mW   (96%)
                          ---------
-Total Dynamic Power    = 550.3512 mW  (100%)
+Total Dynamic Power    = 536.6600 mW  (100%)
 
-Cell Leakage Power     = 656.0608 uW
+Cell Leakage Power     = 660.0814 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -1009,10 +1009,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network      2.1778          511.9508        5.5440e+03          514.1346  (  93.31%)
-register          30.5998            0.6931        2.9552e+05           31.5884  (   5.73%)
+clock_network      1.8734          515.0861        8.0866e+03          516.9681  (  96.21%)
+register          16.3788            0.2740        2.9501e+05           16.9478  (   3.15%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      2.4931            2.4364        3.5499e+05            5.2844  (   0.96%)
+combinational      1.3329            1.7131        3.5698e+05            3.4029  (   0.63%)
 --------------------------------------------------------------------------------------------------
-Total             35.2708 mW       515.0803 mW     6.5605e+05 nW       551.0074 mW
+Total             19.5851 mW       517.0732 mW     6.6008e+05 nW       537.3188 mW
 1
