@@ -1,5 +1,5 @@
-# Floorplan
-floorPlan -s 640 90 15 15 15 15
+#Floorplan
+floorPlan -s 700 100 15 15 15 15
 
 globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
 globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
@@ -10,7 +10,7 @@ globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
 setAddStripeMode -break_at {block_ring}
 
 ### Note: Change the number of strip  by looking at the layout #########
-addStripe -number_of_sets 30  -spacing 1 -layer M4 -width 1 -nets { VSS VDD } -start_from left -start 25 -stop 635
+addStripe -number_of_sets 20  -spacing 1 -layer M4 -width 1 -nets { VSS VDD } -start_from left -start 20 -stop 680
 #################################################
 
 #addStripe -nets {VDD VSS} -layer M4 -direction vertical -width 1.8 -spacing 1.8 -number_of_sets 5 -start_from left -start 80 -stop 180 

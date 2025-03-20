@@ -10,7 +10,7 @@ module sram_w16_out (CLK,
     parameter sram_fold = sram_bit/4;
     parameter sram_addr = 16*4;
     input  CLK;
-    input  WEN;
+    input  WEN;//active low
     input  CEN;
     input  [sram_bit-1:0] D;
     input  [3:0] A;
@@ -32,6 +32,6 @@ module sram_w16_out (CLK,
             memory[{A, 2'b10}] <= D[sram_fold*3-1:sram_fold*2];
             memory[{A, 2'b11}] <= D[sram_fold*4-1:sram_fold*3];
         end
-            end
+    end
             
-            endmodule
+endmodule
