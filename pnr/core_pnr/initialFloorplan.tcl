@@ -6,14 +6,17 @@
 # i i
 # n n
 #    S R A M O U T
-floorPlan -site core -s 930 430 10.0 10.0 10.0 10.0
+#
+#    sramin: 320*120
+#    sramout: 720*130
+floorPlan -site core -s 1100 600 50.0 50.0 50.0 50.0
 
 globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
 globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
 
 # Add ring
-addRing -spacing {top 1 bottom 1 left 1 right 1} 	\
-	-width {top 2 bottom 2 left 2 right 2}		\
+addRing -spacing {top 5 bottom 5 left 5 right 5} 	\
+	-width {top 10 bottom 10 left 10 right 10}		\
 	-layer {top M1 bottom M1 left M2 right M2}	\
        	-center 1 					\
 	-type core_rings				\
@@ -25,13 +28,13 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-block_ring_top_layer_limit M1		\
 		-max_same_layer_jog_length 0.8		\
 		-padcore_ring_bottom_layer_limit M1	\
-		-number_of_sets 12			\
+		-number_of_sets 10			\
 		-skip_via_on_pin Standardcell		\
 		-stacked_via_top_layer M8		\
 		-padcore_ring_top_layer_limit M1	\
 		-spacing 1				\
 		-merge_stripes_value 0.1		\
-		-direction vertical			\
+		-direction horizontal			\
 		-layer M5				\
 		-block_ring_bottom_layer_limit M1	\
 		-width 2				\
@@ -60,7 +63,7 @@ addRing -nets {VDD VSS}						\
 	-type block_rings					\
 	-around each_block 					\
 	-layer {top M1 bottom M1 left M2 right M2} 		\
-	-width   {top 0.5 bottom 0.5 left 0.5 right 0.5}	\
+	-width   {top 1 bottom 1 left 1 right 1}	\
 	-spacing {top 0.5 bottom 0.5 left 0.5 right 0.5}
 
 

@@ -2,7 +2,7 @@ setMultiCpuUsage -localCpu 8
 #Load design
 set desdir 		"/home/linux/ieng6/ee260bwi25/public/DESIGNdata"
 set libdir 		"/home/linux/ieng6/ee260bwi25/public/PDKdata"
-set design 		"sram_w16_in"
+set design 		"core"
 set netlist 		"./netlist/$design.v"
 set sdc 		"./constraints/$design.sdc"
 
@@ -23,12 +23,12 @@ set init_verilog "$netlist"
 set init_design_netlisttype "Verilog"
 set init_design_settop 1
 set init_top_cell "$design"
-set init_lef_file "$lef"
+set init_lef_file "$lef ./subckt/sram_w16_in.lef ./subckt/sram_w16_out.lef"
 
 # MCMM setup
-create_library_set -name WC_LIB -timing $worst_timing_lib
-create_library_set -name BC_LIB -timing $best_timing_lib
-create_library_set -name TC_LIB -timing $typical_timing_lib
+create_library_set -name WC_LIB -timing "$worst_timing_lib  ./subckt/sram_w16_in_WC.lib  ./subckt/sram_w16_out_WC.lib"
+create_library_set -name BC_LIB -timing "$best_timing_lib  ./subckt/sram_w16_in_BC.lib  ./subckt/sram_w16_out_BC.lib"
+create_library_set -name TC_LIB -timing "$typical_timing_lib  ./subckt/sram_w16_in_TC.lib  ./subckt/sram_w16_out_TC.lib"
 
 create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
 create_rc_corner -name Cmin -cap_table $best_captbl -T -40
