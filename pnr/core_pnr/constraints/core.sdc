@@ -7,6 +7,7 @@ set clock_port clk
 set clock_port_out clk_o
 # set clock_port_scan clk_scan
 
+set_false_path -from [get_ports reset]
 create_clock -name clk -period $clock_cycle [get_ports $clock_port]
 create_clock -name clk_o -period $clock_cycle [get_ports $clock_port_out]
 

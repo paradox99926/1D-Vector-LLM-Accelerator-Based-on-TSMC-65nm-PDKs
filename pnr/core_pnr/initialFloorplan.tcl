@@ -9,7 +9,7 @@
 #
 #    sramin: 320*120
 #    sramout: 720*130
-floorPlan -site core -s 1100 600 50.0 50.0 50.0 50.0
+floorPlan -site core -s 800 550 50.0 50.0 50.0 50.0
 
 globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
 globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
@@ -42,17 +42,21 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-nets {VDD VSS}				\
 		-stacked_via_bottom_layer M1
 
-# Add submodule instance
 setObjFPlanBox Instance qmem_instance 40 150 110 420
 flipOrRotateObject -rotate R90 -name qmem_instance
 flipOrRotateObject -flip MY -name qmem_instance
-
 setObjFPlanBox Instance kmem_instance 140 150 210 420
 flipOrRotateObject -rotate R90 -name kmem_instance
 flipOrRotateObject -flip MY -name kmem_instance
-
 setObjFPlanBox Instance psum_mem_instance 240 60 910 180
 flipOrRotateObject -flip MX -name psum_mem_instance
+setObjFPlanBox Instance psum_mem_instance 82.8565 88.1945 812.8565 218.1945
+setObjFPlanBox Instance kmem_instance 256.4485 243.2135 376.4485 563.2135
+setObjFPlanBox Instance qmem_instance 88.535 263.177 208.535 583.177
+
+
+
+
 
 addHaloToBlock {3 3 3 3} qmem_instance
 addHaloToBlock {3 3 3 3} kmem_instance
@@ -63,7 +67,7 @@ addRing -nets {VDD VSS}						\
 	-type block_rings					\
 	-around each_block 					\
 	-layer {top M1 bottom M1 left M2 right M2} 		\
-	-width   {top 1 bottom 1 left 1 right 1}	\
+	-width   {top 0.5 bottom 0.5 left 0.5 right 0.5}	\
 	-spacing {top 0.5 bottom 0.5 left 0.5 right 0.5}
 
 
