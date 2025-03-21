@@ -42,8 +42,6 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-nets {VDD VSS}				\
 		-stacked_via_bottom_layer M1
 
-
-
 setObjFPlanBox Instance qmem_instance 40 150 110 420
 flipOrRotateObject -rotate R90 -name qmem_instance
 flipOrRotateObject -flip MY -name qmem_instance
@@ -67,6 +65,20 @@ setObjFPlanBox Instance qmem_instance 93.865 267.1735 213.865 587.1735
 deselectAll
 selectInst kmem_instance
 setObjFPlanBox Instance kmem_instance 271.107 265.8655 391.107 585.8655
+deselectAll
+selectInst psum_mem_instance
+setObjFPlanBox Instance psum_mem_instance 82.8565 88.1945 812.8565 218.1945
+deselectAll
+selectInst kmem_instance
+setObjFPlanBox Instance kmem_instance 256.4485 243.2135 376.4485 563.2135
+deselectAll
+selectInst qmem_instance
+setObjFPlanBox Instance qmem_instance 88.5355 256.5155 208.5355 576.5155
+setObjFPlanBox Instance qmem_instance 88.535 263.177 208.535 583.177
+
+
+
+
 
 addHaloToBlock {3 3 3 3} qmem_instance
 addHaloToBlock {3 3 3 3} kmem_instance

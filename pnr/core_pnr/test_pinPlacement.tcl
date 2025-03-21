@@ -1,38 +1,3 @@
-setObjFPlanBox Instance qmem_instance 40 150 110 420
-flipOrRotateObject -rotate R90 -name qmem_instance
-flipOrRotateObject -flip MY -name qmem_instance
-setObjFPlanBox Instance kmem_instance 140 150 210 420
-flipOrRotateObject -rotate R90 -name kmem_instance
-flipOrRotateObject -flip MY -name kmem_instance
-setObjFPlanBox Instance psum_mem_instance 240 60 910 180
-flipOrRotateObject -flip MX -name psum_mem_instance
-pan -307.474 8.977
-uiSetTool move
-selectInst psum_mem_instance
-setObjFPlanBox Instance psum_mem_instance 374.6605 80.199 1104.6605 210.199
-deselectAll
-selectInst kmem_instance
-setObjFPlanBox Instance kmem_instance 274.6605 271.1945 394.6605 591.1945
-deselectAll
-selectInst qmem_instance
-setObjFPlanBox Instance qmem_instance 93.864 268.95 213.864 588.95
-fit
-setObjFPlanBox Instance qmem_instance 93.865 267.1735 213.865 587.1735
-deselectAll
-selectInst kmem_instance
-setObjFPlanBox Instance kmem_instance 271.107 265.8655 391.107 585.8655
-deselectAll
-selectInst psum_mem_instance
-setObjFPlanBox Instance psum_mem_instance 82.8565 88.1945 812.8565 218.1945
-deselectAll
-selectInst kmem_instance
-setObjFPlanBox Instance kmem_instance 256.4485 243.2135 376.4485 563.2135
-deselectAll
-selectInst qmem_instance
-setObjFPlanBox Instance qmem_instance 88.5355 256.5155 208.5355 576.5155
-setObjFPlanBox Instance qmem_instance 88.535 263.177 208.535 583.177
-
-
 setPinAssignMode -pinEditInBatch true
 editPin -fixedPin True -fixOverlap True -unit MICRON -spreadDirection clockwise -side Top -layer 4 -spreadType center -spacing 4 -pin {clk clk_o {inst[*]} reset		 {sum_in[*]} fifo_ext_rd		 {sum_out[*]} div_ready}
 editPin -fixedPin True -fixOverlap True -unit MICRON -spreadDirection counterclockwise -side Bottom -layer 4 -spreadType center -spacing 4 -pin {{out[*]}}
