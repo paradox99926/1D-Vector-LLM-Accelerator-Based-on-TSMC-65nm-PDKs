@@ -99,7 +99,7 @@ current_design $top_module
 
 # Compile
 # Source user compile options
-ungroup -flatten -all
+#ungroup -flatten -all
 compile_ultra -no_autoungroup -timing_high_effort_script -exact_map -gate_clock -retime
 
 # Write Out Design - Hierarchical

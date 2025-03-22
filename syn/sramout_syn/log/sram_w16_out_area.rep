@@ -3,7 +3,7 @@
 Report : area
 Design : sram_w16_out
 Version: K-2015.06-SP2
-Date   : Wed Mar 19 20:32:12 2025
+Date   : Fri Mar 21 19:35:59 2025
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -13,21 +13,21 @@ Library(s) Used:
     tcbn65gplustc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db)
 
 Number of ports:                          327
-Number of nets:                          4728
-Number of cells:                         4561
-Number of combinational cells:           1841
+Number of nets:                          4784
+Number of cells:                         4617
+Number of combinational cells:           1897
 Number of sequential cells:              2720
 Number of macros/black boxes:               0
-Number of buf/inv:                         39
-Number of references:                      22
+Number of buf/inv:                         95
+Number of references:                      38
 
-Combinational area:               4605.480023
-Buf/Inv area:                       90.720003
+Combinational area:               4687.920029
+Buf/Inv area:                      209.880006
 Noncombinational area:           25459.199066
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                 30064.679089
+Total cell area:                 30147.119095
 Total area:                 undefined
 1
  
@@ -35,7 +35,7 @@ Total area:                 undefined
 Report : reference
 Design : sram_w16_out
 Version: K-2015.06-SP2
-Date   : Wed Mar 19 20:32:13 2025
+Date   : Fri Mar 21 19:35:59 2025
 ****************************************
 
 Attributes:
@@ -52,49 +52,81 @@ Attributes:
 Reference          Library       Unit Area   Count    Total Area   Attributes
 -----------------------------------------------------------------------------
 AN4D0              tcbn65gplustc
-                                  2.880000     320    921.600037  
+                                  2.880000     248    714.240028  
+AN4D1              tcbn65gplustc
+                                  2.880000      10     28.800001  
+AN4XD1             tcbn65gplustc
+                                  2.880000      62    178.560007  
 AOI22D0            tcbn65gplustc
                                   2.520000    1280   3225.599976  
+BUFFD1             tcbn65gplustc
+                                  1.440000       8     11.520000  
 BUFFD2             tcbn65gplustc
-                                  2.160000      12     25.920001  
+                                  2.160000      28     60.480002  
+BUFFD3             tcbn65gplustc
+                                  2.520000       5     12.600000  
 BUFFD6             tcbn65gplustc
-                                  4.320000       2      8.640000  
+                                  4.320000       1      4.320000  
+BUFFD8             tcbn65gplustc
+                                  5.760000       2     11.520000  
+BUFFD12            tcbn65gplustc
+                                  7.920000       1      7.920000  
 CKBD1              tcbn65gplustc
-                                  1.440000       3      4.320000  
+                                  1.440000      28     40.320002  
 CKBD2              tcbn65gplustc
-                                  2.160000      10     21.600001  
+                                  2.160000       3      6.480000  
+CKBD3              tcbn65gplustc
+                                  2.520000       2      5.040000  
 CKBD4              tcbn65gplustc
-                                  3.240000       8     25.920000  
+                                  3.240000       7     22.680000  
+CKBD6              tcbn65gplustc
+                                  4.320000       3     12.960001  
+CKBD8              tcbn65gplustc
+                                  5.760000       1      5.760000  
+CKND2              tcbn65gplustc
+                                  1.440000       2      2.880000  
 CKND2D0            tcbn65gplustc
-                                  1.440000     161    231.840009  
+                                  1.440000      95    136.800005  
 CKND2D1            tcbn65gplustc
-                                  1.440000       4      5.760000  
+                                  1.440000      20     28.800001  
+CKND2D2            tcbn65gplustc
+                                  2.520000       1      2.520000  
 EDFQD1             tcbn65gplustc
                                   9.360000    2720  25459.199066  n
+INR2D1             tcbn65gplustc
+                                  2.160000       7     15.120001  
 INR2D2             tcbn65gplustc
-                                  2.880000       5     14.400001  
+                                  2.880000       6     17.280001  
+INR2XD0            tcbn65gplustc
+                                  2.160000       1      2.160000  
 INR2XD2            tcbn65gplustc
-                                  4.680000      11     51.479998  
+                                  4.680000       2      9.360000  
 INR2XD4            tcbn65gplustc
                                   9.360000       1      9.360000  
 INVD0              tcbn65gplustc
-                                  1.080000       3      3.240000  
-INVD1              tcbn65gplustc
                                   1.080000       1      1.080000  
+INVD1              tcbn65gplustc
+                                  1.080000       2      2.160000  
+INVD3              tcbn65gplustc
+                                  2.160000       1      2.160000  
+ND2D0              tcbn65gplustc
+                                  1.440000      45     64.800003  
 ND2D1              tcbn65gplustc
+                                  1.440000       4      5.760000  
+ND2D2              tcbn65gplustc
+                                  2.520000       3      7.560000  
+NR2D0              tcbn65gplustc
                                   1.440000       3      4.320000  
 NR2D1              tcbn65gplustc
-                                  1.440000       1      1.440000  
+                                  1.440000       5      7.200000  
 NR2D2              tcbn65gplustc
-                                  2.520000      11     27.720000  
-NR2XD1             tcbn65gplustc
+                                  2.520000       2      5.040000  
+NR2D3              tcbn65gplustc
+                                  3.240000       2      6.480000  
+NR2XD0             tcbn65gplustc
+                                  1.440000       4      5.760000  
+OR2D2              tcbn65gplustc
                                   2.520000       1      2.520000  
-NR2XD2             tcbn65gplustc
-                                  4.320000       1      4.320000  
-NR2XD3             tcbn65gplustc
-                                  6.120000       2     12.240000  
-OR2D1              tcbn65gplustc
-                                  2.160000       1      2.160000  
 -----------------------------------------------------------------------------
-Total 22 references                                 30064.679089
+Total 38 references                                 30147.119095
 1

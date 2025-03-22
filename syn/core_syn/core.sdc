@@ -25,9 +25,9 @@ set_input_delay -clock $clock_port_out -add_delay -max $io_delay [get_ports {fif
 # set_max_capacitance 0.5 [get_ports *]
 # set_driving_cell -lib_cell DFF1 -pin Q [get_ports *]
 
-set_multicycle_path 2 -setup -from [get_cells "sfp_row_instance/sfp_in_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
-set_multicycle_path 2 -setup -from [get_cells "sfp_row_instance/sum_2core_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
+set_multicycle_path 3 -setup -from [get_cells "sfp_row_instance/sfp_in_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
+set_multicycle_path 3 -setup -from [get_cells "sfp_row_instance/sum_2core_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
 
-set_multicycle_path 1 -hold -from  [get_cells "sfp_row_instance/sfp_in_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
-set_multicycle_path 1 -hold -from  [get_cells "sfp_row_instance/sum_2core_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
+set_multicycle_path 2 -hold -from  [get_cells "sfp_row_instance/sfp_in_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
+set_multicycle_path 2 -hold -from  [get_cells "sfp_row_instance/sum_2core_temp_reg*"] -to [get_pins "sfp_row_instance/sfp_out"]
 
