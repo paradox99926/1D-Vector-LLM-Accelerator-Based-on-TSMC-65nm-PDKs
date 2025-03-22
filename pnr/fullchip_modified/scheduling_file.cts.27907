@@ -1,0 +1,4 @@
+MacroModel pin core_instance1/clk_o  200.00ps 200.00ps 200.00ps 200.00ps 0pf WC_VIEW
+MacroModel pin core_instance0/clk  54.00ps 54.00ps 54.00ps 54.00ps 0pf WC_VIEW
+MacroModel pin core_instance0/clk_o  200.00ps 200.00ps 200.00ps 200.00ps 0pf WC_VIEW
+MacroModel pin core_instance1/clk  37.60ps 37.60ps 37.60ps 37.60ps 0pf WC_VIEW
