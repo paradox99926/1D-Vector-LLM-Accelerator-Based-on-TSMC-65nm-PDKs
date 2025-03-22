@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-module sram_w16_out (CLK,
+module sram_w16_out (clk,
                  D,
                  Q,
                  CEN,
@@ -12,7 +12,7 @@ module sram_w16_out (CLK,
     parameter sram_fold = sram_bit/spliter;
     parameter sram_addr = initial_addr*spliter;
 
-    input  CLK;
+    input  clk;
     input  WEN;//active low
     input  CEN;
     input  [sram_bit-1:0] D;
@@ -23,7 +23,7 @@ module sram_w16_out (CLK,
     reg [sram_fold-1:0] memory [0:sram_addr-1]; // 64 memory units, each 40 bits wide
 
     
-    always @ (posedge CLK) begin
+    always @ (posedge clk) begin
         if (!CEN && WEN) begin // read operation
             // Combine four 40bit datas into one 160bit output
             Q <= {memory[{A, 2'b11}],memory[{A, 2'b10}],memory[{A, 2'b01}],memory[{A, 2'b00}]};

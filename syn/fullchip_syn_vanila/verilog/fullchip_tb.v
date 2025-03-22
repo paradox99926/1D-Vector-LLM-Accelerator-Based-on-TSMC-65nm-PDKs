@@ -107,15 +107,15 @@ initial begin
 
   if (mode_sel) begin
       $display("##### Q data txt reading #####");
-      //qk_file = $fopen("../testdata/qdata_sparse.txt", "r");
+      qk_file = $fopen("../../testdata/qdata.txt", "r");
       //qk_file = $fopen("../../../source_file/testdata/qdata_sparse.txt", "r");
-      qk_file = $fopen("qdata_sparse.txt", "r");
+      //qk_file = $fopen("qdata_sparse.txt", "r");
   end
   else begin
       $display("##### V data txt reading #####");
-      //qk_file = $fopen("../testdata/vdata_sparse.txt", "r");
+      qk_file = $fopen("../../testdata/vdata.txt", "r");
       //qk_file = $fopen("../../../source_file/testdata/vdata_sparse.txt", "r");
-      qk_file = $fopen("vdata_sparse.txt", "r");
+      //qk_file = $fopen("vdata_sparse.txt", "r");
   end
 
 
@@ -154,13 +154,13 @@ initial begin
   reset = 0;
 
   if (mode_sel)
-      //qk_file = $fopen("./../testdata/kdata_core0_sparse.txt", "r");
+      qk_file = $fopen("../../testdata/kdata_core0.txt", "r");
       //qk_file = $fopen("../../../source_file/testdata/kdata_core0_sparse.txt", "r");
-      qk_file = $fopen("kdata_core0_sparse.txt", "r");
+      //qk_file = $fopen("kdata_core0_sparse.txt", "r");
   else
-      //qk_file = $fopen("./../testdata/norm_core0_sparse.txt", "r");
+      qk_file = $fopen("../../testdata/norm_core0.txt", "r");
       //qk_file = $fopen("../../../source_file/testdata/norm_core0_sparse.txt", "r");
-      qk_file = $fopen("norm_core0_sparse.txt", "r");
+      //qk_file = $fopen("norm_core0_sparse.txt", "r");
   
   for (q=0; q<col; q=q+1) begin
     for (j=0; j<pr; j=j+1) begin
@@ -173,13 +173,13 @@ initial begin
 
 
   if (mode_sel)
-      //qk_file = $fopen("./../testdata/kdata_core1_sparse.txt", "r");
+      qk_file = $fopen("../../testdata/kdata_core1.txt", "r");
       //qk_file = $fopen("../../../source_file/testdata/kdata_core1_sparse.txt", "r");
-      qk_file = $fopen("kdata_core1_sparse.txt", "r");
+      //qk_file = $fopen("kdata_core1_sparse.txt", "r");
   else
-      //qk_file = $fopen("./../testdata/norm_core1_sparse.txt", "r");
+      qk_file = $fopen("../../testdata/norm_core1.txt", "r");
       //qk_file = $fopen("../../../source_file/testdata/norm_core1_sparse.txt", "r");
-      qk_file = $fopen("norm_core1_sparse.txt", "r");
+      //qk_file = $fopen("norm_core1_sparse.txt", "r");
   
   for (q = 0; q<col; q = q+1) begin
       for (j = pr; j<core*pr; j = j+1) begin

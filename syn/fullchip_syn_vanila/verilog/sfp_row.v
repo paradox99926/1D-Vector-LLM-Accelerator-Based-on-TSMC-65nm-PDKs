@@ -1,11 +1,11 @@
-module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_out, div_ready);
+module sfp_row (clk, clk_o, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_out, div_ready);
 
   parameter col = 8;
   parameter bw = 8;
   parameter bw_psum = 2*bw+4;
 
 
-  input  clk, div, acc, fifo_ext_rd, reset;
+  input  clk, clk_o, div, acc, fifo_ext_rd, reset;
   input  [bw_psum+3:0] sum_in;
   input  [col*bw_psum-1:0] sfp_in;
   wire  [col*bw_psum-1:0] abs;
@@ -81,7 +81,7 @@ module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_
 
   fifo_depth16 #(.bw(bw_psum+4)) fifo_inst_ext (
      .rd_clk(clk), 
-     .wr_clk(clk), 
+     .wr_clk(clk_o), 
      .in(sum_q),
      .out(sum_out), 
      .rd(fifo_ext_rd), 

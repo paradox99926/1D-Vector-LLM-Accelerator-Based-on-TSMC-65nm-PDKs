@@ -24,6 +24,7 @@ assign clk_o = clk;
 core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance0 (
       .reset(reset), 
       .clk(clk), 
+      .clk_o(clk_o),
       .mem_in(mem_in[pr*bw*core-1:pr*bw]), 
       .inst(inst),
       .out(out_core0),
@@ -36,6 +37,7 @@ core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance0 (
 core #(.bw(bw), .bw_psum(bw_psum), .col(col), .pr(pr)) core_instance1 (
       .reset(reset), 
       .clk(clk_o), 
+      .clk_o(clk),
       .mem_in(mem_in[pr*bw-1:0]), 
       .inst(inst),
       .out(out_core1),

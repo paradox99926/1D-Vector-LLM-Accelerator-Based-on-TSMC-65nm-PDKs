@@ -1,95 +1,101 @@
-module fifo_depth16 (rd_clk, wr_clk, in, out, rd, wr, o_full, o_empty, reset);
 
-  parameter bw = 4;
-  parameter simd = 1;
+module fifo_depth16 (rd_clk,
+                     wr_clk,
+                     rd,
+                     wr,
+                     reset,
+                     o_full,
+                     o_empty,
+                     in,
+                     out);
 
-  input  rd_clk;
-  input  wr_clk;
-  input  rd;
-  input  wr;
-  input  reset;
-  output o_full;
-  output o_empty;
-  input  [simd*bw-1:0] in;
-  output [simd*bw-1:0] out;
-
-  wire full, empty;
-
-  reg [4:0] rd_ptr;
-  reg [4:0] wr_ptr;
-
-  reg [simd*bw-1:0] q0;
-  reg [simd*bw-1:0] q1;
-  reg [simd*bw-1:0] q2;
-  reg [simd*bw-1:0] q3;
-  reg [simd*bw-1:0] q4;
-  reg [simd*bw-1:0] q5;
-  reg [simd*bw-1:0] q6;
-  reg [simd*bw-1:0] q7;
-  reg [simd*bw-1:0] q8;
-  reg [simd*bw-1:0] q9;
-  reg [simd*bw-1:0] q10;
-  reg [simd*bw-1:0] q11;
-  reg [simd*bw-1:0] q12;
-  reg [simd*bw-1:0] q13;
-  reg [simd*bw-1:0] q14;
-  reg [simd*bw-1:0] q15;
-
-
- assign empty = (wr_ptr == rd_ptr) ? 1'b1 : 1'b0 ;
- assign full  = ((wr_ptr[3:0] == rd_ptr[3:0]) && (wr_ptr[4] != rd_ptr[4])) ? 1'b1 : 1'b0;
-
- assign o_full  = full;
- assign o_empty = empty;
-
-
-  fifo_mux_16_1 #(.bw(bw), .simd(simd)) fifo_mux_16_1a (.in0(q0), .in1(q1), .in2(q2), .in3(q3), .in4(q4), .in5(q5), .in6(q6), .in7(q7),
-                                 .in8(q8), .in9(q9), .in10(q10), .in11(q11), .in12(q12), .in13(q13), .in14(q14), .in15(q15),
-	                         .sel(rd_ptr[3:0]), .out(out));
-
-
- always @ (posedge rd_clk or posedge reset) begin
-   if (reset) begin
-      rd_ptr <= 5'b00000;
-   end
-   else if ((rd == 1) && (empty == 0)) begin
-      rd_ptr <= rd_ptr + 1;
-   end
- end
-
-
- always @ (posedge wr_clk or posedge reset) begin
-   if (reset) begin
-      wr_ptr <= 5'b00000;
-   end
-   else begin 
-      if ((wr == 1) && (full == 0)) begin
-        wr_ptr <= wr_ptr + 1;
-      end
-
-      if (wr == 1) begin
-        case (wr_ptr[3:0])
-         4'b0000   :    q0  <= in ;
-         4'b0001   :    q1  <= in ;
-         4'b0010   :    q2  <= in ;
-         4'b0011   :    q3  <= in ;
-         4'b0100   :    q4  <= in ;
-         4'b0101   :    q5  <= in ;
-         4'b0110   :    q6  <= in ;
-         4'b0111   :    q7  <= in ;
-         4'b1000   :    q8  <= in ;
-         4'b1001   :    q9  <= in ;
-         4'b1010   :    q10 <= in ;
-         4'b1011   :    q11 <= in ;
-         4'b1100   :    q12 <= in ;
-         4'b1101   :    q13 <= in ;
-         4'b1110   :    q14 <= in ;
-         4'b1111   :    q15 <= in ;
-        endcase
-      end
-   end
-
- end
-
-
+    parameter simd = 1;         // SIMD width
+    parameter DEPTH = 16;         // FIFO depth
+    parameter bw = 24;         // Data bw
+    
+    input          rd_clk;    // Read clock
+    input          wr_clk;    // Write clock
+    input          rd;        // Read enable
+    input          wr;        // Write enable
+    input          reset;     // Reset signal
+    output         o_full;    // FIFO full signal
+    output         o_empty;   // FIFO empty signal
+    input   [bw-1:0] in;        // 16-bit input data
+    output  [bw-1:0] out;       // 16-bit output data
+    
+    reg [bw-1:0] fifo_mem [0:DEPTH-1];  // FIFO memory
+    reg [4:0] wr_ptr;          // Write pointer
+    reg [4:0] rd_ptr;          // Read pointer
+    
+    wire [4:0] wr_ptr_gray;                // Gray code of write pointer
+    wire [4:0] rd_ptr_gray;                // Gray code of read pointer
+    reg  [4:0] wr_ptr_gray_sync1, wr_ptr_gray_sync2;  // Write pointer gray code synchronized to read clock domain
+    reg  [4:0] rd_ptr_gray_sync1, rd_ptr_gray_sync2;  // Read pointer gray code synchronized to write clock domain
+    
+    wire full, empty;                      // FIFO full and empty signals
+    
+    // Function to convert binary to Gray code
+    function [4:0] binary_to_gray(input [4:0] binary);
+        binary_to_gray = (binary >> 1) ^ binary;
+    endfunction
+    
+    // Generate Gray code pointers
+    assign wr_ptr_gray = binary_to_gray(wr_ptr);
+    assign rd_ptr_gray = binary_to_gray(rd_ptr);
+    
+    // Synchronize write pointer to read clock domain
+    always @(posedge rd_clk or posedge reset) begin
+        if (reset) begin
+            wr_ptr_gray_sync1 <= 5'b00000;
+            wr_ptr_gray_sync2 <= 5'b00000;
+            end 
+            else begin
+            wr_ptr_gray_sync1 <= wr_ptr_gray;
+            wr_ptr_gray_sync2 <= wr_ptr_gray_sync1;
+        end
+    end
+    
+    // Synchronize read pointer to write clock domain
+    always @(posedge wr_clk or posedge reset) begin
+        if (reset) begin
+            rd_ptr_gray_sync1 <= 5'b00000;
+            rd_ptr_gray_sync2 <= 5'b00000;
+            end 
+            else begin
+            rd_ptr_gray_sync1 <= rd_ptr_gray;
+            rd_ptr_gray_sync2 <= rd_ptr_gray_sync1;
+        end
+    end
+    
+    // Generate FIFO full signal
+    assign full = (wr_ptr_gray == {~rd_ptr_gray_sync2[4:3], rd_ptr_gray_sync2[2:0]});
+    
+    // Generate FIFO empty signal
+    assign empty = (wr_ptr_gray_sync2 == rd_ptr_gray);
+    
+    assign o_full  = full;
+    assign o_empty = empty;
+    
+    // Write logic
+    always @(posedge wr_clk or posedge reset) begin
+        if (reset) begin
+            wr_ptr <= 5'b00000;
+            end else if (wr && !full) begin
+            fifo_mem[wr_ptr[3:0]] <= in;  // Write data
+            wr_ptr                <= wr_ptr + 1;         // Increment write pointer
+        end
+    end
+    
+    // Read logic
+    always @(posedge rd_clk or posedge reset) begin
+        if (reset) begin
+            rd_ptr <= 5'b00000;
+            end else if (rd && !empty) begin
+            rd_ptr <= rd_ptr + 1;         // Increment read pointer
+        end
+    end
+    
+    // Output data
+    assign out = fifo_mem[rd_ptr[3:0]];
+    
 endmodule

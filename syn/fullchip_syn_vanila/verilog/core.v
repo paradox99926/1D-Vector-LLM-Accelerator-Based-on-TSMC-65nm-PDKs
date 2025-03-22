@@ -1,4 +1,4 @@
-module core (clk, sum_out, mem_in, out, inst, reset, div_ready, fifo_ext_rd, sum_in);
+module core (clk, clk_o, sum_out, mem_in, out, inst, reset, div_ready, fifo_ext_rd, sum_in);
 
 parameter col = 8;
 parameter bw = 8;
@@ -11,6 +11,7 @@ output div_ready;
 wire   [bw_psum*col-1:0] pmem_out;
 input  [pr*bw-1:0] mem_in;
 input  clk;
+input  clk_o;
 input  [19:0] inst; 
 input  reset;
 input fifo_ext_rd;
@@ -74,7 +75,7 @@ ofifo #(.bw(bw_psum), .col(col))  ofifo_inst (
 
 
 sram_w16_in #(.sram_bit(pr*bw)) qmem_instance (
-        .CLK(clk),
+        .clk(clk),
         .D(mem_in),
         .Q(qmem_out),
         .CEN(!(qmem_rd||qmem_wr)),
@@ -83,7 +84,7 @@ sram_w16_in #(.sram_bit(pr*bw)) qmem_instance (
 );
 
 sram_w16_in #(.sram_bit(pr*bw)) kmem_instance (
-        .CLK(clk),
+        .clk(clk),
         .D(mem_in),
         .Q(kmem_out),
         .CEN(!(kmem_rd||kmem_wr)),
@@ -93,7 +94,7 @@ sram_w16_in #(.sram_bit(pr*bw)) kmem_instance (
 
 
 sram_w16_out #(.sram_bit(col*bw_psum)) psum_mem_instance (
-        .CLK(clk),
+        .clk(clk),
         .D(pmem_in),
         .Q(pmem_out),
         .CEN(!(pmem_rd||pmem_wr)),
@@ -103,6 +104,7 @@ sram_w16_out #(.sram_bit(col*bw_psum)) psum_mem_instance (
 
 sfp_row #(.bw(bw), .col(col)) sfp_instance (
         .clk(clk),
+        .clk_o(clk_o),
         .reset(reset),
         .acc(sfp_acc),
         .div(sfp_div),
