@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "sram_w16_in")
-  (DATE "Fri Mar 21 19:06:33 2025")
+  (DATE "Fri Mar 21 19:48:00 2025")
   (VENDOR "Cadence Design Systems, Inc.")
   (PROGRAM "Innovus")
   (VERSION "v15.23-s045_1 ((64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5))")
@@ -777,51 +777,6 @@
 	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_6/Z Q_reg_38_/CP  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_6/Z Q_reg_37_/CP  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_6/Z Q_reg_36_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_1__27_/CP  (0.002::0.002) (0.001::0.001))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_1__21_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_3__27_/CP  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_3__21_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_5__27_/CP  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_5__21_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_5__13_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_7__27_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_7__21_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_7__13_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_9__27_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_9__21_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_9__13_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_11__27_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_11__21_/CP  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_11__13_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_13__21_/CP  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_15__27_/CP  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_15__21_/CP  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_17__21_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_17__15_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_17__13_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_19__21_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_19__15_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_19__13_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_21__19_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_21__15_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_21__13_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__21_/CP  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__19_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__15_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__13_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_25__21_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_25__15_/CP  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_25__13_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_27__15_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_27__13_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__20_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__19_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__15_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__13_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__20_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__19_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__15_/CP  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__13_/CP  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_4/Z memory_reg_0__31_/CP  (0.004::0.004) (0.004::0.004))
 	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_4/Z memory_reg_0__23_/CP  (0.007::0.007) (0.007::0.007))
 	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_4/Z memory_reg_2__31_/CP  (0.003::0.003) (0.003::0.003))
@@ -1241,11 +1196,11 @@
 	(INTERCONNECT FE_OCPC247_FE_OFN134_n682/ZN memory_reg_2__2_/E  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OCPC247_FE_OFN134_n682/ZN memory_reg_2__1_/E  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OCPC247_FE_OFN134_n682/ZN memory_reg_2__0_/E  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT FE_OCPC246_FE_OFN134_n682/ZN memory_reg_2__16_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OCPC245_FE_OFN134_n682/ZN memory_reg_2__18_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OCPC245_FE_OFN134_n682/ZN memory_reg_2__14_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OCPC245_FE_OFN134_n682/ZN memory_reg_2__9_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OCPC245_FE_OFN134_n682/ZN memory_reg_2__4_/E  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT FE_OCPC246_FE_OFN134_n682/ZN memory_reg_2__16_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OCPC244_FE_OFN134_n682/ZN memory_reg_3__29_/E  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OCPC244_FE_OFN134_n682/ZN memory_reg_3__27_/E  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OCPC244_FE_OFN134_n682/ZN memory_reg_3__25_/E  (0.002::0.002) (0.002::0.002))
@@ -1436,6 +1391,51 @@
 	(INTERCONNECT FE_OFC37_N130_dup_dup/Z memory_reg_5__5_/E  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OFC37_N130_dup_dup/Z memory_reg_5__4_/E  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OFC37_N130_dup_dup/Z memory_reg_5__0_/E  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_1__27_/CP  (0.002::0.002) (0.001::0.001))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_1__21_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_3__27_/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_3__21_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_5__27_/CP  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_5__21_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_5__13_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_7__27_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_7__21_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_7__13_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_9__27_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_9__21_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_9__13_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_11__27_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_11__21_/CP  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_11__13_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_13__21_/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_15__27_/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_15__21_/CP  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_17__21_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_17__15_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_17__13_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_19__21_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_19__15_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_19__13_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_21__19_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_21__15_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_21__13_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__21_/CP  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__19_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__15_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_23__13_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_25__21_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_25__15_/CP  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_25__13_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_27__15_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_27__13_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__20_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__19_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__15_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_29__13_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__20_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__19_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__15_/CP  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT CTS_ccl_BUF_CLK_G0_L2_5/Z memory_reg_31__13_/CP  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT FE_OFC47_n780_dup_dup/Z FE_RC_292_0/A1  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OFC47_n780_dup_dup/Z FE_RC_275_0/A1  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OFC47_n780_dup_dup/Z FE_RC_66_0/A1  (0.003::0.003) (0.003::0.003))
@@ -1833,6 +1833,29 @@
 	(INTERCONNECT FE_OFC37_N130_dup/Z memory_reg_5__3_/E  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT FE_OFC37_N130_dup/Z memory_reg_5__2_/E  (0.004::0.004) (0.004::0.004))
 	(INTERCONNECT FE_OFC37_N130_dup/Z memory_reg_5__1_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__28_/E  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__27_/E  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__24_/E  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__13_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__12_/E  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__11_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__10_/E  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__8_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__7_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__6_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__5_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__4_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__3_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__2_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__1_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__0_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__20_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__19_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__15_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__9_/E  (0.005::0.005) (0.004::0.004))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__8_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__7_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__6_/E  (0.004::0.004) (0.004::0.004))
 	(INTERCONNECT FE_OCPC194_FE_OFN102_N125/ZN memory_reg_14__30_/E  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OCPC194_FE_OFN102_N125/ZN memory_reg_14__29_/E  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OCPC194_FE_OFN102_N125/ZN memory_reg_14__26_/E  (0.001::0.001) (0.001::0.001))
@@ -1863,29 +1886,6 @@
 	(INTERCONNECT FE_RC_248_0/ZN FE_RC_247_0/A1  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_RC_249_0/ZN FE_RC_247_0/A2  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_RC_245_0/ZN FE_RC_244_0/A1  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__28_/E  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__27_/E  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__24_/E  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__13_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__12_/E  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__11_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__10_/E  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__8_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__7_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__6_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__5_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__4_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__3_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__2_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__1_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_14__0_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__20_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__19_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__15_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__9_/E  (0.005::0.005) (0.004::0.004))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__8_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__7_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OCPC196_FE_OFN102_N125/ZN memory_reg_15__6_/E  (0.004::0.004) (0.004::0.004))
 	(INTERCONNECT FE_RC_246_0/ZN FE_RC_244_0/A2  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_RC_236_0/ZN FE_RC_235_0/A1  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_RC_237_0/ZN FE_RC_235_0/A2  (0.000::0.000) (0.000::0.000))
@@ -2213,6 +2213,7 @@
 	(INTERCONNECT FE_OFC42_N127_dup_dup/Z memory_reg_11__5_/E  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OFC42_N127_dup_dup/Z memory_reg_11__4_/E  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OFC42_N127_dup_dup/Z memory_reg_11__0_/E  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT FE_RC_43_0/Z FE_RC_44_0/I  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OFC57_n730_dup/Z U763/A1  (0.007::0.007) (0.007::0.007))
 	(INTERCONNECT FE_OFC57_n730_dup/Z U996/B1  (0.006::0.006) (0.006::0.006))
 	(INTERCONNECT FE_OFC57_n730_dup/Z U1004/B1  (0.004::0.004) (0.004::0.004))
@@ -2387,7 +2388,6 @@
 	(INTERCONNECT FE_OCPC185_n779/ZN U1431/B1  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT FE_OCPC185_n779/ZN U1460/B1  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT FE_OCPC185_n779/ZN U1475/B1  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT FE_RC_43_0/Z FE_RC_44_0/I  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OCPC184_n779/ZN FE_RC_304_0/A1  (0.004::0.004) (0.004::0.004))
 	(INTERCONNECT FE_OCPC184_n779/ZN FE_RC_89_0/A1  (0.004::0.004) (0.004::0.004))
 	(INTERCONNECT FE_OCPC184_n779/ZN FE_RC_50_0/A1  (0.004::0.004) (0.004::0.004))
@@ -2521,6 +2521,33 @@
 	(INTERCONNECT FE_OFC142_n770/Z U1494/B1  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OFC142_n770/Z U1501/B1  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OFC142_n770/Z U1509/B1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__28_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__25_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__24_/E  (0.008::0.008) (0.007::0.007))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__23_/E  (0.003::0.003) (0.003::0.003))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__22_/E  (0.005::0.005) (0.005::0.005))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__21_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__20_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__18_/E  (0.008::0.008) (0.007::0.007))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__17_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__16_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__15_/E  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__14_/E  (0.008::0.008) (0.007::0.007))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__13_/E  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__12_/E  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__11_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__10_/E  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__9_/E  (0.007::0.007) (0.007::0.007))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__8_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__7_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__6_/E  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__5_/E  (0.009::0.009) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__4_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__3_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__2_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__1_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__0_/E  (0.009::0.009) (0.009::0.009))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_31__2_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OFC138_N117/ZN FE_OFC139_N117/I  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OFC137_N117/Z memory_reg_30__31_/E  (0.003::0.003) (0.003::0.003))
 	(INTERCONNECT FE_OFC137_N117/Z memory_reg_30__30_/E  (0.002::0.002) (0.002::0.002))
@@ -3795,6 +3822,22 @@
 	(INTERCONNECT D[36] memory_reg_27__4_/D  (0.002::0.003) (0.002::0.003))
 	(INTERCONNECT D[36] memory_reg_29__4_/D  (0.002::0.003) (0.002::0.003))
 	(INTERCONNECT D[36] memory_reg_31__4_/D  (0.002::0.003) (0.002::0.003))
+	(INTERCONNECT D[35] memory_reg_1__3_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[35] memory_reg_3__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_5__3_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[35] memory_reg_7__3_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[35] memory_reg_9__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_11__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_13__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_15__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_17__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_19__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_21__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_23__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_25__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_27__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_29__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[35] memory_reg_31__3_/D  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT D[34] memory_reg_1__2_/D  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT D[34] memory_reg_3__2_/D  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT D[34] memory_reg_5__2_/D  (0.003::0.003) (0.003::0.003))
@@ -3987,22 +4030,22 @@
 	(INTERCONNECT D[23] memory_reg_26__23_/D  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT D[23] memory_reg_28__23_/D  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT D[23] memory_reg_30__23_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_1__3_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[35] memory_reg_3__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_5__3_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[35] memory_reg_7__3_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[35] memory_reg_9__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_11__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_13__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_15__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_17__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_19__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_21__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_23__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_25__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_27__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_29__3_/D  (0.002::0.002) (0.002::0.002))
-	(INTERCONNECT D[35] memory_reg_31__3_/D  (0.002::0.002) (0.002::0.002))
+	(INTERCONNECT D[22] memory_reg_0__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_2__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_4__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_6__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_8__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_10__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_12__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_14__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_16__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_18__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_20__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_22__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_24__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_26__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_28__22_/D  (0.001::0.001) (0.001::0.001))
+	(INTERCONNECT D[22] memory_reg_30__22_/D  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT D[21] memory_reg_0__21_/D  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT D[21] memory_reg_2__21_/D  (0.002::0.002) (0.002::0.002))
 	(INTERCONNECT D[21] memory_reg_4__21_/D  (0.002::0.002) (0.002::0.002))
@@ -4394,49 +4437,6 @@
 	(INTERCONNECT Q_reg_27_/Q Q[27]  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT Q_reg_26_/Q Q[26]  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT Q_reg_25_/Q Q[25]  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__28_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__25_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__24_/E  (0.008::0.008) (0.007::0.007))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__23_/E  (0.003::0.003) (0.003::0.003))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__22_/E  (0.005::0.005) (0.005::0.005))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__21_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__20_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__18_/E  (0.008::0.008) (0.007::0.007))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__17_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__16_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__15_/E  (0.008::0.008) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__14_/E  (0.008::0.008) (0.007::0.007))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__13_/E  (0.008::0.008) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__12_/E  (0.008::0.008) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__11_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__10_/E  (0.008::0.008) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__9_/E  (0.007::0.007) (0.007::0.007))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__8_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__7_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__6_/E  (0.008::0.008) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__5_/E  (0.009::0.009) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__4_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__3_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__2_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__1_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__0_/E  (0.009::0.009) (0.009::0.009))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_31__2_/E  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT D[22] memory_reg_0__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_2__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_4__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_6__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_8__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_10__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_12__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_14__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_16__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_18__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_20__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_22__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_24__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_26__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_28__22_/D  (0.001::0.001) (0.001::0.001))
-	(INTERCONNECT D[22] memory_reg_30__22_/D  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT Q_reg_24_/Q Q[24]  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT Q_reg_23_/Q Q[23]  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT Q_reg_22_/Q Q[22]  (0.000::0.000) (0.000::0.000))
@@ -9421,19 +9421,6 @@
   )
 
   (CELL
-    (CELLTYPE  "AOI22D0")
-    (INSTANCE  FE_RC_127_0)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH A1 ZN  (0.028::0.028) (0.025::0.025))
-	(IOPATH A2 ZN  (0.027::0.027) (0.021::0.021))
-	(IOPATH B1 ZN  (0.038::0.038) (0.032::0.032))
-	(IOPATH B2 ZN  (0.033::0.033) (0.025::0.025))
-	)
-      )
-  )
-
-  (CELL
     (CELLTYPE  "AOI22D1")
     (INSTANCE  FE_RC_126_0)
       (DELAY
@@ -9452,6 +9439,19 @@
       (DELAY
 	(ABSOLUTE
 	(IOPATH I Z  (0.036::0.036) (0.028::0.029))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AOI22D0")
+    (INSTANCE  FE_RC_127_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.028::0.028) (0.025::0.025))
+	(IOPATH A2 ZN  (0.027::0.027) (0.021::0.021))
+	(IOPATH B1 ZN  (0.038::0.038) (0.032::0.032))
+	(IOPATH B2 ZN  (0.033::0.033) (0.025::0.025))
 	)
       )
   )
@@ -11827,24 +11827,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_0__5_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.061::0.061))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.025::0.025) (-0.018::-0.018))
-	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_0__4_)
       (DELAY
 	(ABSOLUTE
@@ -12115,24 +12097,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_1__21_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.055::0.055) (0.063::0.063))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.025::0.025) (-0.018::-0.018))
-	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_1__20_)
       (DELAY
 	(ABSOLUTE
@@ -12151,17 +12115,17 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_1__19_)
+    (INSTANCE  memory_reg_1__21_)
       (DELAY
 	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
+	(IOPATH (posedge CP) Q  (0.055::0.055) (0.063::0.063))
 	)
       )
       (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.018::-0.018))
-	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.026::0.026) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
+	(SETUPHOLD (posedge E) (posedge CP) (0.025::0.025) (-0.018::-0.018))
+	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -12180,6 +12144,24 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
 	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
 	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_1__19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.018::-0.018))
+	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.026::0.026) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -12655,17 +12637,17 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_2__23_)
+    (INSTANCE  memory_reg_0__5_)
       (DELAY
 	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.053::0.053) (0.061::0.061))
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.061::0.061))
 	)
       )
       (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.024::0.024) (-0.017::-0.017))
-	(SETUPHOLD (negedge E) (posedge CP) (0.014::0.014) (-0.002::-0.002))
+	(SETUPHOLD (posedge E) (posedge CP) (0.025::0.025) (-0.018::-0.018))
+	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
 	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
+	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -12972,6 +12954,24 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.014::0.014) (-0.002::-0.002))
 	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
 	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_2__23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.053::0.053) (0.061::0.061))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.024::0.024) (-0.017::-0.017))
+	(SETUPHOLD (negedge E) (posedge CP) (0.014::0.014) (-0.002::-0.002))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -22393,24 +22393,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_19__26_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.028::0.028) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.019::0.019) (-0.006::-0.006))
-	(SETUPHOLD (posedge D) (posedge CP) (0.026::0.026) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_19__25_)
       (DELAY
 	(ABSOLUTE
@@ -22937,24 +22919,6 @@
       (DELAY
 	(ABSOLUTE
 	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_20__27_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.055::0.057) (0.063::0.064))
 	)
       )
       (TIMINGCHECK
@@ -24823,6 +24787,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_23__19_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_23__18_)
       (DELAY
 	(ABSOLUTE
@@ -24841,15 +24823,15 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_23__17_)
+    (INSTANCE  memory_reg_19__26_)
       (DELAY
 	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.061::0.061))
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
 	)
       )
       (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.027::0.027) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.005::-0.005))
+	(SETUPHOLD (posedge E) (posedge CP) (0.028::0.028) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.019::0.019) (-0.006::-0.006))
 	(SETUPHOLD (posedge D) (posedge CP) (0.026::0.026) (-0.012::-0.012))
 	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
 	(WIDTH (posedge CP) (0.026::0.026))
@@ -25624,24 +25606,6 @@
       (TIMINGCHECK
 	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.018::-0.018))
 	(SETUPHOLD (negedge E) (posedge CP) (0.016::0.016) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_23__19_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
 	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
 	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.026::0.026))
@@ -26479,24 +26443,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_26__23_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.055::0.057) (0.063::0.064))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.025::0.025) (-0.018::-0.018))
-	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_26__22_)
       (DELAY
 	(ABSOLUTE
@@ -26591,6 +26537,24 @@
       (DELAY
 	(ABSOLUTE
 	(IOPATH (posedge CP) Q  (0.055::0.055) (0.062::0.062))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.025::0.025) (-0.018::-0.018))
+	(SETUPHOLD (negedge E) (posedge CP) (0.015::0.015) (-0.003::-0.003))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_26__23_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.055::0.057) (0.063::0.064))
 	)
       )
       (TIMINGCHECK
@@ -27577,24 +27541,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_28__26_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.056::0.056) (0.063::0.063))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_28__25_)
       (DELAY
 	(ABSOLUTE
@@ -27858,24 +27804,6 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
 	(SETUPHOLD (posedge D) (posedge CP) (0.026::0.026) (-0.012::-0.012))
 	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_28__10_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.061::0.061))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -28423,24 +28351,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_29__11_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.027::0.027) (-0.019::-0.019))
-	(SETUPHOLD (negedge E) (posedge CP) (0.018::0.018) (-0.005::-0.005))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_29__10_)
       (DELAY
 	(ABSOLUTE
@@ -28675,6 +28585,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_28__10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.061::0.061))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_30__29_)
       (DELAY
 	(ABSOLUTE
@@ -28686,24 +28614,6 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
 	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
 	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_30__28_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.056::0.056) (0.063::0.063))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.018::-0.018))
-	(SETUPHOLD (negedge E) (posedge CP) (0.016::0.016) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
-	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -30349,24 +30259,6 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  Q_reg_32_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.056::0.057) (0.063::0.064))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.034::0.034) (-0.024::-0.024))
-	(SETUPHOLD (negedge E) (posedge CP) (0.034::0.034) (-0.016::-0.016))
-	(SETUPHOLD (posedge D) (posedge CP) (0.030::0.030) (-0.015::-0.015))
-	(SETUPHOLD (negedge D) (posedge CP) (0.027::0.027) (-0.004::-0.004))
-	(WIDTH (posedge CP) (0.026::0.026))
-	(WIDTH (negedge CP) (0.029::0.029))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
     (INSTANCE  Q_reg_31_)
       (DELAY
 	(ABSOLUTE
@@ -30738,6 +30630,24 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.034::0.034) (-0.017::-0.017))
 	(SETUPHOLD (posedge D) (posedge CP) (0.028::0.028) (-0.014::-0.014))
 	(SETUPHOLD (negedge D) (posedge CP) (0.025::0.025) (-0.003::-0.003))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_20__27_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.055::0.057) (0.063::0.064))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.026::0.026))
 	(WIDTH (negedge CP) (0.029::0.029))
       )
@@ -31703,6 +31613,24 @@
   )
 
   (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_23__17_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.061::0.061))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.027::0.027) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.005::-0.005))
+	(SETUPHOLD (posedge D) (posedge CP) (0.026::0.026) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
     (CELLTYPE  "AN4D0")
     (INSTANCE  U913)
       (DELAY
@@ -31899,6 +31827,24 @@
   )
 
   (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_29__11_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.054::0.054) (0.062::0.062))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.027::0.027) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.018::0.018) (-0.005::-0.005))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
     (CELLTYPE  "ND2D2")
     (INSTANCE  U936)
       (DELAY
@@ -31978,6 +31924,60 @@
 	(IOPATH A1 ZN  (0.021::0.026) (0.020::0.023))
 	(IOPATH A2 ZN  (0.022::0.028) (0.021::0.025))
 	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_30__28_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.056::0.056) (0.063::0.063))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.018::-0.018))
+	(SETUPHOLD (negedge E) (posedge CP) (0.016::0.016) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.022::0.022) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  Q_reg_32_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.056::0.057) (0.063::0.064))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.034::0.034) (-0.024::-0.024))
+	(SETUPHOLD (negedge E) (posedge CP) (0.034::0.034) (-0.016::-0.016))
+	(SETUPHOLD (posedge D) (posedge CP) (0.030::0.030) (-0.015::-0.015))
+	(SETUPHOLD (negedge D) (posedge CP) (0.027::0.027) (-0.004::-0.004))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_28__26_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.056::0.056) (0.063::0.063))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.026::0.026) (-0.019::-0.019))
+	(SETUPHOLD (negedge E) (posedge CP) (0.017::0.017) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.025::0.025) (-0.012::-0.012))
+	(SETUPHOLD (negedge D) (posedge CP) (0.023::0.023) (-0.001::-0.001))
+	(WIDTH (posedge CP) (0.026::0.026))
+	(WIDTH (negedge CP) (0.029::0.029))
       )
   )
 

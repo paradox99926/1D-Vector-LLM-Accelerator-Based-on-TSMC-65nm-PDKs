@@ -1,6 +1,6 @@
 library (sram_w16_in ){
   delay_model : table_lookup;
-  date : "Fri Mar 21 19:06:32 2025" ;
+  date : "Fri Mar 21 19:47:59 2025" ;
   revision : "0.0" ;
   bus_naming_style : "%s[%d]" ;
   capacitive_load_unit ( 1.0000,pf);

@@ -1,7 +1,7 @@
 (DELAYFILE
   (SDFVERSION "3.0")
   (DESIGN "sram_w16_in")
-  (DATE "Fri Mar 21 19:06:21 2025")
+  (DATE "Fri Mar 21 19:47:47 2025")
   (VENDOR "Cadence Design Systems, Inc.")
   (PROGRAM "Innovus")
   (VERSION "v15.23-s045_1 ((64bit) 04/22/2016 12:32 (Linux 2.6.18-194.el5))")
@@ -2521,33 +2521,6 @@
 	(INTERCONNECT FE_OFC142_n770/Z U1494/B1  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OFC142_n770/Z U1501/B1  (0.001::0.001) (0.001::0.001))
 	(INTERCONNECT FE_OFC142_n770/Z U1509/B1  (0.000::0.000) (0.000::0.000))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__28_/E  (0.007::0.007) (0.007::0.007))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__25_/E  (0.008::0.008) (0.007::0.007))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__24_/E  (0.011::0.011) (0.011::0.011))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__23_/E  (0.004::0.004) (0.004::0.004))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__22_/E  (0.008::0.008) (0.008::0.008))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__21_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__20_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__18_/E  (0.011::0.011) (0.011::0.011))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__17_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__16_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__15_/E  (0.012::0.012) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__14_/E  (0.011::0.011) (0.011::0.011))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__13_/E  (0.012::0.012) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__12_/E  (0.012::0.012) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__11_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__10_/E  (0.012::0.012) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__9_/E  (0.010::0.010) (0.010::0.010))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__8_/E  (0.013::0.013) (0.013::0.013))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__7_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__6_/E  (0.012::0.012) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__5_/E  (0.013::0.013) (0.012::0.012))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__4_/E  (0.013::0.013) (0.013::0.013))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__3_/E  (0.013::0.013) (0.013::0.013))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__2_/E  (0.013::0.013) (0.013::0.013))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__1_/E  (0.013::0.013) (0.013::0.013))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__0_/E  (0.013::0.013) (0.013::0.013))
-	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_31__2_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OFC138_N117/ZN FE_OFC139_N117/I  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_OFC137_N117/Z memory_reg_30__31_/E  (0.005::0.005) (0.005::0.005))
 	(INTERCONNECT FE_OFC137_N117/Z memory_reg_30__30_/E  (0.003::0.003) (0.003::0.003))
@@ -5079,6 +5052,33 @@
 	(INTERCONNECT FE_RC_96_0/ZN FE_RC_58_0/A4  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT U1326/ZN FE_RC_58_0/A2  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT U1325/ZN FE_RC_58_0/A1  (0.000::0.000) (0.000::0.000))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__28_/E  (0.007::0.007) (0.007::0.007))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__25_/E  (0.008::0.008) (0.007::0.007))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__24_/E  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__23_/E  (0.004::0.004) (0.004::0.004))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__22_/E  (0.008::0.008) (0.008::0.008))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__21_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__20_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__18_/E  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__17_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__16_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__15_/E  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__14_/E  (0.011::0.011) (0.011::0.011))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__13_/E  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__12_/E  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__11_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__10_/E  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__9_/E  (0.010::0.010) (0.010::0.010))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__8_/E  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__7_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__6_/E  (0.012::0.012) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__5_/E  (0.013::0.013) (0.012::0.012))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__4_/E  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__3_/E  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__2_/E  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__1_/E  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_30__0_/E  (0.013::0.013) (0.013::0.013))
+	(INTERCONNECT FE_OFC139_N117/ZN memory_reg_31__2_/E  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT U977/ZN FE_RC_58_0/A3  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_RC_59_0/ZN U794/A1  (0.000::0.000) (0.000::0.000))
 	(INTERCONNECT FE_RC_234_0/Z U794/A2  (0.000::0.000) (0.000::0.000))
@@ -11903,6 +11903,19 @@
   )
 
   (CELL
+    (CELLTYPE  "AN4XD1")
+    (INSTANCE  FE_RC_17_0)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 Z  (0.064::0.065) (0.038::0.040))
+	(IOPATH A2 Z  (0.068::0.069) (0.041::0.044))
+	(IOPATH A3 Z  (0.067::0.068) (0.041::0.043))
+	(IOPATH A4 Z  (0.066::0.067) (0.040::0.044))
+	)
+      )
+  )
+
+  (CELL
     (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_0__0_)
       (DELAY
@@ -12084,6 +12097,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_1__22_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.082::0.082) (0.095::0.095))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.043::0.043) (-0.030::-0.030))
+	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.005::-0.005))
+	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_1__21_)
       (DELAY
 	(ABSOLUTE
@@ -12102,17 +12133,17 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_1__22_)
+    (INSTANCE  memory_reg_1__20_)
       (DELAY
 	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.082::0.082) (0.095::0.095))
+	(IOPATH (posedge CP) Q  (0.080::0.082) (0.093::0.095))
 	)
       )
       (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.043::0.043) (-0.030::-0.030))
+	(SETUPHOLD (posedge E) (posedge CP) (0.044::0.044) (-0.030::-0.030))
 	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.005::-0.005))
-	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
+	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.001::-0.001))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
       )
@@ -12329,24 +12360,6 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.005::-0.005))
 	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
 	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_1__7_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.081::0.084) (0.094::0.096))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.044::0.044) (-0.030::-0.030))
-	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.005::-0.005))
-	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
       )
@@ -13182,6 +13195,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_3__24_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.079::0.080) (0.092::0.093))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.041::0.041) (-0.028::-0.028))
+	(SETUPHOLD (negedge E) (posedge CP) (0.048::0.048) (-0.003::-0.003))
+	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.001::-0.001))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_3__23_)
       (DELAY
 	(ABSOLUTE
@@ -13668,6 +13699,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_1__7_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.081::0.084) (0.094::0.096))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.044::0.044) (-0.030::-0.030))
+	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.005::-0.005))
+	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_4__28_)
       (DELAY
 	(ABSOLUTE
@@ -13704,17 +13753,17 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_3__24_)
+    (INSTANCE  memory_reg_4__26_)
       (DELAY
 	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.079::0.080) (0.092::0.093))
+	(IOPATH (posedge CP) Q  (0.081::0.083) (0.095::0.096))
 	)
       )
       (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.041::0.041) (-0.028::-0.028))
-	(SETUPHOLD (negedge E) (posedge CP) (0.048::0.048) (-0.003::-0.003))
+	(SETUPHOLD (posedge E) (posedge CP) (0.045::0.045) (-0.031::-0.031))
+	(SETUPHOLD (negedge E) (posedge CP) (0.051::0.051) (-0.005::-0.005))
 	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.001::-0.001))
+	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
       )
@@ -13992,6 +14041,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_4__10_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.080::0.080) (0.094::0.094))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.047::0.047) (-0.033::-0.033))
+	(SETUPHOLD (negedge E) (posedge CP) (0.052::0.052) (-0.007::-0.007))
+	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_4__9_)
       (DELAY
 	(ABSOLUTE
@@ -14092,73 +14159,6 @@
 	(SETUPHOLD (posedge E) (posedge CP) (0.047::0.047) (-0.033::-0.033))
 	(SETUPHOLD (negedge E) (posedge CP) (0.052::0.052) (-0.007::-0.007))
 	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_4__10_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.080::0.080) (0.094::0.094))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.047::0.047) (-0.033::-0.033))
-	(SETUPHOLD (negedge E) (posedge CP) (0.052::0.052) (-0.007::-0.007))
-	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "AN4XD1")
-    (INSTANCE  FE_RC_17_0)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH A1 Z  (0.064::0.065) (0.038::0.040))
-	(IOPATH A2 Z  (0.068::0.069) (0.041::0.044))
-	(IOPATH A3 Z  (0.067::0.068) (0.041::0.043))
-	(IOPATH A4 Z  (0.066::0.067) (0.040::0.044))
-	)
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_1__20_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.080::0.082) (0.093::0.095))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.044::0.044) (-0.030::-0.030))
-	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.005::-0.005))
-	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.001::-0.001))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_4__26_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.081::0.083) (0.095::0.096))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.045::0.045) (-0.031::-0.031))
-	(SETUPHOLD (negedge E) (posedge CP) (0.051::0.051) (-0.005::-0.005))
-	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
 	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (-0.000::-0.000))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
@@ -14538,24 +14538,6 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.053::0.053) (-0.007::-0.007))
 	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
 	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.000::-0.000))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_5__14_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.080::0.080) (0.094::0.094))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.048::0.048) (-0.034::-0.034))
-	(SETUPHOLD (negedge E) (posedge CP) (0.053::0.053) (-0.007::-0.007))
-	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (0.000::0.000))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
       )
@@ -15762,6 +15744,24 @@
 	(SETUPHOLD (negedge E) (posedge CP) (0.051::0.051) (-0.006::-0.006))
 	(SETUPHOLD (posedge D) (posedge CP) (0.036::0.036) (-0.018::-0.018))
 	(SETUPHOLD (negedge D) (posedge CP) (0.033::0.033) (-0.000::-0.000))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_5__14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.080::0.080) (0.094::0.094))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.048::0.048) (-0.034::-0.034))
+	(SETUPHOLD (negedge E) (posedge CP) (0.053::0.053) (-0.007::-0.007))
+	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (0.000::0.000))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
       )
@@ -23761,6 +23761,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  memory_reg_21__14_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.081::0.081) (0.094::0.094))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.044::0.044) (-0.031::-0.031))
+	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.004::-0.004))
+	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
+	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (0.000::0.000))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  memory_reg_21__13_)
       (DELAY
 	(ABSOLUTE
@@ -30277,6 +30295,24 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
+    (INSTANCE  Q_reg_35_)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH (posedge CP) Q  (0.093::0.099) (0.104::0.108))
+	)
+      )
+      (TIMINGCHECK
+	(SETUPHOLD (posedge E) (posedge CP) (0.072::0.072) (-0.054::-0.054))
+	(SETUPHOLD (negedge E) (posedge CP) (0.075::0.075) (-0.026::-0.026))
+	(SETUPHOLD (posedge D) (posedge CP) (0.043::0.043) (-0.024::-0.024))
+	(SETUPHOLD (negedge D) (posedge CP) (0.038::0.038) (-0.006::-0.006))
+	(WIDTH (posedge CP) (0.037::0.037))
+	(WIDTH (negedge CP) (0.055::0.055))
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "EDFQD1")
     (INSTANCE  Q_reg_34_)
       (DELAY
 	(ABSOLUTE
@@ -30835,17 +30871,17 @@
 
   (CELL
     (CELLTYPE  "EDFQD1")
-    (INSTANCE  Q_reg_35_)
+    (INSTANCE  Q_reg_3_)
       (DELAY
 	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.093::0.099) (0.104::0.108))
+	(IOPATH (posedge CP) Q  (0.084::0.084) (0.097::0.097))
 	)
       )
       (TIMINGCHECK
 	(SETUPHOLD (posedge E) (posedge CP) (0.072::0.072) (-0.054::-0.054))
-	(SETUPHOLD (negedge E) (posedge CP) (0.075::0.075) (-0.026::-0.026))
-	(SETUPHOLD (posedge D) (posedge CP) (0.043::0.043) (-0.024::-0.024))
-	(SETUPHOLD (negedge D) (posedge CP) (0.038::0.038) (-0.006::-0.006))
+	(SETUPHOLD (negedge E) (posedge CP) (0.075::0.075) (-0.027::-0.027))
+	(SETUPHOLD (posedge D) (posedge CP) (0.043::0.043) (-0.022::-0.022))
+	(SETUPHOLD (negedge D) (posedge CP) (0.045::0.045) (-0.011::-0.011))
 	(WIDTH (posedge CP) (0.037::0.037))
 	(WIDTH (negedge CP) (0.055::0.055))
       )
@@ -34022,6 +34058,19 @@
   )
 
   (CELL
+    (CELLTYPE  "AOI22D1")
+    (INSTANCE  U1152)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.047::0.050) (0.035::0.038))
+	(IOPATH A2 ZN  (0.035::0.038) (0.021::0.023))
+	(IOPATH B1 ZN  (0.051::0.054) (0.041::0.044))
+	(IOPATH B2 ZN  (0.043::0.046) (0.027::0.029))
+	)
+      )
+  )
+
+  (CELL
     (CELLTYPE  "AOI22D0")
     (INSTANCE  U1153)
       (DELAY
@@ -34374,13 +34423,13 @@
 
   (CELL
     (CELLTYPE  "AOI22D1")
-    (INSTANCE  U1152)
+    (INSTANCE  U1189)
       (DELAY
 	(ABSOLUTE
-	(IOPATH A1 ZN  (0.047::0.050) (0.035::0.038))
-	(IOPATH A2 ZN  (0.035::0.038) (0.021::0.023))
-	(IOPATH B1 ZN  (0.051::0.054) (0.041::0.044))
-	(IOPATH B2 ZN  (0.043::0.046) (0.027::0.029))
+	(IOPATH A1 ZN  (0.045::0.045) (0.034::0.034))
+	(IOPATH A2 ZN  (0.034::0.034) (0.021::0.021))
+	(IOPATH B1 ZN  (0.051::0.051) (0.042::0.042))
+	(IOPATH B2 ZN  (0.042::0.042) (0.026::0.026))
 	)
       )
   )
@@ -35140,19 +35189,6 @@
   )
 
   (CELL
-    (CELLTYPE  "AOI22D1")
-    (INSTANCE  U1189)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH A1 ZN  (0.045::0.045) (0.034::0.034))
-	(IOPATH A2 ZN  (0.034::0.034) (0.021::0.021))
-	(IOPATH B1 ZN  (0.051::0.051) (0.042::0.042))
-	(IOPATH B2 ZN  (0.042::0.042) (0.026::0.026))
-	)
-      )
-  )
-
-  (CELL
     (CELLTYPE  "AOI22D0")
     (INSTANCE  U1258)
       (DELAY
@@ -35486,6 +35522,19 @@
 	(IOPATH A2 ZN  (0.046::0.046) (0.027::0.027))
 	(IOPATH B1 ZN  (0.065::0.065) (0.050::0.050))
 	(IOPATH B2 ZN  (0.054::0.054) (0.034::0.034))
+	)
+      )
+  )
+
+  (CELL
+    (CELLTYPE  "AOI22D0")
+    (INSTANCE  U1290)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.056::0.062) (0.045::0.048))
+	(IOPATH A2 ZN  (0.045::0.050) (0.027::0.030))
+	(IOPATH B1 ZN  (0.064::0.069) (0.047::0.050))
+	(IOPATH B2 ZN  (0.054::0.059) (0.034::0.036))
 	)
       )
   )
@@ -35942,55 +35991,6 @@
 	(IOPATH B1 ZN  (0.060::0.060) (0.047::0.047))
 	(IOPATH B2 ZN  (0.052::0.052) (0.032::0.032))
 	)
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  memory_reg_21__14_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.081::0.081) (0.094::0.094))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.044::0.044) (-0.031::-0.031))
-	(SETUPHOLD (negedge E) (posedge CP) (0.050::0.050) (-0.004::-0.004))
-	(SETUPHOLD (posedge D) (posedge CP) (0.035::0.035) (-0.018::-0.018))
-	(SETUPHOLD (negedge D) (posedge CP) (0.032::0.032) (0.000::0.000))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "AOI22D0")
-    (INSTANCE  U1290)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH A1 ZN  (0.056::0.062) (0.045::0.048))
-	(IOPATH A2 ZN  (0.045::0.050) (0.027::0.030))
-	(IOPATH B1 ZN  (0.064::0.069) (0.047::0.050))
-	(IOPATH B2 ZN  (0.054::0.059) (0.034::0.036))
-	)
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "EDFQD1")
-    (INSTANCE  Q_reg_3_)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH (posedge CP) Q  (0.084::0.084) (0.097::0.097))
-	)
-      )
-      (TIMINGCHECK
-	(SETUPHOLD (posedge E) (posedge CP) (0.072::0.072) (-0.054::-0.054))
-	(SETUPHOLD (negedge E) (posedge CP) (0.075::0.075) (-0.027::-0.027))
-	(SETUPHOLD (posedge D) (posedge CP) (0.043::0.043) (-0.022::-0.022))
-	(SETUPHOLD (negedge D) (posedge CP) (0.045::0.045) (-0.011::-0.011))
-	(WIDTH (posedge CP) (0.037::0.037))
-	(WIDTH (negedge CP) (0.055::0.055))
       )
   )
 
@@ -37737,6 +37737,19 @@
   )
 
   (CELL
+    (CELLTYPE  "AOI22D0")
+    (INSTANCE  U1496)
+      (DELAY
+	(ABSOLUTE
+	(IOPATH A1 ZN  (0.055::0.055) (0.044::0.044))
+	(IOPATH A2 ZN  (0.046::0.046) (0.028::0.028))
+	(IOPATH B1 ZN  (0.064::0.064) (0.050::0.050))
+	(IOPATH B2 ZN  (0.055::0.055) (0.034::0.034))
+	)
+      )
+  )
+
+  (CELL
     (CELLTYPE  "AOI22D1")
     (INSTANCE  U1497)
       (DELAY
@@ -38005,19 +38018,6 @@
 	(IOPATH A2 ZN  (0.052::0.052) (0.031::0.031))
 	(IOPATH B1 ZN  (0.061::0.061) (0.041::0.041))
 	(IOPATH B2 ZN  (0.060::0.060) (0.038::0.038))
-	)
-      )
-  )
-
-  (CELL
-    (CELLTYPE  "AOI22D0")
-    (INSTANCE  U1496)
-      (DELAY
-	(ABSOLUTE
-	(IOPATH A1 ZN  (0.055::0.055) (0.044::0.044))
-	(IOPATH A2 ZN  (0.046::0.046) (0.028::0.028))
-	(IOPATH B1 ZN  (0.064::0.064) (0.050::0.050))
-	(IOPATH B2 ZN  (0.055::0.055) (0.034::0.034))
 	)
       )
   )
