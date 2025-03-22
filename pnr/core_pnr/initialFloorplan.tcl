@@ -15,7 +15,7 @@ globalNetConnect VDD -type pgpin -pin VDD -inst * -verbose
 globalNetConnect VSS -type pgpin -pin VSS -inst * -verbose
 
 # Add ring
-addRing -spacing {top 5 bottom 5 left 5 right 5} 	\
+#addRing -spacing {top 5 bottom 5 left 5 right 5} 	\
 	-width {top 10 bottom 10 left 10 right 10}		\
 	-layer {top M1 bottom M1 left M2 right M2}	\
        	-center 1 					\
