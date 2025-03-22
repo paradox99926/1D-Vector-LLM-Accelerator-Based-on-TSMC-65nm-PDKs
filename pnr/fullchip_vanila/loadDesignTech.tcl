@@ -1,0 +1,50 @@
+setMultiCpuUsage -localCpu 8
+#Load design
+set desdir 		"/home/linux/ieng6/ee260bwi25/public/DESIGNdata"
+set libdir 		"/home/linux/ieng6/ee260bwi25/public/PDKdata"
+set design 		"fullchip"
+set netlist 	"./netlist/$design.v"
+set sdc 		"./constraints/$design.sdc"
+set lef 		"$libdir/lef/tcbn65gplus_8lmT2.lef"
+
+set best_timing_lib 	"$libdir/lib/tcbn65gplusbc.lib"
+set worst_timing_lib 	"$libdir/lib/tcbn65gpluswc.lib"
+set typical_timing_lib 	"$libdir/lib/tcbn65gplustc.lib"
+
+set best_captbl 	"$libdir/captbl/cln65g+_1p08m+alrdl_top2_cbest.captable"
+set worst_captbl 	"$libdir/captbl/cln65g+_1p08m+alrdl_top2_cworst.captable"
+
+# default settings
+set init_pwr_net "VDD"
+set init_gnd_net "VSS"
+
+# default settings
+set init_verilog "$netlist"
+set init_design_netlisttype "Verilog"
+set init_design_settop 1
+set init_top_cell "$design"
+set init_lef_file "$lef ./subckt/sram_w16_in.lef ./subckt/sram_w16_out.lef"
+
+# MCMM setup
+create_library_set -name WC_LIB -timing "$worst_timing_lib ./subckt/sram_w16_in_WC.lib ./subckt/sram_w16_out_WC.lib"
+create_library_set -name BC_LIB -timing "$best_timing_lib ./subckt/sram_w16_in_BC.lib ./subckt/sram_w16_out_BC.lib"
+create_library_set -name TC_LIB -timing "$typical_timing_lib ./subckt/sram_w16_in_TC.lib ./subckt/sram_w16_out_TC.lib"
+
+create_rc_corner -name Cmax -cap_table $worst_captbl -T 125
+create_rc_corner -name Cmin -cap_table $best_captbl -T -40
+
+create_delay_corner -name WC -library_set WC_LIB -rc_corner Cmax
+create_delay_corner -name BC -library_set BC_LIB -rc_corner Cmin
+create_delay_corner -name TC -library_set TC_LIB -rc_corner Cmax
+
+create_constraint_mode -name CON -sdc_file [list $sdc]
+
+create_analysis_view -name WC_VIEW -delay_corner WC -constraint_mode CON
+create_analysis_view -name BC_VIEW -delay_corner BC -constraint_mode CON
+create_analysis_view -name TC_VIEW -delay_corner TC -constraint_mode CON
+
+init_design -setup {WC_VIEW} -hold {BC_VIEW}
+
+set_interactive_constraint_modes {CON}
+setDesignMode -process 65
+
