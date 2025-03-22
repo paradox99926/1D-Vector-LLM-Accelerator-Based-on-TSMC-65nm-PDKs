@@ -107,11 +107,15 @@ initial begin
 
   if (mode_sel) begin
       $display("##### Q data txt reading #####");
-      qk_file = $fopen("../testdata/qdata_sparse.txt", "r");
+      //qk_file = $fopen("../testdata/qdata_sparse.txt", "r");
+      //qk_file = $fopen("../../../source_file/testdata/qdata_sparse.txt", "r");
+      qk_file = $fopen("qdata_sparse.txt", "r");
   end
   else begin
       $display("##### V data txt reading #####");
-      qk_file = $fopen("../testdata/vdata_sparse.txt", "r");
+      //qk_file = $fopen("../testdata/vdata_sparse.txt", "r");
+      //qk_file = $fopen("../../../source_file/testdata/vdata_sparse.txt", "r");
+      qk_file = $fopen("vdata_sparse.txt", "r");
   end
 
 
@@ -150,9 +154,13 @@ initial begin
   reset = 0;
 
   if (mode_sel)
-      qk_file = $fopen("./../testdata/kdata_core0_sparse.txt", "r");
+      //qk_file = $fopen("./../testdata/kdata_core0_sparse.txt", "r");
+      //qk_file = $fopen("../../../source_file/testdata/kdata_core0_sparse.txt", "r");
+      qk_file = $fopen("kdata_core0_sparse.txt", "r");
   else
-      qk_file = $fopen("./../testdata/norm_core0_sparse.txt", "r");
+      //qk_file = $fopen("./../testdata/norm_core0_sparse.txt", "r");
+      //qk_file = $fopen("../../../source_file/testdata/norm_core0_sparse.txt", "r");
+      qk_file = $fopen("norm_core0_sparse.txt", "r");
   
   for (q=0; q<col; q=q+1) begin
     for (j=0; j<pr; j=j+1) begin
@@ -165,9 +173,13 @@ initial begin
 
 
   if (mode_sel)
-      qk_file = $fopen("./../testdata/kdata_core1_sparse.txt", "r");
+      //qk_file = $fopen("./../testdata/kdata_core1_sparse.txt", "r");
+      //qk_file = $fopen("../../../source_file/testdata/kdata_core1_sparse.txt", "r");
+      qk_file = $fopen("kdata_core1_sparse.txt", "r");
   else
-      qk_file = $fopen("./../testdata/norm_core1_sparse.txt", "r");
+      //qk_file = $fopen("./../testdata/norm_core1_sparse.txt", "r");
+      //qk_file = $fopen("../../../source_file/testdata/norm_core1_sparse.txt", "r");
+      qk_file = $fopen("norm_core1_sparse.txt", "r");
   
   for (q = 0; q<col; q = q+1) begin
       for (j = pr; j<core*pr; j = j+1) begin
@@ -198,6 +210,8 @@ $display("##### Estimated multiplication and norm result #####");
 
   for (t=0; t<total_cycle; t=t+1) begin
     temp_sum = 0;
+    temp_sum_core0 = 0;
+    temp_sum_core1 = 0;
     for (q=0; q<col; q=q+1) begin
       for (k=0; k<pr; k=k+1) begin
         result[t][q] = result[t][q] + Q[t][k] * K[q][k];
@@ -215,13 +229,14 @@ $display("##### Estimated multiplication and norm result #####");
         temp5b_core1 = temp5b_core1[bw_psum-1] ? (~temp5b_core1 + 1) : temp5b_core1;  // abs
         temp_sum_core0 = temp_sum_core0 + temp5b_core0;
         temp_sum_core1 = temp_sum_core1 + temp5b_core1;
-        //$display("prd sum0: %6h", temp_sum_core0);
-        //$display("prd sum1: %6h", temp_sum_core1);
-        temp_sum = temp_sum_core0 + temp_sum_core1;
+        
+        temp_sum = temp_sum_core0[bw_psum+3:6] + temp_sum_core1[bw_psum+3:6];
     end
     sum[t] = temp_sum;
+    $display("prd sum0@cycle%2d: %6h",t, temp_sum_core0);
+    $display("prd sum1@cycle%2d: %6h",t, temp_sum_core1);
     //$display("%d %d %d %d %d %d %d %d", result[t][0], result[t][1], result[t][2], result[t][3], result[t][4], result[t][5], result[t][6], result[t][7]);
-    //$display("sum @cycle%2d: %6h", t, sum[t]);
+    $display("sum two core @cycle%2d: %6h", t, sum[t]);
     $display("prd core0&core1 @cycle%2d: %80h", t, {temp16b_core0, temp16b_core1});
   end
 
@@ -235,8 +250,8 @@ $display("##### Estimated norm result #####");
         temp5b_core1 = result[t][q+col];
         temp5b_core0 = temp5b_core0[bw_psum-1] ? (~temp5b_core0 + 1) : temp5b_core0;
         temp5b_core1 = temp5b_core1[bw_psum-1] ? (~temp5b_core1 + 1) : temp5b_core1;
-        norm5b_core0 = temp5b_core0 / sum[t][23:6];
-        norm5b_core1 = temp5b_core1 / sum[t][23:6];
+        norm5b_core0 = temp5b_core0 / sum[t];
+        norm5b_core1 = temp5b_core1 / sum[t];
         //$display("norm5b[%2d][%2d]: %5h", t, q, norm5b);
         norm16b_core0 = {norm16b_core0[139:0], norm5b_core0};
         norm16b_core1 = {norm16b_core1[139:0], norm5b_core1};

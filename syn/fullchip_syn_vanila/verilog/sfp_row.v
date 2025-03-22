@@ -37,7 +37,7 @@ module sfp_row (clk, reset, acc, div, fifo_ext_rd, sum_in, sum_out, sfp_in, sfp_
   reg [bw_psum+3:0] sum_q;
   reg fifo_wr;
 
-  assign div_ready = div;
+  assign div_ready = div_q;
   assign sfp_in_sign0 =  sfp_in[bw_psum*1-1 : bw_psum*0];
   assign sfp_in_sign1 =  sfp_in[bw_psum*2-1 : bw_psum*1];
   assign sfp_in_sign2 =  sfp_in[bw_psum*3-1 : bw_psum*2];
