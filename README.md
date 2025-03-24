@@ -23,3 +23,9 @@ Root Directory
 └── source_file
 ```
 
+## Post Route Result
+
+![single core](images/core.png)![single core with scan chain](images/core_with_scan_chain.png)
+
+![fullchip](images/fullchip.png) ![full chip with scan chain](images/fullchip_with_scan_chain.png)
+
