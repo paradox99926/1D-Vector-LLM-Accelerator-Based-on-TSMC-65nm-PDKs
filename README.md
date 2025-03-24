@@ -5,8 +5,14 @@
 1D Vector LLM accelerator, course project for ECE 260B VLSI Integrated Circuits & Systems Design (Prof. Mingu Kang). 
 
 - The design aims to speed up Q * K calculation of transformers.
-- For simplicity, we use normalization instead of softmax.
+- For simplicity, we use normalization instead of SoftMax.
 - The results are unsigned number
+
+Tools:
+
+- Synthesis: Design Compiler
+- P&R: Innovus
+- Gate-level simulation: Xcelium
 
 ## File Structure
 
@@ -25,7 +31,8 @@ Root Directory
 
 ## Post Route Result
 
-![single core](images/core.png)![single core with scan chain](images/core_with_scan_chain.png)
-
-![fullchip](images/fullchip.png) ![full chip with scan chain](images/fullchip_with_scan_chain.png)
+|           | vanilla                          | with scan chain                                  |
+| --------- | -------------------------------- | ------------------------------------------------ |
+| core      | ![single core](images/core.png)  | ![single core](images/core_with_scan_chain.png)  |
+| full chip | ![fullchip](images/fullchip.png) | ![fullchip](images/fullchip_with_scan_chain.png) |
 
