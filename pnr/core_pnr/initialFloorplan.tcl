@@ -28,7 +28,7 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-block_ring_top_layer_limit M1		\
 		-max_same_layer_jog_length 0.8		\
 		-padcore_ring_bottom_layer_limit M1	\
-		-number_of_sets 10			\
+		-number_of_sets 20			\
 		-skip_via_on_pin Standardcell		\
 		-stacked_via_top_layer M8		\
 		-padcore_ring_top_layer_limit M1	\

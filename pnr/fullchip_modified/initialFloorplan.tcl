@@ -39,9 +39,9 @@ addStripe	-skip_via_on_wire_shape Noshape		\
 		-skip_via_on_pin Standardcell		\
 		-stacked_via_top_layer M8		\
 		-padcore_ring_top_layer_limit M1	\
-		-spacing 0.4				\
+		-spacing 1				\
 		-merge_stripes_value 0.1		\
-		-direction horizontal			\
+		-direction vertical			\
 		-layer M7				\
 		-block_ring_bottom_layer_limit M1	\
 		-width 2				\

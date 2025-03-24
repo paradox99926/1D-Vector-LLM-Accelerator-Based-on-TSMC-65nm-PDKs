@@ -22,4 +22,6 @@ optDesign -postRoute -setup -hold
 optDesign -postRoute -drv
 optDesign -postRoute -inc
 
+addFiller -cell {FILL FILL4 DCAP8 DCAP16 DCAP32} -merge true
+
 saveDesign route.enc
