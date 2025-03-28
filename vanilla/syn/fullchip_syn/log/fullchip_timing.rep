@@ -1,0 +1,1919 @@
+Warning: Design 'fullchip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 100
+        -transition_time
+        -capacitance
+Design : fullchip
+Version: K-2015.06-SP2
+Date   : Sat Mar 22 00:04:43 2025
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn65gplustc
+Wire Load Model Mode: segmented
+
+  Startpoint: core_instance1/out[159] (internal pin)
+  Endpoint: out[319] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[159] (core)                    0.000     0.000      0.000 r
+  out[319] (net)                 1        0.050               0.000      0.000 r
+  out[319] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[158] (internal pin)
+  Endpoint: out[318] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[158] (core)                    0.000     0.000      0.000 r
+  out[318] (net)                 1        0.050               0.000      0.000 r
+  out[318] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[157] (internal pin)
+  Endpoint: out[317] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[157] (core)                    0.000     0.000      0.000 r
+  out[317] (net)                 1        0.050               0.000      0.000 r
+  out[317] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[156] (internal pin)
+  Endpoint: out[316] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[156] (core)                    0.000     0.000      0.000 r
+  out[316] (net)                 1        0.050               0.000      0.000 r
+  out[316] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[155] (internal pin)
+  Endpoint: out[315] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[155] (core)                    0.000     0.000      0.000 r
+  out[315] (net)                 1        0.050               0.000      0.000 r
+  out[315] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[154] (internal pin)
+  Endpoint: out[314] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[154] (core)                    0.000     0.000      0.000 r
+  out[314] (net)                 1        0.050               0.000      0.000 r
+  out[314] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[153] (internal pin)
+  Endpoint: out[313] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[153] (core)                    0.000     0.000      0.000 r
+  out[313] (net)                 1        0.050               0.000      0.000 r
+  out[313] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[152] (internal pin)
+  Endpoint: out[312] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[152] (core)                    0.000     0.000      0.000 r
+  out[312] (net)                 1        0.050               0.000      0.000 r
+  out[312] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[151] (internal pin)
+  Endpoint: out[311] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[151] (core)                    0.000     0.000      0.000 r
+  out[311] (net)                 1        0.050               0.000      0.000 r
+  out[311] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[150] (internal pin)
+  Endpoint: out[310] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[150] (core)                    0.000     0.000      0.000 r
+  out[310] (net)                 1        0.050               0.000      0.000 r
+  out[310] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[149] (internal pin)
+  Endpoint: out[309] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[149] (core)                    0.000     0.000      0.000 r
+  out[309] (net)                 1        0.050               0.000      0.000 r
+  out[309] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[148] (internal pin)
+  Endpoint: out[308] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[148] (core)                    0.000     0.000      0.000 r
+  out[308] (net)                 1        0.050               0.000      0.000 r
+  out[308] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[147] (internal pin)
+  Endpoint: out[307] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[147] (core)                    0.000     0.000      0.000 r
+  out[307] (net)                 1        0.050               0.000      0.000 r
+  out[307] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[146] (internal pin)
+  Endpoint: out[306] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[146] (core)                    0.000     0.000      0.000 r
+  out[306] (net)                 1        0.050               0.000      0.000 r
+  out[306] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[145] (internal pin)
+  Endpoint: out[305] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[145] (core)                    0.000     0.000      0.000 r
+  out[305] (net)                 1        0.050               0.000      0.000 r
+  out[305] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[144] (internal pin)
+  Endpoint: out[304] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[144] (core)                    0.000     0.000      0.000 r
+  out[304] (net)                 1        0.050               0.000      0.000 r
+  out[304] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[143] (internal pin)
+  Endpoint: out[303] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[143] (core)                    0.000     0.000      0.000 r
+  out[303] (net)                 1        0.050               0.000      0.000 r
+  out[303] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[142] (internal pin)
+  Endpoint: out[302] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[142] (core)                    0.000     0.000      0.000 r
+  out[302] (net)                 1        0.050               0.000      0.000 r
+  out[302] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[141] (internal pin)
+  Endpoint: out[301] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[141] (core)                    0.000     0.000      0.000 r
+  out[301] (net)                 1        0.050               0.000      0.000 r
+  out[301] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[140] (internal pin)
+  Endpoint: out[300] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[140] (core)                    0.000     0.000      0.000 r
+  out[300] (net)                 1        0.050               0.000      0.000 r
+  out[300] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[139] (internal pin)
+  Endpoint: out[299] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[139] (core)                    0.000     0.000      0.000 r
+  out[299] (net)                 1        0.050               0.000      0.000 r
+  out[299] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[138] (internal pin)
+  Endpoint: out[298] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[138] (core)                    0.000     0.000      0.000 r
+  out[298] (net)                 1        0.050               0.000      0.000 r
+  out[298] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[137] (internal pin)
+  Endpoint: out[297] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[137] (core)                    0.000     0.000      0.000 r
+  out[297] (net)                 1        0.050               0.000      0.000 r
+  out[297] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[136] (internal pin)
+  Endpoint: out[296] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[136] (core)                    0.000     0.000      0.000 r
+  out[296] (net)                 1        0.050               0.000      0.000 r
+  out[296] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[135] (internal pin)
+  Endpoint: out[295] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[135] (core)                    0.000     0.000      0.000 r
+  out[295] (net)                 1        0.050               0.000      0.000 r
+  out[295] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[134] (internal pin)
+  Endpoint: out[294] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[134] (core)                    0.000     0.000      0.000 r
+  out[294] (net)                 1        0.050               0.000      0.000 r
+  out[294] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[133] (internal pin)
+  Endpoint: out[293] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[133] (core)                    0.000     0.000      0.000 r
+  out[293] (net)                 1        0.050               0.000      0.000 r
+  out[293] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[132] (internal pin)
+  Endpoint: out[292] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[132] (core)                    0.000     0.000      0.000 r
+  out[292] (net)                 1        0.050               0.000      0.000 r
+  out[292] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[131] (internal pin)
+  Endpoint: out[291] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[131] (core)                    0.000     0.000      0.000 r
+  out[291] (net)                 1        0.050               0.000      0.000 r
+  out[291] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[130] (internal pin)
+  Endpoint: out[290] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[130] (core)                    0.000     0.000      0.000 r
+  out[290] (net)                 1        0.050               0.000      0.000 r
+  out[290] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[129] (internal pin)
+  Endpoint: out[289] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[129] (core)                    0.000     0.000      0.000 r
+  out[289] (net)                 1        0.050               0.000      0.000 r
+  out[289] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[128] (internal pin)
+  Endpoint: out[288] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[128] (core)                    0.000     0.000      0.000 r
+  out[288] (net)                 1        0.050               0.000      0.000 r
+  out[288] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[127] (internal pin)
+  Endpoint: out[287] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[127] (core)                    0.000     0.000      0.000 r
+  out[287] (net)                 1        0.050               0.000      0.000 r
+  out[287] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[126] (internal pin)
+  Endpoint: out[286] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[126] (core)                    0.000     0.000      0.000 r
+  out[286] (net)                 1        0.050               0.000      0.000 r
+  out[286] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[125] (internal pin)
+  Endpoint: out[285] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[125] (core)                    0.000     0.000      0.000 r
+  out[285] (net)                 1        0.050               0.000      0.000 r
+  out[285] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[124] (internal pin)
+  Endpoint: out[284] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[124] (core)                    0.000     0.000      0.000 r
+  out[284] (net)                 1        0.050               0.000      0.000 r
+  out[284] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[123] (internal pin)
+  Endpoint: out[283] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[123] (core)                    0.000     0.000      0.000 r
+  out[283] (net)                 1        0.050               0.000      0.000 r
+  out[283] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[122] (internal pin)
+  Endpoint: out[282] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[122] (core)                    0.000     0.000      0.000 r
+  out[282] (net)                 1        0.050               0.000      0.000 r
+  out[282] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[121] (internal pin)
+  Endpoint: out[281] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[121] (core)                    0.000     0.000      0.000 r
+  out[281] (net)                 1        0.050               0.000      0.000 r
+  out[281] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[120] (internal pin)
+  Endpoint: out[280] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[120] (core)                    0.000     0.000      0.000 r
+  out[280] (net)                 1        0.050               0.000      0.000 r
+  out[280] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[119] (internal pin)
+  Endpoint: out[279] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[119] (core)                    0.000     0.000      0.000 r
+  out[279] (net)                 1        0.050               0.000      0.000 r
+  out[279] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[118] (internal pin)
+  Endpoint: out[278] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[118] (core)                    0.000     0.000      0.000 r
+  out[278] (net)                 1        0.050               0.000      0.000 r
+  out[278] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[117] (internal pin)
+  Endpoint: out[277] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[117] (core)                    0.000     0.000      0.000 r
+  out[277] (net)                 1        0.050               0.000      0.000 r
+  out[277] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[116] (internal pin)
+  Endpoint: out[276] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[116] (core)                    0.000     0.000      0.000 r
+  out[276] (net)                 1        0.050               0.000      0.000 r
+  out[276] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[115] (internal pin)
+  Endpoint: out[275] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[115] (core)                    0.000     0.000      0.000 r
+  out[275] (net)                 1        0.050               0.000      0.000 r
+  out[275] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[114] (internal pin)
+  Endpoint: out[274] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[114] (core)                    0.000     0.000      0.000 r
+  out[274] (net)                 1        0.050               0.000      0.000 r
+  out[274] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[113] (internal pin)
+  Endpoint: out[273] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[113] (core)                    0.000     0.000      0.000 r
+  out[273] (net)                 1        0.050               0.000      0.000 r
+  out[273] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[112] (internal pin)
+  Endpoint: out[272] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[112] (core)                    0.000     0.000      0.000 r
+  out[272] (net)                 1        0.050               0.000      0.000 r
+  out[272] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[111] (internal pin)
+  Endpoint: out[271] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[111] (core)                    0.000     0.000      0.000 r
+  out[271] (net)                 1        0.050               0.000      0.000 r
+  out[271] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[110] (internal pin)
+  Endpoint: out[270] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[110] (core)                    0.000     0.000      0.000 r
+  out[270] (net)                 1        0.050               0.000      0.000 r
+  out[270] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[109] (internal pin)
+  Endpoint: out[269] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[109] (core)                    0.000     0.000      0.000 r
+  out[269] (net)                 1        0.050               0.000      0.000 r
+  out[269] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[108] (internal pin)
+  Endpoint: out[268] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[108] (core)                    0.000     0.000      0.000 r
+  out[268] (net)                 1        0.050               0.000      0.000 r
+  out[268] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[107] (internal pin)
+  Endpoint: out[267] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[107] (core)                    0.000     0.000      0.000 r
+  out[267] (net)                 1        0.050               0.000      0.000 r
+  out[267] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[106] (internal pin)
+  Endpoint: out[266] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[106] (core)                    0.000     0.000      0.000 r
+  out[266] (net)                 1        0.050               0.000      0.000 r
+  out[266] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[105] (internal pin)
+  Endpoint: out[265] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[105] (core)                    0.000     0.000      0.000 r
+  out[265] (net)                 1        0.050               0.000      0.000 r
+  out[265] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[104] (internal pin)
+  Endpoint: out[264] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[104] (core)                    0.000     0.000      0.000 r
+  out[264] (net)                 1        0.050               0.000      0.000 r
+  out[264] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[103] (internal pin)
+  Endpoint: out[263] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[103] (core)                    0.000     0.000      0.000 r
+  out[263] (net)                 1        0.050               0.000      0.000 r
+  out[263] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[102] (internal pin)
+  Endpoint: out[262] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[102] (core)                    0.000     0.000      0.000 r
+  out[262] (net)                 1        0.050               0.000      0.000 r
+  out[262] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[101] (internal pin)
+  Endpoint: out[261] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[101] (core)                    0.000     0.000      0.000 r
+  out[261] (net)                 1        0.050               0.000      0.000 r
+  out[261] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[100] (internal pin)
+  Endpoint: out[260] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[100] (core)                    0.000     0.000      0.000 r
+  out[260] (net)                 1        0.050               0.000      0.000 r
+  out[260] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[99] (internal pin)
+  Endpoint: out[259] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[99] (core)                     0.000     0.000      0.000 r
+  out[259] (net)                 1        0.050               0.000      0.000 r
+  out[259] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[98] (internal pin)
+  Endpoint: out[258] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[98] (core)                     0.000     0.000      0.000 r
+  out[258] (net)                 1        0.050               0.000      0.000 r
+  out[258] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[97] (internal pin)
+  Endpoint: out[257] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[97] (core)                     0.000     0.000      0.000 r
+  out[257] (net)                 1        0.050               0.000      0.000 r
+  out[257] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[96] (internal pin)
+  Endpoint: out[256] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[96] (core)                     0.000     0.000      0.000 r
+  out[256] (net)                 1        0.050               0.000      0.000 r
+  out[256] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[95] (internal pin)
+  Endpoint: out[255] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[95] (core)                     0.000     0.000      0.000 r
+  out[255] (net)                 1        0.050               0.000      0.000 r
+  out[255] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[94] (internal pin)
+  Endpoint: out[254] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[94] (core)                     0.000     0.000      0.000 r
+  out[254] (net)                 1        0.050               0.000      0.000 r
+  out[254] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[93] (internal pin)
+  Endpoint: out[253] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[93] (core)                     0.000     0.000      0.000 r
+  out[253] (net)                 1        0.050               0.000      0.000 r
+  out[253] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[92] (internal pin)
+  Endpoint: out[252] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[92] (core)                     0.000     0.000      0.000 r
+  out[252] (net)                 1        0.050               0.000      0.000 r
+  out[252] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[91] (internal pin)
+  Endpoint: out[251] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[91] (core)                     0.000     0.000      0.000 r
+  out[251] (net)                 1        0.050               0.000      0.000 r
+  out[251] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[90] (internal pin)
+  Endpoint: out[250] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[90] (core)                     0.000     0.000      0.000 r
+  out[250] (net)                 1        0.050               0.000      0.000 r
+  out[250] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[89] (internal pin)
+  Endpoint: out[249] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[89] (core)                     0.000     0.000      0.000 r
+  out[249] (net)                 1        0.050               0.000      0.000 r
+  out[249] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[88] (internal pin)
+  Endpoint: out[248] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[88] (core)                     0.000     0.000      0.000 r
+  out[248] (net)                 1        0.050               0.000      0.000 r
+  out[248] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[87] (internal pin)
+  Endpoint: out[247] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[87] (core)                     0.000     0.000      0.000 r
+  out[247] (net)                 1        0.050               0.000      0.000 r
+  out[247] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[86] (internal pin)
+  Endpoint: out[246] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[86] (core)                     0.000     0.000      0.000 r
+  out[246] (net)                 1        0.050               0.000      0.000 r
+  out[246] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[85] (internal pin)
+  Endpoint: out[245] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[85] (core)                     0.000     0.000      0.000 r
+  out[245] (net)                 1        0.050               0.000      0.000 r
+  out[245] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[84] (internal pin)
+  Endpoint: out[244] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[84] (core)                     0.000     0.000      0.000 r
+  out[244] (net)                 1        0.050               0.000      0.000 r
+  out[244] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[83] (internal pin)
+  Endpoint: out[243] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[83] (core)                     0.000     0.000      0.000 r
+  out[243] (net)                 1        0.050               0.000      0.000 r
+  out[243] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[82] (internal pin)
+  Endpoint: out[242] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[82] (core)                     0.000     0.000      0.000 r
+  out[242] (net)                 1        0.050               0.000      0.000 r
+  out[242] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[81] (internal pin)
+  Endpoint: out[241] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[81] (core)                     0.000     0.000      0.000 r
+  out[241] (net)                 1        0.050               0.000      0.000 r
+  out[241] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[80] (internal pin)
+  Endpoint: out[240] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[80] (core)                     0.000     0.000      0.000 r
+  out[240] (net)                 1        0.050               0.000      0.000 r
+  out[240] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[79] (internal pin)
+  Endpoint: out[239] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[79] (core)                     0.000     0.000      0.000 r
+  out[239] (net)                 1        0.050               0.000      0.000 r
+  out[239] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[78] (internal pin)
+  Endpoint: out[238] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[78] (core)                     0.000     0.000      0.000 r
+  out[238] (net)                 1        0.050               0.000      0.000 r
+  out[238] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[77] (internal pin)
+  Endpoint: out[237] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[77] (core)                     0.000     0.000      0.000 r
+  out[237] (net)                 1        0.050               0.000      0.000 r
+  out[237] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[76] (internal pin)
+  Endpoint: out[236] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[76] (core)                     0.000     0.000      0.000 r
+  out[236] (net)                 1        0.050               0.000      0.000 r
+  out[236] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[75] (internal pin)
+  Endpoint: out[235] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[75] (core)                     0.000     0.000      0.000 r
+  out[235] (net)                 1        0.050               0.000      0.000 r
+  out[235] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[74] (internal pin)
+  Endpoint: out[234] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[74] (core)                     0.000     0.000      0.000 r
+  out[234] (net)                 1        0.050               0.000      0.000 r
+  out[234] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[73] (internal pin)
+  Endpoint: out[233] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[73] (core)                     0.000     0.000      0.000 r
+  out[233] (net)                 1        0.050               0.000      0.000 r
+  out[233] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[72] (internal pin)
+  Endpoint: out[232] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[72] (core)                     0.000     0.000      0.000 r
+  out[232] (net)                 1        0.050               0.000      0.000 r
+  out[232] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[71] (internal pin)
+  Endpoint: out[231] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[71] (core)                     0.000     0.000      0.000 r
+  out[231] (net)                 1        0.050               0.000      0.000 r
+  out[231] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[70] (internal pin)
+  Endpoint: out[230] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[70] (core)                     0.000     0.000      0.000 r
+  out[230] (net)                 1        0.050               0.000      0.000 r
+  out[230] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[69] (internal pin)
+  Endpoint: out[229] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[69] (core)                     0.000     0.000      0.000 r
+  out[229] (net)                 1        0.050               0.000      0.000 r
+  out[229] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[68] (internal pin)
+  Endpoint: out[228] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[68] (core)                     0.000     0.000      0.000 r
+  out[228] (net)                 1        0.050               0.000      0.000 r
+  out[228] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[67] (internal pin)
+  Endpoint: out[227] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[67] (core)                     0.000     0.000      0.000 r
+  out[227] (net)                 1        0.050               0.000      0.000 r
+  out[227] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[66] (internal pin)
+  Endpoint: out[226] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[66] (core)                     0.000     0.000      0.000 r
+  out[226] (net)                 1        0.050               0.000      0.000 r
+  out[226] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[65] (internal pin)
+  Endpoint: out[225] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[65] (core)                     0.000     0.000      0.000 r
+  out[225] (net)                 1        0.050               0.000      0.000 r
+  out[225] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[64] (internal pin)
+  Endpoint: out[224] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[64] (core)                     0.000     0.000      0.000 r
+  out[224] (net)                 1        0.050               0.000      0.000 r
+  out[224] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[63] (internal pin)
+  Endpoint: out[223] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[63] (core)                     0.000     0.000      0.000 r
+  out[223] (net)                 1        0.050               0.000      0.000 r
+  out[223] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[62] (internal pin)
+  Endpoint: out[222] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[62] (core)                     0.000     0.000      0.000 r
+  out[222] (net)                 1        0.050               0.000      0.000 r
+  out[222] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[61] (internal pin)
+  Endpoint: out[221] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[61] (core)                     0.000     0.000      0.000 r
+  out[221] (net)                 1        0.050               0.000      0.000 r
+  out[221] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: core_instance1/out[60] (internal pin)
+  Endpoint: out[220] (output port clocked by clk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  fullchip           ZeroWireload          tcbn65gplustc
+
+  Point                        Fanout       Cap     Trans      Incr       Path
+  -------------------------------------------------------------------------------
+  core_instance1/out[60] (core)                     0.000     0.000      0.000 r
+  out[220] (net)                 1        0.050               0.000      0.000 r
+  out[220] (out)                                    0.000     0.000      0.000 r
+  data arrival time                                                      0.000
+  -------------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

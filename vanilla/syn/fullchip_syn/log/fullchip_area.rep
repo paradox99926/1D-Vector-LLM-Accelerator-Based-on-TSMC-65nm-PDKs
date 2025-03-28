@@ -1,0 +1,26 @@
+Warning: Design 'fullchip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : reference
+Design : fullchip
+Version: K-2015.06-SP2
+Date   : Sat Mar 22 00:04:43 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+core                              0.000000       2      0.000000  b
+-----------------------------------------------------------------------------
+Total 1 references                                      0.000000
+1

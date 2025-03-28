@@ -18,15 +18,15 @@ Tools:
 
 ```
 Root Directory
-├── syn
-│   ├── core_syn
-│   ├── sramin_syn
-|   └── sramout_syn
-├── pnr
-│   ├── core_pnr
-│   ├── sramin_pnr
-|   └── sramout_pnr
-└── source_file
+├── scan_chain
+│   ├── gate_sim
+│   ├── pnr
+|   └── syn
+├── vanilla
+│   ├── gate_sim
+│   ├── pnr
+|   └── syn
+└── images
 ```
 
 ## Post Route Result

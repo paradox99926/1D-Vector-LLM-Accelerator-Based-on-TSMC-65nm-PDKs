@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : area
+Design : sram_w16_out
+Version: K-2015.06-SP2
+Date   : Fri Mar 14 20:29:15 2025
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'sram_w16_out' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    tcbn65gplustc (File: /home/linux/ieng6/ee260bwi25/public/PDKdata/db/tcbn65gplustc.db)
+
+Number of ports:                          327
+Number of nets:                          4753
+Number of cells:                         4586
+Number of combinational cells:           1866
+Number of sequential cells:              2720
+Number of macros/black boxes:               0
+Number of buf/inv:                         64
+Number of references:                      11
+
+Combinational area:               4569.840029
+Buf/Inv area:                      118.800004
+Noncombinational area:           25459.199066
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 30029.039095
+Total area:                 undefined
+1
+ 
+****************************************
+Report : reference
+Design : sram_w16_out
+Version: K-2015.06-SP2
+Date   : Fri Mar 14 20:29:15 2025
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AN4D0              tcbn65gplustc
+                                  2.880000     320    921.600037  
+AOI22D0            tcbn65gplustc
+                                  2.520000    1280   3225.599976  
+BUFFD1             tcbn65gplustc
+                                  1.440000      24     34.560001  
+CKBD2              tcbn65gplustc
+                                  2.160000      34     73.440003  
+CKBD4              tcbn65gplustc
+                                  3.240000       2      6.480000  
+CKND2D0            tcbn65gplustc
+                                  1.440000     168    241.920010  
+EDFQD1             tcbn65gplustc
+                                  9.360000    2720  25459.199066  n
+INR2XD0            tcbn65gplustc
+                                  2.160000      17     36.720001  
+INVD0              tcbn65gplustc
+                                  1.080000       4      4.320000  
+NR2D1              tcbn65gplustc
+                                  1.440000      16     23.040001  
+OR2D0              tcbn65gplustc
+                                  2.160000       1      2.160000  
+-----------------------------------------------------------------------------
+Total 11 references                                 30029.039095
+1
